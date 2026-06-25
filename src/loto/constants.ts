@@ -36,23 +36,23 @@ export const GAME_SPECS: Record<
 };
 
 export const STRATEGY_LABELS: Record<StrategyType, string> = {
-  balance: "バランス重視",
-  frequent: "頻出数字重視",
-  overdue: "未出現数字重視",
-  high_payout: "高配当狙い",
-  random: "ランダム重視",
-  sougaku_delete: "削除数字参考",
-  mixed: "複合ミックス"
+  balance: "バランス",
+  hot_trend: "ホットトレンド",
+  deep_gap: "ディープギャップ",
+  high_return: "ハイリターン",
+  pure_random: "ピュアランダム",
+  pattern_filter: "パターンフィルター",
+  smart_mix: "スマートミックス"
 };
 
 export const BASE_DISCLAIMER =
   "この予想は過去データの傾向をもとにした参考買い目です。当選番号を保証するものではありません。";
 
 export const HIGH_PAYOUT_DISCLAIMER =
-  "高配当狙いは、当たりやすさではなく、当選時に他の購入者と数字が重なりにくくなる可能性を重視したモードです。";
+  "ハイリターンは、当たりやすさではなく、当選時に他の購入者と数字が重なりにくくなる可能性を重視したモードです。";
 
-export const SOUGAKU_DELETE_DISCLAIMER =
-  "削除数字は過去傾向から候補を絞る考え方ですが、当選確率の向上を保証するものではありません。本アプリでは検証可能なスコアとして扱います。";
+export const PATTERN_FILTER_DISCLAIMER =
+  "このフィルターは、過去データの並び間隔バランスを参考に候補の優先度を調整するものです。当選確率の向上を保証するものではありません。";
 
 export function numbersForGame(game: GameType): number[] {
   return Array.from({ length: GAME_SPECS[game].maxNumber }, (_, index) => index + 1);

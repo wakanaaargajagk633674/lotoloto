@@ -8,80 +8,80 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     prev: 0.02,
     bonus: 0.02,
     anti_pop: 0.1,
-    deletion: 0.1,
-    sougaku: 0.15,
+    candidate_tuning: 0.1,
+    pattern_filter: 0.15,
     combo_balance: 0.35,
     random: 0.1
   },
-  frequent: {
+  hot_trend: {
     recent: 0.4,
     long: 0.3,
     gap: 0.05,
     prev: 0.02,
     bonus: 0.02,
     anti_pop: 0.05,
-    deletion: 0.05,
-    sougaku: 0.1,
+    candidate_tuning: 0.05,
+    pattern_filter: 0.1,
     combo_balance: 0.15,
     random: 0.05
   },
-  overdue: {
+  deep_gap: {
     recent: 0.05,
     long: 0.1,
     gap: 0.45,
     prev: 0.01,
     bonus: 0.01,
     anti_pop: 0.05,
-    deletion: 0.05,
-    sougaku: 0.1,
+    candidate_tuning: 0.05,
+    pattern_filter: 0.1,
     combo_balance: 0.2,
     random: 0.1
   },
-  high_payout: {
+  high_return: {
     recent: 0.05,
     long: 0.05,
     gap: 0.1,
     prev: 0,
     bonus: 0,
     anti_pop: 0.4,
-    deletion: 0.05,
-    sougaku: 0.1,
+    candidate_tuning: 0.05,
+    pattern_filter: 0.1,
     combo_balance: 0.25,
     random: 0.15
   },
-  random: {
+  pure_random: {
     recent: 0.05,
     long: 0.05,
     gap: 0.05,
     prev: 0,
     bonus: 0,
     anti_pop: 0.05,
-    deletion: 0,
-    sougaku: 0.05,
+    candidate_tuning: 0,
+    pattern_filter: 0.05,
     combo_balance: 0.1,
     random: 0.65
   },
-  sougaku_delete: {
+  pattern_filter: {
     recent: 0.1,
     long: 0.1,
     gap: 0.1,
     prev: 0.02,
     bonus: 0.02,
     anti_pop: 0.1,
-    deletion: 0.35,
-    sougaku: 0.35,
+    candidate_tuning: 0.35,
+    pattern_filter: 0.35,
     combo_balance: 0.2,
     random: 0.05
   },
-  mixed: {
+  smart_mix: {
     recent: 0.16,
     long: 0.14,
     gap: 0.16,
     prev: 0.01,
     bonus: 0.01,
     anti_pop: 0.17,
-    deletion: 0.12,
-    sougaku: 0.14,
+    candidate_tuning: 0.12,
+    pattern_filter: 0.14,
     combo_balance: 0.25,
     random: 0.18
   }

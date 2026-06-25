@@ -2,14 +2,14 @@ export type GameType = "loto6" | "loto7";
 
 export type StrategyType =
   | "balance"
-  | "frequent"
-  | "overdue"
-  | "high_payout"
-  | "random"
-  | "sougaku_delete"
-  | "mixed";
+  | "hot_trend"
+  | "deep_gap"
+  | "high_return"
+  | "pure_random"
+  | "pattern_filter"
+  | "smart_mix";
 
-export type DeletionMode = "none" | "weak" | "strong" | "hard";
+export type CandidateTuningMode = "off" | "light" | "focused" | "strict";
 
 export type PrizeTier = {
   tier: number;
@@ -56,9 +56,9 @@ export type NumberFeature = {
   birthdayPopularityRisk: number;
   humanPopularityRisk: number;
   antiPopularityScore: number;
-  deletionCandidateScore: number;
-  sougakuDeletionScore: number;
-  sougakuPartitionScore: number;
+  candidateAdjustmentScore: number;
+  sourcePatternSignalScore: number;
+  sourcePatternBalanceScore: number;
   carryoverContextScore: number;
   randomNoise: number;
   scoreParts: Record<string, number>;
@@ -79,7 +79,7 @@ export type CombinationScores = {
   previousDrawOverlap: number;
   previousBonusOverlap: number;
   averageNumberScore: number;
-  deletionRiskScore: number;
+  lowPrioritySignalScore: number;
   popularityAvoidanceScore: number;
   balanceScore: number;
   diversityScore: number;
@@ -111,7 +111,9 @@ export type GenerateOptions = {
   strategy: StrategyType;
   ticketCount: number;
   seed?: number;
-  deletionMode?: DeletionMode;
+  candidateTuningMode?: CandidateTuningMode;
+  randomStrength?: number;
+  highReturnStrength?: number;
 };
 
 export type StrategyWeights = {
@@ -121,8 +123,8 @@ export type StrategyWeights = {
   prev: number;
   bonus: number;
   anti_pop: number;
-  deletion: number;
-  sougaku: number;
+  candidate_tuning: number;
+  pattern_filter: number;
   combo_balance: number;
   random: number;
 };

@@ -4,12 +4,12 @@ import type { BacktestStep, BacktestSummary, Draw, GameType, StrategyType } from
 
 const DEFAULT_STRATEGIES: StrategyType[] = [
   "balance",
-  "frequent",
-  "overdue",
-  "high_payout",
-  "random",
-  "sougaku_delete",
-  "mixed"
+  "hot_trend",
+  "deep_gap",
+  "high_return",
+  "pure_random",
+  "pattern_filter",
+  "smart_mix"
 ];
 
 export function runWalkForwardBacktest(
@@ -31,7 +31,7 @@ export function runWalkForwardBacktest(
         strategy,
         ticketCount: 1,
         seed: (options.seed ?? 7) + targetIndex * 100 + strategies.indexOf(strategy),
-        deletionMode: strategy === "sougaku_delete" ? "strong" : "weak"
+        candidateTuningMode: strategy === "pattern_filter" ? "focused" : "light"
       });
       const mainMatches = ticket.numbers.filter((number) => actual.mainNumbers.includes(number)).length;
       const bonusMatches = ticket.numbers.filter((number) => actual.bonusNumbers.includes(number)).length;
@@ -112,8 +112,8 @@ function summarizeBacktest(game: GameType, detail: BacktestStep[], startedAtDraw
     ) as BacktestSummary["strategies"],
     notes: [
       "ウォークフォワード方式で、各 targetDraw の予想には trainThroughDraw までの履歴だけを使う。",
-      "ランダムとの差は短期では大きく揺れるため、優位に見える結果も過剰最適化を疑う。",
-      "削除数字は hard exclude ではなく、既定ではスコア上の抑制要素として扱う。"
+      "ランダムとの差は短期では大きく揺れるため、優位に見える結果でも過剰最適化を疑う。",
+      "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。"
     ]
   };
 }

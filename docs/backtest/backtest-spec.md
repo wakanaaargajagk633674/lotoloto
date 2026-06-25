@@ -18,20 +18,20 @@
 
 ## Compared Strategies
 
-- random
 - balance
-- frequent
-- overdue
-- high_payout
-- sougaku_delete
-- mixed
+- hot_trend
+- deep_gap
+- high_return
+- pure_random
+- pattern_filter
+- smart_mix
 
 ## Metrics
 
 - 平均一致数
 - 3個以上一致率
 - 等級別的中数
-- ランダムとの差
+- pure_randomとの差
 - 払戻額
 - 1口あたり平均払戻
 - 最大ドローダウン
@@ -46,12 +46,20 @@
 - `data/backtest/results/loto7_backtest_detail.csv`
 - `docs/backtest/backtest-report.md`
 
+## Pattern Filter
+
+パターンフィルターは、参考サイト由来の候補選別思想を直接的な除外ではなく、候補の優先度を調整する soft signal として検証する。
+
+比較では以下を見る。
+
+- pattern filter off
+- light
+- focused
+- strict
+- pattern balance only
+
 ## Initial Run
 
-2026-06-25 に実データで初回実行した。
+2026-06-25 に実データで初回実行した。戦略名刷新後は `npm run backtest` で再生成する。
 
-- ロト6: 第300回まで学習開始、第301回から第2113回まで評価、各戦略1813試行。
-- ロト7: 第120回まで学習開始、第121回から第682回まで評価、各戦略562試行。
-
-結果は戦略間で差があるように見える箇所もあるが、ランダムとの差は小さく、過剰最適化や偶然の揺れを疑うべき範囲。UIでは「有利な戦略」ではなく「参考テーマ」として表示する。
-
+結果は戦略間で差があるように見える箇所もあるが、pure_randomとの差は小さく、過剰最適化や偶然の揺れを疑うべき範囲。UIでは「有利な戦略」ではなく「参考テーマ」として表示する。

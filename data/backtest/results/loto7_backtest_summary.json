@@ -13,7 +13,7 @@
       "averagePayoutPerTicketYen": 55.51601423487544,
       "maxDrawdownYen": 137400
     },
-    "frequent": {
+    "hot_trend": {
       "trials": 562,
       "averageMainMatches": 1.3683274021352314,
       "match3PlusRate": 0.12633451957295375,
@@ -22,7 +22,7 @@
       "averagePayoutPerTicketYen": 58.362989323843415,
       "maxDrawdownYen": 136200
     },
-    "overdue": {
+    "deep_gap": {
       "trials": 562,
       "averageMainMatches": 1.3487544483985765,
       "match3PlusRate": 0.11387900355871886,
@@ -31,7 +31,7 @@
       "averagePayoutPerTicketYen": 46.263345195729535,
       "maxDrawdownYen": 142600
     },
-    "high_payout": {
+    "high_return": {
       "trials": 562,
       "averageMainMatches": 1.3825622775800712,
       "match3PlusRate": 0.13701067615658363,
@@ -40,7 +40,7 @@
       "averagePayoutPerTicketYen": 63.879003558718864,
       "maxDrawdownYen": 132700
     },
-    "random": {
+    "pure_random": {
       "trials": 562,
       "averageMainMatches": 1.3362989323843417,
       "match3PlusRate": 0.10854092526690391,
@@ -49,7 +49,7 @@
       "averagePayoutPerTicketYen": 95.37366548042705,
       "maxDrawdownYen": 116200
     },
-    "sougaku_delete": {
+    "pattern_filter": {
       "trials": 562,
       "averageMainMatches": 1.4181494661921707,
       "match3PlusRate": 0.12811387900355872,
@@ -58,7 +58,7 @@
       "averagePayoutPerTicketYen": 56.58362989323843,
       "maxDrawdownYen": 136800
     },
-    "mixed": {
+    "smart_mix": {
       "trials": 562,
       "averageMainMatches": 1.400355871886121,
       "match3PlusRate": 0.13523131672597866,
@@ -70,7 +70,7 @@
   },
   "notes": [
     "ウォークフォワード方式で、各 targetDraw の予想には trainThroughDraw までの履歴だけを使う。",
-    "ランダムとの差は短期では大きく揺れるため、優位に見える結果も過剰最適化を疑う。",
-    "削除数字は hard exclude ではなく、既定ではスコア上の抑制要素として扱う。"
+    "ランダムとの差は短期では大きく揺れるため、優位に見える結果でも過剰最適化を疑う。",
+    "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。"
   ]
 }

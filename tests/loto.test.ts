@@ -72,21 +72,21 @@ describe("generator", () => {
   });
 
   it("generates loto7 numbers in range without duplicates", () => {
-    const [ticket] = generateTickets(makeDraws("loto7", 80), { game: "loto7", strategy: "high_payout", ticketCount: 1, seed: 2 });
+    const [ticket] = generateTickets(makeDraws("loto7", 80), { game: "loto7", strategy: "high_return", ticketCount: 1, seed: 2 });
     expect(ticket.numbers).toHaveLength(7);
     expect(new Set(ticket.numbers).size).toBe(7);
     expect(ticket.numbers.every((number) => number >= 1 && number <= 37)).toBe(true);
   });
 
   it("generates requested ticket count", () => {
-    const tickets = generateTickets(makeDraws("loto6", 80), { game: "loto6", strategy: "mixed", ticketCount: 4, seed: 3 });
+    const tickets = generateTickets(makeDraws("loto6", 80), { game: "loto6", strategy: "smart_mix", ticketCount: 4, seed: 3 });
     expect(tickets).toHaveLength(4);
   });
 
   it("is reproducible with a fixed seed", () => {
     const draws = makeDraws("loto6", 80);
-    const a = generateTickets(draws, { game: "loto6", strategy: "random", ticketCount: 3, seed: 99 });
-    const b = generateTickets(draws, { game: "loto6", strategy: "random", ticketCount: 3, seed: 99 });
+    const a = generateTickets(draws, { game: "loto6", strategy: "pure_random", ticketCount: 3, seed: 99 });
+    const b = generateTickets(draws, { game: "loto6", strategy: "pure_random", ticketCount: 3, seed: 99 });
     expect(a.map((ticket) => ticket.numbers)).toEqual(b.map((ticket) => ticket.numbers));
   });
 });
@@ -108,7 +108,7 @@ describe("backtest", () => {
   it("records walk-forward train draw before target draw", () => {
     const { detail } = runWalkForwardBacktest(makeDraws("loto6", 25), "loto6", {
       minTrainingDraws: 10,
-      strategies: ["random"],
+      strategies: ["pure_random"],
       seed: 4
     });
     expect(detail.length).toBeGreaterThan(0);

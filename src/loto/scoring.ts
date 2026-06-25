@@ -18,8 +18,8 @@ export function scoreNumbers(strategy: StrategyType, features: NumberFeature[]):
       prev: weights.prev * (feature.appearedInPreviousDraw ? -1 : 0.15),
       bonus: weights.bonus * (feature.appearedInPreviousBonus ? 0.05 : 0),
       anti_pop: weights.anti_pop * feature.antiPopularityScore,
-      deletion: weights.deletion * -feature.deletionCandidateScore,
-      sougaku: weights.sougaku * (feature.sougakuPartitionScore - feature.sougakuDeletionScore),
+      candidate_tuning: weights.candidate_tuning * -feature.candidateAdjustmentScore,
+      pattern_filter: weights.pattern_filter * (feature.sourcePatternBalanceScore - feature.sourcePatternSignalScore),
       random: weights.random * feature.randomNoise
     };
     const total = Object.values(parts).reduce((sum, value) => sum + value, 0);
@@ -58,8 +58,8 @@ export function scoreCombination(
   );
   const averageNumberScore =
     sorted.reduce((sum, number) => sum + (scoreByNumber.get(number)?.total ?? 0), 0) / sorted.length;
-  const deletionRiskScore =
-    sorted.reduce((sum, number) => sum + (scoreByNumber.get(number)?.feature.deletionCandidateScore ?? 0), 0) /
+  const lowPrioritySignalScore =
+    sorted.reduce((sum, number) => sum + (scoreByNumber.get(number)?.feature.candidateAdjustmentScore ?? 0), 0) /
     sorted.length;
   const popularityAvoidanceScore =
     sorted.reduce((sum, number) => sum + (scoreByNumber.get(number)?.feature.antiPopularityScore ?? 0), 0) /
@@ -82,9 +82,9 @@ export function scoreCombination(
     previousDrawOverlap: previousDraw ? sorted.filter((number) => previousDraw.mainNumbers.includes(number)).length : 0,
     previousBonusOverlap: previousDraw ? sorted.filter((number) => previousDraw.bonusNumbers.includes(number)).length : 0,
     averageNumberScore,
-    deletionRiskScore,
+    lowPrioritySignalScore,
     popularityAvoidanceScore,
-    balanceScore: strategy === "random" ? balanceScore * 0.5 : balanceScore,
+    balanceScore: strategy === "pure_random" ? balanceScore * 0.5 : balanceScore,
     diversityScore,
     explanationScore: (balanceScore + diversityScore + popularityAvoidanceScore) / 3
   };

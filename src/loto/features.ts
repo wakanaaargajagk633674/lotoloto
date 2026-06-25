@@ -27,7 +27,7 @@ export function computeNumberFeatures(
   game: GameType,
   history: Draw[],
   seed = 1,
-  sougakuDeleteNumbers: number[] = []
+  sourcePatternSignals: number[] = []
 ): NumberFeature[] {
   const spec = GAME_SPECS[game];
   const domain = numbersForGame(game);
@@ -64,7 +64,7 @@ export function computeNumberFeatures(
     gapZSource.set(number, currentGap);
   }
   const gapZ = zScoreMap(gapZSource, domain);
-  const sougakuSet = new Set(sougakuDeleteNumbers);
+  const sourcePatternSet = new Set(sourcePatternSignals);
 
   return domain.map((number) => {
     const rangeGroup = number <= Math.ceil(spec.maxNumber / 3) ? "low" : number <= Math.ceil((spec.maxNumber * 2) / 3) ? "mid" : "high";
@@ -72,9 +72,9 @@ export function computeNumberFeatures(
     const roundedRisk = number % 10 === 0 || number % 5 === 0 ? 0.25 : 0;
     const edgeRisk = number === 1 || number === spec.maxNumber ? 0.1 : 0;
     const humanPopularityRisk = Math.min(1, birthdayPopularityRisk * 0.65 + roundedRisk + edgeRisk);
-    const deletionCandidateScore = normalize01((recentZ.get(number) ?? 0) * -0.25 + (gapZ.get(number) ?? 0) * 0.35 + humanPopularityRisk * 0.15);
-    const sougakuDeletionScore = sougakuSet.has(number) ? 1 : 0;
-    const sougakuPartitionScore = partitionScore(game, number);
+    const candidateAdjustmentScore = normalize01((recentZ.get(number) ?? 0) * -0.25 + (gapZ.get(number) ?? 0) * 0.35 + humanPopularityRisk * 0.15);
+    const sourcePatternSignalScore = sourcePatternSet.has(number) ? 1 : 0;
+    const sourcePatternBalanceScore = partitionScore(game, number);
     const gaps = allGaps.get(number) ?? [];
     const currentGap = currentGaps.get(number) ?? history.length;
 
@@ -102,9 +102,9 @@ export function computeNumberFeatures(
       birthdayPopularityRisk,
       humanPopularityRisk,
       antiPopularityScore: 1 - humanPopularityRisk,
-      deletionCandidateScore,
-      sougakuDeletionScore,
-      sougakuPartitionScore,
+      candidateAdjustmentScore,
+      sourcePatternSignalScore,
+      sourcePatternBalanceScore,
       carryoverContextScore: previousDraw?.carryoverAmount && previousDraw.carryoverAmount > 0 ? 0.5 : 0,
       randomNoise: random(),
       scoreParts: {}

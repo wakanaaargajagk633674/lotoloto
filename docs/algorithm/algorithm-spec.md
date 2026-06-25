@@ -13,13 +13,13 @@ Lotoloto は、ロト6・ロト7の当せん番号を保証するアプリでは
 
 ## Strategy Types
 
-- balance: バランス型
-- frequent: 頻出数字型
-- overdue: 未出現数字型
-- high_payout: 高配当狙い型
-- random: ランダム重視型
-- sougaku_delete: sougaku参考削除数字型
-- mixed: 複合ミックス型
+- balance: バランス
+- hot_trend: ホットトレンド
+- deep_gap: ディープギャップ
+- high_return: ハイリターン
+- pure_random: ピュアランダム
+- pattern_filter: パターンフィルター
+- smart_mix: スマートミックス
 
 ## Number Features
 
@@ -45,9 +45,9 @@ Lotoloto は、ロト6・ロト7の当せん番号を保証するアプリでは
 - birthdayPopularityRisk
 - humanPopularityRisk
 - antiPopularityScore
-- deletionCandidateScore
-- sougakuDeletionScore
-- sougakuPartitionScore
+- candidateAdjustmentScore
+- sourcePatternSignalScore
+- sourcePatternBalanceScore
 - carryoverContextScore
 - randomNoise
 
@@ -66,7 +66,7 @@ Lotoloto は、ロト6・ロト7の当せん番号を保証するアプリでは
 - previousDrawOverlap
 - previousBonusOverlap
 - averageNumberScore
-- deletionRiskScore
+- lowPrioritySignalScore
 - popularityAvoidanceScore
 - balanceScore
 - diversityScore
@@ -84,8 +84,8 @@ numberScore =
   + w_prev * appearedInPreviousDraw
   + w_bonus * appearedInPreviousBonus
   + w_anti_pop * antiPopularityScore
-  - w_delete * deletionCandidateScore
-  + w_sougaku * (sougakuPartitionScore - sougakuDeletionScore)
+  - w_candidate_tuning * candidateAdjustmentScore
+  + w_pattern_filter * (sourcePatternBalanceScore - sourcePatternSignalScore)
   + w_random * randomNoise
 ```
 
@@ -103,11 +103,10 @@ numberScore =
 
 ## Strategy Defaults
 
-初期値はユーザー指定の重みに合わせ、`strategyWeights.ts` に実装した。`mixed` は複数戦略を口ごとに切り替える。
+初期値はユーザー指定の重みに合わせ、`strategyWeights.ts` に実装した。`smart_mix` は複数戦略を口ごとに切り替える。
 
 ## Safety
 
-- 削除数字は既定で soft penalty。
-- high_payout は31超を優先するが、当たりやすさとは説明しない。
-- frequent/overdue はユーザーが選ぶテーマであり、統計的優位性を主張しない。
-
+- パターンフィルターは既定で soft signal。
+- high_return は31超を優先するが、当たりやすさとは説明しない。
+- hot_trend/deep_gap はユーザーが選ぶテーマであり、統計的優位性を主張しない。

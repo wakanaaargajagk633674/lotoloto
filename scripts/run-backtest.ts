@@ -14,7 +14,7 @@ async function main() {
     "# Backtest Report",
     "",
     "ウォークフォワード方式で、各回の予想時点までの履歴だけを使って次回を評価した。",
-    "結果は参考実装の初期値であり、当せん確率向上を示すものではない。"
+    "結果は参考実装の初期値であり、当選確率の向上を示すものではない。"
   ];
 
   for (const game of ["loto6", "loto7"] as GameType[]) {
@@ -30,7 +30,14 @@ async function main() {
       serializeBacktestDetailCsv(detail),
       "utf8"
     );
-    reportSections.push("", `## ${game}`, "", "| 戦略 | 試行 | 平均一致数 | 3個以上一致率 | 的中数 | 平均払戻/口 | 最大DD |", "|---|---:|---:|---:|---:|---:|---:|");
+
+    reportSections.push(
+      "",
+      `## ${game}`,
+      "",
+      "| 戦略 | 試行 | 平均一致数 | 3個以上一致率 | 的中数 | 平均払戻/口 | 最大DD |",
+      "|---|---:|---:|---:|---:|---:|---:|"
+    );
     for (const [strategy, row] of Object.entries(summary.strategies)) {
       reportSections.push(
         `| ${strategy} | ${row.trials} | ${row.averageMainMatches.toFixed(3)} | ${(row.match3PlusRate * 100).toFixed(2)}% | ${row.prizeHitCount} | ${row.averagePayoutPerTicketYen.toFixed(1)} | ${row.maxDrawdownYen.toFixed(0)} |`
@@ -38,8 +45,8 @@ async function main() {
     }
     reportSections.push(
       "",
-      "- ランダムとの差は小さく、短期の順位差は偶然の範囲に見える可能性が高い。",
-      "- 有意に見える結果があっても、期間分割・乱数シード変更・感度分析で崩れるかを確認する。",
+      "- ランダムとの差は小さく、期待値の優位差は偶然の範囲に見える可能性が高い。",
+      "- 有効に見える結果があっても、期間分割・乱数シード変更・感度分析で崩れるかを確認する。",
       "- UIでは「当たりやすい」ではなく、戦略テーマ別の参考買い目として表現する。"
     );
   }

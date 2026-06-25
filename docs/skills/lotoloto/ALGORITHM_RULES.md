@@ -9,22 +9,22 @@ The app is an explainable reference-ticket generator, not a winning-number predi
 Implement and test these strategy types:
 
 - `balance`
-- `frequent`
-- `overdue`
-- `high_payout`
-- `random`
-- `sougaku_delete`
-- `mixed`
+- `hot_trend`
+- `deep_gap`
+- `high_return`
+- `pure_random`
+- `pattern_filter`
+- `smart_mix`
 
-## Deletion Numbers
+## Pattern Filter
 
-- Treat deletion numbers as scores by default:
-  - deletionCandidateScore
-  - adoption suppression score
-  - sougakuDeletionScore
-  - sougakuPartitionScore
-- Provide modes: none, weak, strong, hard.
-- Only `hard` may fully exclude, and it must be user-selected or backtest-specific.
+- Treat source-inspired pattern logic as candidate-priority signals by default:
+  - candidateAdjustmentScore
+  - sourcePatternSignalScore
+  - sourcePatternBalanceScore
+  - lowPrioritySignalScore
+- Provide modes: off, light, focused, strict.
+- `strict` may remove low-priority candidates only when user-selected or used for backtest comparison.
 
 ## Backtests
 
@@ -33,7 +33,7 @@ Implement and test these strategy types:
   - Predict N+1.
   - Then advance by one draw.
 - Never compute features for a past prediction from full-period data.
-- Compare against random.
+- Compare against pure_random.
 - Report average matches, 3+ match rate, prize hits, payout, payout per ticket, drawdown, period stability, and overfitting risk.
 
 ## Scoring
@@ -41,4 +41,3 @@ Implement and test these strategy types:
 - Use configurable weights in `src/config/strategyWeights.ts`.
 - Do not display scores as absolute winning probabilities.
 - Prefer deterministic seeded randomness in tests and reports.
-
