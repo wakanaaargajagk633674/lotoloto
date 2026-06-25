@@ -5,10 +5,11 @@ type Props = {
   index: number;
   tone: "standard" | "trend" | "gap" | "return";
   tuned: boolean;
+  reasonLabel?: string;
   onClick: () => void;
 };
 
-export default function NumberBall({ number, index, tone, tuned, onClick }: Props) {
+export default function NumberBall({ number, index, tone, tuned, reasonLabel, onClick }: Props) {
   return (
     <button
       className={`number-ball ${tone} ${tuned ? "tuned" : ""}`}
@@ -17,7 +18,8 @@ export default function NumberBall({ number, index, tone, tuned, onClick }: Prop
       onClick={onClick}
       aria-label={`${number} の理由を見る`}
     >
-      {number.toString().padStart(2, "0")}
+      <strong>{number.toString().padStart(2, "0")}</strong>
+      {reasonLabel ? <span>{reasonLabel}</span> : null}
     </button>
   );
 }

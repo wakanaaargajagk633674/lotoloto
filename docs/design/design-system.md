@@ -2,48 +2,79 @@
 
 ## Theme
 
-Dark UI, designed as a data-analysis dashboard.
+Light, fresh, and friendly UI. The product should feel closer to a public service, household budgeting app, or simple data summary than a gambling prediction site.
+
+## Palette
 
 CSS variables:
 
-- Background: `#070A12`
-- Surface: `#0D1220`
-- Surface 2: `#121A2C`
-- Border: `rgba(255,255,255,0.08)`
-- Text Primary: `#F8FAFC`
-- Text Secondary: `#94A3B8`
-- Accent Cyan: `#22D3EE`
-- Accent Emerald: `#34D399`
-- Accent Violet: `#A78BFA`
-- Accent Gold: `#FBBF24`
+- Background: `#F7FBFF`
+- Background soft: `#EEF6FF`
+- Surface: `#FFFFFF`
+- Surface soft: `#F8FAFC`
+- Border: `#E2E8F0`
+- Text Primary: `#0F172A`
+- Text Secondary: `#475569`
+- Text Muted: `#64748B`
+- Primary Blue: `#2563EB`
+- Sky Blue: `#0EA5E9`
+- Teal: `#14B8A6`
+- Green: `#22C55E`
+- Gold: `#F59E0B`
 - Warning: `#F97316`
+- Danger: `#DC2626`
+
+Color intent:
+
+- Blue: trust, data, clean navigation
+- Sky blue: freshness
+- Green: reassurance and balance
+- Gold: gentle emphasis
+- Red: only error or strong caution
 
 ## Layout
 
-- Max width: around 1200px.
-- Desktop: 2-column workspace, 2-column ticket grid, 4-column insight grid.
+- Max width: around 1180px.
+- Top order: hero, simple settings, tickets, reasons, data details, notice, backtest.
+- Desktop: 2-column hero, 2-column ticket grid.
 - Mobile: single column.
-- Use card surfaces with 8px radius.
-- Keep information dense but separated by clear panels.
+- Cards use 14px radius, light borders, and soft shadows.
+- Advanced analysis is placed inside details sections, not shown before the user sees tickets.
 
 ## Number Balls
 
-Number balls communicate state.
+Number balls are friendly and clear.
 
-- Standard: deep graphite gradient
-- Trend: cyan
-- Gap: violet
-- High-return: gold
-- Candidate tuning: thin emerald ring
+- Standard: white background with pale blue border
+- Trend: pale green
+- Gap: pale violet
+- Distribution-risk mode: pale gold
+- Candidate adjustment: thin teal outline
 
-Tap/click opens the number reason panel.
+Each number can include a short reason label such as:
 
-## Scores
+- 出現多め
+- 間隔参考
+- 32以上
+- バランス
 
-- Total score: conic CSS ring
-- Supporting scores: animated bars
-- Tags: compact rounded badges
-- Scores are relative strategy indicators, not winning probabilities.
+## Metrics
+
+All metrics must use `MetricWithLabel`.
+
+Required:
+
+- label
+- value
+- unit where applicable
+- help text
+
+Forbidden:
+
+- number plus unexplained parentheses
+- raw internal score labels without explanation
+- raw interval labels without explanation
+- unexplained ranking values
 
 ## Motion
 
@@ -52,14 +83,14 @@ Use quiet motion only:
 - Card fade-in
 - Number ball entrance
 - Score bar growth
-- Hover lift
+- Subtle hover lift
 
-Do not use flashing, jackpot-style animation, or urgency effects.
+Do not use flashing, jackpot-style animation, neon glow, or urgency effects.
 
 ## Accessibility
 
-- Keep contrast high on dark surfaces.
+- High contrast on white and pale blue surfaces.
 - Buttons have visible labels.
-- Mobile controls stack vertically.
-- Safety notices are visible and readable, not hidden in tiny footnotes.
-
+- Mobile layout stacks vertically.
+- Safety notices are visible, readable, and not hidden in tiny footnotes.
+- Help text is available for metrics.

@@ -15,23 +15,24 @@ export function buildDisclaimer(strategy: StrategyType): string {
 export function explainTicket(strategy: StrategyType, scores: NumberScore[], combo: CombinationScores): string[] {
   const explanations = scores.slice(0, 4).map((score) => {
     const feature = score.feature;
+    const number = feature.number.toString().padStart(2, "0");
     if (strategy === "high_return" && feature.over31Flag) {
-      return `${feature.number} は31超の数字で、分配リスクを意識する観点から採用しました。`;
+      return `数字 ${number} は31より大きい数字です。誕生日で選ばれやすい1から31だけに偏らないよう、組み合わせに入れています。`;
     }
     if (strategy === "hot_trend") {
-      return `${feature.number} は直近100回の出現回数が ${feature.recent100Frequency} 回で、ホットトレンド内では相対的に目立ちます。`;
+      return `数字 ${number} は直近100回で ${feature.recent100Frequency} 回、本数字に含まれています。よく出ている数字の参考候補として見ています。`;
     }
     if (strategy === "deep_gap") {
-      return `${feature.number} は前回出現から ${feature.lastSeenGap} 回空いており、数字間隔を見るテーマに寄与しました。`;
+      return `数字 ${number} は前回出てから ${feature.lastSeenGap} 回あいています。間隔を見るための参考候補として扱っています。`;
     }
     if (strategy === "pattern_filter") {
-      return `${feature.number} は候補調整と並び間隔バランスを soft signal として評価した結果、組み合わせに残りました。`;
+      return `数字 ${number} は過去の並び方とのバランスを見て、今回は候補の優先度を調整しています。除外を意味するものではありません。`;
     }
-    return `${feature.number} は頻度、数字間隔、人気回避、組み合わせバランスを合わせた相対スコアで採用しました。`;
+    return `数字 ${number} は出現回数、前回からの間隔、全体の散らばりを見て、今回の組み合わせに入れています。`;
   });
   explanations.push(
-    `組み合わせ全体は奇数${combo.oddCount}個・偶数${combo.evenCount}個、合計${combo.sum}、連番ペア${combo.consecutivePairCount}組です。`
+    `この買い目は、奇数 ${combo.oddCount} 個、偶数 ${combo.evenCount} 個、合計値 ${combo.sum}、連番 ${combo.consecutivePairCount} 組です。`
   );
-  explanations.push("各スコアは当せん確率ではなく、選び方のテーマを説明するための相対指標です。");
+  explanations.push("表示しているスコアは参考指標です。当選確率や回収を保証するものではありません。");
   return explanations;
 }

@@ -1,20 +1,68 @@
 import { STRATEGY_LABELS } from "./constants";
 import type { StrategyType } from "./types";
 
-export const strategyDescriptions: Record<StrategyType, string> = {
-  balance: "過去傾向、数字の散らばり、奇数偶数、合計値を総合的に整える標準モードです。",
-  hot_trend: "直近・長期で出現が目立つ数字を少し重視するモードです。",
-  deep_gap: "しばらく出ていない数字を参考に、数字の間隔に注目するモードです。",
-  high_return: "人気が集中しやすい数字を避け、当選時の分配リスクを意識するモードです。",
-  pure_random: "統計スコアの影響を抑え、ランダム性を重視するモードです。",
-  pattern_filter: "過去の並び間隔・組み合わせ傾向を参考に候補優先度を調整するモードです。",
-  smart_mix: "複数の戦略を組み合わせ、買い目ごとに違う狙いを持たせるモードです。"
+export type StrategyInfo = {
+  value: StrategyType;
+  label: string;
+  englishName: string;
+  description: string;
+  suitableFor: string;
+  caution: string;
 };
 
-export function listStrategies(): Array<{ value: StrategyType; label: string; description: string }> {
+const englishNames: Record<StrategyType, string> = {
+  balance: "Balance",
+  hot_trend: "Hot Trend",
+  deep_gap: "Deep Gap",
+  high_return: "High Return",
+  pure_random: "Pure Random",
+  pattern_filter: "Pattern Reference",
+  smart_mix: "Smart Mix"
+};
+
+export const strategyDescriptions: Record<StrategyType, Omit<StrategyInfo, "value" | "label" | "englishName">> = {
+  balance: {
+    description: "過去の出現傾向、数字の散らばり、奇数偶数のバランスを見ながら作ります。",
+    suitableFor: "迷ったらまずこれ。",
+    caution: "当選確率を保証するものではありません。"
+  },
+  hot_trend: {
+    description: "過去に出現回数が多い数字を少し重視します。",
+    suitableFor: "過去傾向を見ながら選びたい人。",
+    caution: "過去によく出た数字が次も出るとは限りません。"
+  },
+  deep_gap: {
+    description: "最後に出てから間隔が空いている数字を少し重視します。",
+    suitableFor: "数字の間隔を参考にしたい人。",
+    caution: "間隔が空いている数字が、そろそろ出るとは限りません。"
+  },
+  high_return: {
+    description: "誕生日などで選ばれやすい数字に偏りすぎないようにします。",
+    suitableFor: "当たった場合の山分けリスクを意識したい人。",
+    caution: "当たりやすさを高めるものではありません。"
+  },
+  pure_random: {
+    description: "分析スコアの影響を抑え、ランダム性を大きく残します。",
+    suitableFor: "シンプルに楽しみたい人。",
+    caution: "完全な未来予測ではありません。"
+  },
+  pattern_filter: {
+    description: "過去の並び、間隔、組み合わせの特徴を参考に候補を調整します。",
+    suitableFor: "少しだけ分析感を入れたい人。",
+    caution: "数字を除外するものではありません。"
+  },
+  smart_mix: {
+    description: "複数の見方を組み合わせて、買い目ごとに違う特徴を持たせます。",
+    suitableFor: "複数口買うときにバリエーションを出したい人。",
+    caution: "口数が増えるほど購入金額も増えます。"
+  }
+};
+
+export function listStrategies(): StrategyInfo[] {
   return (Object.keys(STRATEGY_LABELS) as StrategyType[]).map((value) => ({
     value,
     label: STRATEGY_LABELS[value],
-    description: strategyDescriptions[value]
+    englishName: englishNames[value],
+    ...strategyDescriptions[value]
   }));
 }

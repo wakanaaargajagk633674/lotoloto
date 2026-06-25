@@ -1,109 +1,134 @@
 # UI Spec
 
-## Top
+## Top Order
 
-Name: LOTOLOTO Intelligence
+1. ヒーロー
+2. かんたん設定
+3. 参考買い目
+4. なぜこの数字？
+5. 過去データの見方
+6. 注意事項
+7. バックテストの考え方
+
+## Hero
+
+Name: LOTOLOTO Light Insight
 
 Headline:
 
-> 過去データから、数字の流れを読み解く。
+> ロト6ロト7の数字を、やさしく分析。
 
 Description:
 
-> ロト6・ロト7の過去抽選データをもとに、頻度、間隔、バランス、人気回避傾向を分析し、参考買い目を生成します。
+> 過去の抽選データをもとに、出現回数、間隔、バランスを整理し、参考買い目をわかりやすく表示します。
 
 Required elements:
 
-- Hero area
-- Loto6 / Loto7 toggle
-- Today's analysis status
-- Latest data date
-- Carryover information
-- CTA to start reference generation
-- Safety notice
+- ロト6 / ロト7切り替え
+- 最新データ更新日
+- 分析対象回数
+- かんたん3ステップ
+- CTA: 参考買い目を作る
+- 自然な注意文
 
 ## Generator Settings
 
 Required elements:
 
-- Game type
-- Strategy type
-- Ticket count
-- Randomness strength
-- Pattern filter strength
-- High-return strength
-- Expandable advanced settings
+- 作る買い目の数
+- 分析タイプ
+- ランダム性を残す強さ
+- パターン参考の強さ
+- 分配リスク意識の強さ
+- 折りたたみ詳細設定
 
 UX:
 
-- Beginners can choose game, strategy, ticket count, then generate.
-- Advanced parameters are grouped under details.
-- Sliders use plain labels and do not imply improved odds.
+- 初心者はロト、分析タイプ、口数だけで進める。
+- 詳細設定は閉じた状態を基本にする。
+- スライダーは当たりやすさではなく、参考指標の強さとして説明する。
+
+## Strategy Cards
+
+Each card must show:
+
+- モード名
+- ひとことで説明
+- 向いている人
+- 注意点
+
+Mode names:
+
+- バランス重視
+- よく出ている数字参考
+- しばらく出ていない数字参考
+- 分配リスクを意識
+- ランダム中心
+- パターン参考
+- おまかせミックス
 
 ## Result
 
 Required elements:
 
-- Ticket cards
-- Number balls
-- Total score
-- Balance score
-- Trend score
-- Gap score
-- Popularity avoidance score
-- Pattern adjustment score
-- Reasons per number
-- Regenerate
-- Copy result
+- 買い目番号
+- ロト種別
+- 予想タイプ
+- 数字ボール
+- 総合コメント
+- 主な特徴3つ
+- 詳細を見るボタン
+- 数字をコピー
 
-Ticket cards should feel shareable, but not promotional or sensational.
+All metrics must include a label and unit.
+
+Examples:
+
+- 総合バランス: 82 / 100
+- 奇数偶数のバランス: 3 対 3
+- 合計値: 138
+- 32以上の数字: 2個
 
 ## Number Reason Panel
 
-Example language:
+Use beginner language.
 
-- 直近100回でやや出現多め
-- 奇数偶数バランスを整える役割
-- 今回の組み合わせでは低数字帯を補完
-- 31超の数字として分配リスクを意識するモードで評価
-- 全体のレンジ分散を改善
+- 過去出現回数: 326回
+- 直近100回の出現回数: 14回
+- 前回からの間隔: 18回
+- 参考スコア: 72 / 100
 
-## Dashboard
+Avoid internal names such as `recent100Frequency`, `antiPopularityScore`, and raw score labels in UI.
 
-Required elements:
+## Data Insight Section
 
-- 出現頻度ランキング
-- 直近トレンド
-- 数字間隔ランキング
-- 奇数偶数分布
-- 合計値レンジ
-- 連番出現率
-- 前回重複数
-- 31超の出現傾向
-- キャリーオーバー情報
-- バックテスト概要
+Move advanced analysis under "詳しく見る".
+
+Sections:
+
+- 出現回数ランキング
+- 直近100回の出現回数
+- 前回からの間隔
+- 組み合わせの見方
+
+Each metric must explain what it means and warn where needed that it does not predict the next draw.
 
 ## Components
 
 Implemented:
 
-- AppShell
-- HeroSection
-- GameToggle
-- StrategySelector
-- StrategyCard
-- TicketCard
+- LightAppShell
+- FriendlyHeroSection
+- SimpleStepGuide
+- GameTypeTabs
+- FriendlyStrategyCard
+- GentleTicketCard
 - NumberBall
-- ScoreRing
-- ScoreBar
-- InsightCard
-- TrendBadge
-- RiskNotice
-- DataFreshnessBadge
-- CarryoverCard
-- BacktestSummaryCard
-- NumberReasonPanel
-- AdvancedSettingsPanel
+- MetricWithLabel
+- MetricHelpTooltip
+- FriendlyReasonPanel
+- DataInsightSection
+- ResponsibleNotice
+- BacktestThinkingSection
 - EmptyState
 - LoadingSkeleton
-
