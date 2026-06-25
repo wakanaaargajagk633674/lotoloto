@@ -9,18 +9,14 @@ type ManifestEntry = {
   game: string;
   title: string;
   description: string;
-  rows: number;
-  lastUpdated: string;
-  source: string;
-  verificationStatus: string;
 };
 
 const targets = [
-  { suffix: "draws_japanese", title: "全当せんデータ", description: "回号、抽せん日、本数字、ボーナス数字、販売実績額、キャリーオーバー、等級別配当を含む共通スキーマCSVです。" },
-  { suffix: "number_frequency", title: "数字別出現回数", description: "全期間、直近30回、50回、100回、300回の出現回数と未出現期間です。" },
-  { suffix: "recent100", title: "直近100回分析", description: "直近100回の出現回数、前回からの間隔、過去出現回数です。" },
-  { suffix: "carryover", title: "キャリーオーバー履歴", description: "販売実績額、キャリーオーバー、1等口数、1等当せん金額の履歴です。" },
-  { suffix: "prize_tiers", title: "等級別配当履歴", description: "等級ごとの当せん口数と当せん金額の履歴です。" }
+  { suffix: "draws_japanese", title: "全当せんデータ", description: "回号、抽せん日、本数字、ボーナス数字、キャリーオーバー、配当をまとめています。" },
+  { suffix: "number_frequency", title: "数字別出現回数", description: "それぞれの数字が、過去に何回出ているかをまとめています。" },
+  { suffix: "recent100", title: "直近100回分析", description: "最近100回でよく出ている数字や、前回からの間隔を見られます。" },
+  { suffix: "carryover", title: "キャリーオーバー履歴", description: "キャリーオーバーや1等配当の流れを見られます。" },
+  { suffix: "prize_tiers", title: "等級別配当履歴", description: "各等級の口数と当せん金額をまとめています。" }
 ];
 
 async function main() {
@@ -39,11 +35,7 @@ async function main() {
         bomFileName,
         game,
         title: target.title,
-        description: target.description,
-        rows: Math.max(0, csv.trim().split(/\r\n|\n|\r/).length - 1),
-        lastUpdated: new Date().toISOString(),
-        source: "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
-        verificationStatus: "品質レポートで照合状況を確認"
+        description: target.description
       });
     }
   }

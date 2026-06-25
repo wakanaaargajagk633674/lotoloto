@@ -62,7 +62,6 @@ export default function LotoApp({ initialDraws, backtests }: Props) {
     <LightAppShell>
       <FriendlyHeroSection
         game={game}
-        drawCount={initialDraws[game].length}
         latestDraw={latest}
         onGameChange={setGame}
         onStart={() => document.getElementById("simple-settings")?.scrollIntoView({ behavior: "smooth", block: "start" })}

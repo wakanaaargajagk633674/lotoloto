@@ -6,13 +6,12 @@ import type { Draw, GameType } from "@/loto/types";
 
 type Props = {
   game: GameType;
-  drawCount: number;
   latestDraw?: Draw;
   onGameChange: (game: GameType) => void;
   onStart: () => void;
 };
 
-export default function FriendlyHeroSection({ game, drawCount, latestDraw, onGameChange, onStart }: Props) {
+export default function FriendlyHeroSection({ game, latestDraw, onGameChange, onStart }: Props) {
   const latestDate = latestDraw?.drawDate ? new Date(latestDraw.drawDate).toLocaleDateString("ja-JP") : "未取得";
   return (
     <section className="friendly-hero">
@@ -40,10 +39,9 @@ export default function FriendlyHeroSection({ game, drawCount, latestDraw, onGam
             help="アプリに取り込まれている最新抽選日の目安です。"
           />
           <MetricWithLabel
-            label="分析対象回数"
-            value={drawCount.toLocaleString("ja-JP")}
-            unit="回"
-            help={`${GAME_SPECS[game].label}で分析に使っている過去抽選の回数です。`}
+            label="選択中のロト"
+            value={GAME_SPECS[game].label}
+            help="ロト6とロト7を切り替えて、参考買い目を作れます。"
           />
         </div>
         <SimpleStepGuide />

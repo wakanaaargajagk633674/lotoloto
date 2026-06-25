@@ -15,11 +15,11 @@ export default async function DownloadsPage() {
     <main className="site-main">
       <PageHero
         label="CSV Download"
-        title="ロト6ロト7 CSVデータダウンロード"
-        description="分析用に整形したCSVをダウンロードできます。Excelで開きやすいUTF-8 BOM付きCSVも用意しています。"
+        title="ロト6ロト7のデータをCSVで保存"
+        description="当せんデータや数字別の出現回数を、表計算ソフトで見やすいCSVとして保存できます。"
       />
       <NoticeBox title="CSV利用時の注意">
-        本CSVは、公開されている当せん番号情報をもとにlotolotoが分析用に整形したデータです。内容の正確性には注意していますが、購入換金等の判断には必ず公式情報をご確認ください。公式情報との照合状況はデータ品質レポートに記録しています。
+        CSVはロトの過去データを見やすく整理したものです。購入や換金に関わる確認は、必ず公式情報をご確認ください。
       </NoticeBox>
       <section className="download-card-grid" aria-label="CSVダウンロード一覧">
         {manifest.map((item) => (
@@ -29,20 +29,13 @@ export default async function DownloadsPage() {
               <h2>{item.title}</h2>
               <p>{item.description}</p>
             </div>
-            <dl className="definition-grid">
-              <div><dt>行数</dt><dd>{item.rows.toLocaleString("ja-JP")}行</dd></div>
-              <div><dt>最終更新日</dt><dd>{new Date(item.lastUpdated).toLocaleString("ja-JP")}</dd></div>
-              <div><dt>データソース</dt><dd>{item.source}</dd></div>
-              <div><dt>検証状態</dt><dd>{item.verificationStatus}</dd></div>
-            </dl>
             <div className="download-actions">
-              <Link className="download-button" href={`/downloads/${item.bomFileName}`}>CSVをダウンロード</Link>
-              <Link className="text-link" href={`/downloads/${item.fileName}`}>BOMなしCSV</Link>
+              <Link className="download-button" href={`/downloads/${item.bomFileName}`}>Excel向けCSV</Link>
+              <Link className="text-link" href={`/downloads/${item.fileName}`}>通常CSV</Link>
             </div>
           </article>
         ))}
       </section>
-      <p className="soft-note">データ品質レポート: <code>data/quality/source-quality-report.md</code></p>
     </main>
   );
 }

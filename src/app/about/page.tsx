@@ -17,7 +17,8 @@ export default function AboutPage() {
         description="lotolotoは、ロト6ロト7の過去当せんデータを見やすく整理し、CSVと分析ページとして公開する情報サイトです。"
         actions={
           <>
-            <Link className="secondary-action" href="/methodology">分析方法を見る</Link>
+            <Link className="secondary-action" href="/loto6">ロト6分析を見る</Link>
+            <Link className="secondary-action" href="/loto7">ロト7分析を見る</Link>
             <Link className="secondary-action" href="/downloads">CSVを見る</Link>
           </>
         }
@@ -31,8 +32,8 @@ export default function AboutPage() {
           <ul className="friendly-list">
             <li>数字だけでなく、意味と注意点を一緒に表示します。</li>
             <li>出現回数や未出現期間を、未来予測のように見せません。</li>
-            <li>データソースと照合状況を記録します。</li>
-            <li>CSVを公開し、閲覧者が自分で確認できる形にします。</li>
+            <li>ロト6とロト7を、スマホでも読みやすく整理します。</li>
+            <li>CSVで保存して、あとから自分でも見返せるようにします。</li>
           </ul>
         </article>
         <article className="analysis-card">

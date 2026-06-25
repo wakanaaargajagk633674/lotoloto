@@ -9,10 +9,6 @@ export type DownloadManifestEntry = {
   game: string;
   title: string;
   description: string;
-  rows: number;
-  lastUpdated: string;
-  source: string;
-  verificationStatus: string;
 };
 
 export async function loadDraws(game: GameType): Promise<Draw[]> {
@@ -29,14 +25,6 @@ export async function loadBacktest(game: GameType): Promise<BacktestSummary | un
 
 export async function loadDownloadManifest(): Promise<DownloadManifestEntry[]> {
   return readJson<DownloadManifestEntry[]>(path.join("public", "downloads", "download-manifest.json"), []);
-}
-
-export async function loadQualityReport(): Promise<string> {
-  try {
-    return await readFile(path.join(process.cwd(), "data", "quality", "source-quality-report.md"), "utf8");
-  } catch {
-    return "";
-  }
 }
 
 async function readJson<T>(relativePath: string, fallback: T): Promise<T> {

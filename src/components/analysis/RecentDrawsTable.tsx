@@ -17,7 +17,6 @@ export default function RecentDrawsTable({ draws }: { draws: Draw[] }) {
             <th>ボーナス数字</th>
             <th>販売実績額</th>
             <th>キャリーオーバー</th>
-            <th>データソース</th>
           </tr>
         </thead>
         <tbody>
@@ -35,7 +34,6 @@ export default function RecentDrawsTable({ draws }: { draws: Draw[] }) {
               <td>{draw.bonusNumbers.length ? draw.bonusNumbers.map(padNumber).join(" / ") : "なし"}</td>
               <td>{formatYen(draw.salesAmount)}</td>
               <td>{formatYen(draw.carryoverAmount)}</td>
-              <td>{draw.source}</td>
             </tr>
           ))}
         </tbody>

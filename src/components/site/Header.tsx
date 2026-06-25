@@ -4,9 +4,7 @@ const navItems = [
   { href: "/", label: "トップ" },
   { href: "/loto6", label: "ロト6分析" },
   { href: "/loto7", label: "ロト7分析" },
-  { href: "/downloads", label: "データDL" },
-  { href: "/methodology", label: "分析方法" },
-  { href: "/expert-review", label: "専門家の見方" },
+  { href: "/downloads", label: "CSV保存" },
   { href: "/prediction", label: "参考買い目" }
 ];
 

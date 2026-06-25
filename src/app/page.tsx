@@ -1,7 +1,6 @@
 import Link from "next/link";
 import DownloadCsvButton from "@/components/analysis/DownloadCsvButton";
 import LatestDrawCard from "@/components/analysis/LatestDrawCard";
-import DataSourceBadge from "@/components/analysis/DataSourceBadge";
 import PageHero from "@/components/site/PageHero";
 import NoticeBox from "@/components/site/NoticeBox";
 import { GAME_SPECS } from "@/loto/constants";
@@ -27,6 +26,9 @@ export default async function HomePage() {
             <Link className="ghost-action" href="/prediction">
               参考買い目へ
             </Link>
+            <Link className="ghost-action" href="/downloads">
+              CSVを保存
+            </Link>
           </>
         }
       />
@@ -36,16 +38,13 @@ export default async function HomePage() {
       </NoticeBox>
 
       <section className="summary-grid">
-        <article className="analysis-card">
-          <h2>データ更新状況</h2>
-          <div className="badge-row">
-            <DataSourceBadge label="ロト6分析対象" value={`${loto6?.drawCount.toLocaleString("ja-JP") ?? 0}回`} />
-            <DataSourceBadge label="ロト7分析対象" value={`${loto7?.drawCount.toLocaleString("ja-JP") ?? 0}回`} />
-            <DataSourceBadge label="履歴ソース" value="sougaku公開ZIP整形" />
-            <DataSourceBadge label="公式照合" value="みずほ銀行CSV取得範囲" />
+        <article className="analysis-card highlight-card">
+          <h2>まずはロト別に見る</h2>
+          <p>最新結果、よく出ている数字、しばらく出ていない数字、合計値や連番の傾向をロト別にまとめています。</p>
+          <div className="page-hero-actions">
+            <Link className="secondary-action" href="/loto6">ロト6を見る</Link>
+            <Link className="secondary-action" href="/loto7">ロト7を見る</Link>
           </div>
-          <p>公式CSVで取得できる直近範囲を照合し、全期間の履歴はsougaku公開ZIPを整形して保持しています。</p>
-          <DownloadCsvButton href="/downloads">CSVダウンロードページへ</DownloadCsvButton>
         </article>
         <article className="analysis-card">
           <h2>キャリーオーバー概要</h2>
@@ -79,15 +78,15 @@ export default async function HomePage() {
           <strong>ロト7分析トップ</strong>
           <p>ロト7の数字分布、連番、キャリー、配当の傾向を確認できます。</p>
         </Link>
-        <Link className="route-card" href="/methodology">
-          <span>Methodology</span>
-          <strong>分析方法と注意点</strong>
-          <p>ウォークフォワード、データソース、過信防止の考え方を説明します。</p>
+        <Link className="route-card" href="/downloads">
+          <span>CSV</span>
+          <strong>CSVを保存</strong>
+          <p>当せんデータや数字別の出現回数をCSVで保存できます。</p>
         </Link>
-        <Link className="route-card" href="/expert-review">
-          <span>Expert Review</span>
-          <strong>10の視点で見る使い方</strong>
-          <p>確率論、統計、UX、法務などの視点で分析の使い方を整理しています。</p>
+        <Link className="route-card" href="/prediction">
+          <span>参考</span>
+          <strong>参考買い目を作る</strong>
+          <p>分析結果を見たあとに、参考用の買い目を作れます。</p>
         </Link>
       </section>
     </main>

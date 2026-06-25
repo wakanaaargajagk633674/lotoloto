@@ -64,7 +64,6 @@ export default function GameAnalysisView({ game, analysis, view }: Props) {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>分析対象回数</td><td>{analysis.drawCount.toLocaleString("ja-JP")}回</td></tr>
                 <tr><td>合計値の平均</td><td>{analysis.sumStats.average.toFixed(1)}</td></tr>
                 <tr><td>合計値の中央値</td><td>{analysis.sumStats.median}</td></tr>
                 <tr><td>最新キャリーオーバー</td><td>{formatYen(analysis.carryover.latestAmount)}</td></tr>

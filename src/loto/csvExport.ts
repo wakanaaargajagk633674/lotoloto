@@ -31,10 +31,7 @@ export function serializeJapaneseDrawsCsv(draws: Draw[]): string {
     "5等口数",
     "5等当せん金額",
     "6等口数",
-    "6等当せん金額",
-    "データソース",
-    "取得日時",
-    "検証状態"
+    "6等当せん金額"
   ];
   return tableToCsv(
     headers,
@@ -52,10 +49,7 @@ export function serializeJapaneseDrawsCsv(draws: Draw[]): string {
         ...bonus,
         draw.salesAmount ?? "",
         draw.carryoverAmount ?? "",
-        ...tiers,
-        draw.source,
-        draw.sourceDownloadedAt ?? "",
-        "processed"
+        ...tiers
       ];
     })
   );
