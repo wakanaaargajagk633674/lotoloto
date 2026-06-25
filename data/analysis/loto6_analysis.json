@@ -1,0 +1,2242 @@
+{
+  "game": "loto6",
+  "latestDraw": {
+    "game": "loto6",
+    "drawNumber": 2113,
+    "drawDate": "2026-06-22",
+    "dayOfWeek": "月",
+    "mainNumbers": [
+      2,
+      5,
+      32,
+      36,
+      38,
+      42
+    ],
+    "bonusNumbers": [
+      14
+    ],
+    "salesAmount": null,
+    "carryoverAmount": 744495484,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 0,
+        "prizeYen": 0
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 10842600
+      },
+      {
+        "tier": 3,
+        "winners": 225,
+        "prizeYen": 416300
+      },
+      {
+        "tier": 4,
+        "winners": 12885,
+        "prizeYen": 7600
+      },
+      {
+        "tier": 5,
+        "winners": 213988,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+    "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+    "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+  },
+  "recentDraws": [
+    {
+      "game": "loto6",
+      "drawNumber": 2113,
+      "drawDate": "2026-06-22",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        2,
+        5,
+        32,
+        36,
+        38,
+        42
+      ],
+      "bonusNumbers": [
+        14
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 744495484,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 8,
+          "prizeYen": 10842600
+        },
+        {
+          "tier": 3,
+          "winners": 225,
+          "prizeYen": 416300
+        },
+        {
+          "tier": 4,
+          "winners": 12885,
+          "prizeYen": 7600
+        },
+        {
+          "tier": 5,
+          "winners": 213988,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2112,
+      "drawDate": "2026-06-18",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        3,
+        7,
+        8,
+        27,
+        31,
+        40
+      ],
+      "bonusNumbers": [
+        18
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 455366461,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 4,
+          "prizeYen": 18589200
+        },
+        {
+          "tier": 3,
+          "winners": 293,
+          "prizeYen": 274000
+        },
+        {
+          "tier": 4,
+          "winners": 14317,
+          "prizeYen": 5900
+        },
+        {
+          "tier": 5,
+          "winners": 218891,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2111,
+      "drawDate": "2026-06-15",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        1,
+        5,
+        8,
+        12,
+        37,
+        43
+      ],
+      "bonusNumbers": [
+        36
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 207517626,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 5,
+          "prizeYen": 12451400
+        },
+        {
+          "tier": 3,
+          "winners": 259,
+          "prizeYen": 259500
+        },
+        {
+          "tier": 4,
+          "winners": 13929,
+          "prizeYen": 5100
+        },
+        {
+          "tier": 5,
+          "winners": 216748,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2110,
+      "drawDate": "2026-06-11",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        3,
+        9,
+        18,
+        35,
+        36,
+        40
+      ],
+      "bonusNumbers": [
+        29
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 2,
+          "prizeYen": 124941200
+        },
+        {
+          "tier": 2,
+          "winners": 4,
+          "prizeYen": 17446600
+        },
+        {
+          "tier": 3,
+          "winners": 217,
+          "prizeYen": 347300
+        },
+        {
+          "tier": 4,
+          "winners": 11138,
+          "prizeYen": 7100
+        },
+        {
+          "tier": 5,
+          "winners": 167812,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2109,
+      "drawDate": "2026-06-08",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        6,
+        11,
+        19,
+        31,
+        38,
+        41
+      ],
+      "bonusNumbers": [
+        3
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 17268406,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 200000000
+        },
+        {
+          "tier": 2,
+          "winners": 6,
+          "prizeYen": 10863700
+        },
+        {
+          "tier": 3,
+          "winners": 234,
+          "prizeYen": 300800
+        },
+        {
+          "tier": 4,
+          "winners": 10718,
+          "prizeYen": 6900
+        },
+        {
+          "tier": 5,
+          "winners": 171685,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2108,
+      "drawDate": "2026-06-04",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        2,
+        5,
+        10,
+        15,
+        28,
+        43
+      ],
+      "bonusNumbers": [
+        27
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 3,
+          "prizeYen": 83434500
+        },
+        {
+          "tier": 2,
+          "winners": 6,
+          "prizeYen": 10845500
+        },
+        {
+          "tier": 3,
+          "winners": 313,
+          "prizeYen": 224500
+        },
+        {
+          "tier": 4,
+          "winners": 13552,
+          "prizeYen": 5400
+        },
+        {
+          "tier": 5,
+          "winners": 195451,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2107,
+      "drawDate": "2026-06-01",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        5,
+        8,
+        27,
+        32,
+        36,
+        39
+      ],
+      "bonusNumbers": [
+        38
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 33399525,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 200000000
+        },
+        {
+          "tier": 2,
+          "winners": 6,
+          "prizeYen": 11670300
+        },
+        {
+          "tier": 3,
+          "winners": 241,
+          "prizeYen": 313700
+        },
+        {
+          "tier": 4,
+          "winners": 11251,
+          "prizeYen": 7100
+        },
+        {
+          "tier": 5,
+          "winners": 181175,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2106,
+      "drawDate": "2026-05-28",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        1,
+        6,
+        17,
+        27,
+        34,
+        43
+      ],
+      "bonusNumbers": [
+        24
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 2,
+          "prizeYen": 261492400
+        },
+        {
+          "tier": 2,
+          "winners": 12,
+          "prizeYen": 6397500
+        },
+        {
+          "tier": 3,
+          "winners": 269,
+          "prizeYen": 308200
+        },
+        {
+          "tier": 4,
+          "winners": 12294,
+          "prizeYen": 7100
+        },
+        {
+          "tier": 5,
+          "winners": 193814,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2105,
+      "drawDate": "2026-05-25",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        5,
+        26,
+        28,
+        30,
+        36,
+        40
+      ],
+      "bonusNumbers": [
+        32
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 267091381,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 5,
+          "prizeYen": 15075200
+        },
+        {
+          "tier": 3,
+          "winners": 159,
+          "prizeYen": 511900
+        },
+        {
+          "tier": 4,
+          "winners": 8406,
+          "prizeYen": 10200
+        },
+        {
+          "tier": 5,
+          "winners": 151323,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2104,
+      "drawDate": "2026-05-21",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        18,
+        19,
+        21,
+        25,
+        28,
+        34
+      ],
+      "bonusNumbers": [
+        4
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 15845051,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 200000000
+        },
+        {
+          "tier": 2,
+          "winners": 9,
+          "prizeYen": 7195000
+        },
+        {
+          "tier": 3,
+          "winners": 180,
+          "prizeYen": 388500
+        },
+        {
+          "tier": 4,
+          "winners": 9725,
+          "prizeYen": 7500
+        },
+        {
+          "tier": 5,
+          "winners": 153283,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2103,
+      "drawDate": "2026-05-18",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        38
+      ],
+      "bonusNumbers": [
+        39
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 2,
+          "prizeYen": 121423400
+        },
+        {
+          "tier": 2,
+          "winners": 6,
+          "prizeYen": 10965700
+        },
+        {
+          "tier": 3,
+          "winners": 523,
+          "prizeYen": 135800
+        },
+        {
+          "tier": 4,
+          "winners": 18465,
+          "prizeYen": 4000
+        },
+        {
+          "tier": 5,
+          "winners": 234935,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2102,
+      "drawDate": "2026-05-14",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        18,
+        21,
+        25,
+        28,
+        30,
+        43
+      ],
+      "bonusNumbers": [
+        8
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 23538243,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 200000000
+        },
+        {
+          "tier": 2,
+          "winners": 8,
+          "prizeYen": 8382900
+        },
+        {
+          "tier": 3,
+          "winners": 148,
+          "prizeYen": 489300
+        },
+        {
+          "tier": 4,
+          "winners": 8874,
+          "prizeYen": 8600
+        },
+        {
+          "tier": 5,
+          "winners": 147401,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2101,
+      "drawDate": "2026-05-11",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        1,
+        17,
+        29,
+        33,
+        40,
+        42
+      ],
+      "bonusNumbers": [
+        21
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 2,
+          "prizeYen": 119417600
+        },
+        {
+          "tier": 2,
+          "winners": 3,
+          "prizeYen": 23884300
+        },
+        {
+          "tier": 3,
+          "winners": 158,
+          "prizeYen": 489700
+        },
+        {
+          "tier": 4,
+          "winners": 8609,
+          "prizeYen": 9400
+        },
+        {
+          "tier": 5,
+          "winners": 143366,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2100,
+      "drawDate": "2026-05-07",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        8,
+        17,
+        24,
+        32,
+        35,
+        41
+      ],
+      "bonusNumbers": [
+        28
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 5,
+          "prizeYen": 100644600
+        },
+        {
+          "tier": 2,
+          "winners": 15,
+          "prizeYen": 5150200
+        },
+        {
+          "tier": 3,
+          "winners": 461,
+          "prizeYen": 180900
+        },
+        {
+          "tier": 4,
+          "winners": 15912,
+          "prizeYen": 5500
+        },
+        {
+          "tier": 5,
+          "winners": 212199,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2099,
+      "drawDate": "2026-05-04",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        19,
+        21,
+        34,
+        36,
+        39,
+        42
+      ],
+      "bonusNumbers": [
+        43
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 245719871,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 2,
+          "prizeYen": 36859100
+        },
+        {
+          "tier": 3,
+          "winners": 126,
+          "prizeYen": 631800
+        },
+        {
+          "tier": 4,
+          "winners": 7983,
+          "prizeYen": 10500
+        },
+        {
+          "tier": 5,
+          "winners": 139177,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2098,
+      "drawDate": "2026-04-30",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        1,
+        6,
+        15,
+        18,
+        19,
+        42
+      ],
+      "bonusNumbers": [
+        24
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 2,
+          "prizeYen": 536215400
+        },
+        {
+          "tier": 2,
+          "winners": 18,
+          "prizeYen": 4776600
+        },
+        {
+          "tier": 3,
+          "winners": 254,
+          "prizeYen": 365500
+        },
+        {
+          "tier": 4,
+          "winners": 14486,
+          "prizeYen": 6700
+        },
+        {
+          "tier": 5,
+          "winners": 235925,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2097,
+      "drawDate": "2026-04-27",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        3,
+        20,
+        24,
+        27,
+        34,
+        42
+      ],
+      "bonusNumbers": [
+        37
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 785838686,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 4,
+          "prizeYen": 21894400
+        },
+        {
+          "tier": 3,
+          "winners": 261,
+          "prizeYen": 362300
+        },
+        {
+          "tier": 4,
+          "winners": 12217,
+          "prizeYen": 8100
+        },
+        {
+          "tier": 5,
+          "winners": 202554,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2096,
+      "drawDate": "2026-04-23",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        8,
+        15,
+        18,
+        21,
+        33,
+        43
+      ],
+      "bonusNumbers": [
+        38
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 493922051,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 6,
+          "prizeYen": 12574100
+        },
+        {
+          "tier": 3,
+          "winners": 239,
+          "prizeYen": 340900
+        },
+        {
+          "tier": 4,
+          "winners": 12495,
+          "prizeYen": 6800
+        },
+        {
+          "tier": 5,
+          "winners": 190942,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2095,
+      "drawDate": "2026-04-20",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        13,
+        20,
+        22,
+        23,
+        28,
+        30
+      ],
+      "bonusNumbers": [
+        29
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 242447428,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 5,
+          "prizeYen": 14547300
+        },
+        {
+          "tier": 3,
+          "winners": 175,
+          "prizeYen": 448800
+        },
+        {
+          "tier": 4,
+          "winners": 8524,
+          "prizeYen": 9700
+        },
+        {
+          "tier": 5,
+          "winners": 153085,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2094,
+      "drawDate": "2026-04-16",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        3,
+        4,
+        7,
+        11,
+        24,
+        30
+      ],
+      "bonusNumbers": [
+        16
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 5,
+          "prizeYen": 200321600
+        },
+        {
+          "tier": 2,
+          "winners": 18,
+          "prizeYen": 4168200
+        },
+        {
+          "tier": 3,
+          "winners": 710,
+          "prizeYen": 114100
+        },
+        {
+          "tier": 4,
+          "winners": 25626,
+          "prizeYen": 3300
+        },
+        {
+          "tier": 5,
+          "winners": 316889,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2093,
+      "drawDate": "2026-04-13",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        2,
+        10,
+        21,
+        26,
+        29,
+        38
+      ],
+      "bonusNumbers": [
+        12
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 751519994,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 16,
+          "prizeYen": 5077800
+        },
+        {
+          "tier": 3,
+          "winners": 329,
+          "prizeYen": 266600
+        },
+        {
+          "tier": 4,
+          "winners": 14455,
+          "prizeYen": 6400
+        },
+        {
+          "tier": 5,
+          "winners": 224282,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2092,
+      "drawDate": "2026-04-09",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        8,
+        13,
+        27,
+        36,
+        37,
+        43
+      ],
+      "bonusNumbers": [
+        3
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 480712171,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 6,
+          "prizeYen": 12644000
+        },
+        {
+          "tier": 3,
+          "winners": 264,
+          "prizeYen": 310300
+        },
+        {
+          "tier": 4,
+          "winners": 11718,
+          "prizeYen": 7300
+        },
+        {
+          "tier": 5,
+          "winners": 181007,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2091,
+      "drawDate": "2026-04-06",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        6,
+        16,
+        21,
+        25,
+        28,
+        43
+      ],
+      "bonusNumbers": [
+        9
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 227840393,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 2,
+          "prizeYen": 34177100
+        },
+        {
+          "tier": 3,
+          "winners": 187,
+          "prizeYen": 394700
+        },
+        {
+          "tier": 4,
+          "winners": 9022,
+          "prizeYen": 8600
+        },
+        {
+          "tier": 5,
+          "winners": 160010,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2090,
+      "drawDate": "2026-04-02",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        2,
+        3,
+        6,
+        9,
+        24,
+        36
+      ],
+      "bonusNumbers": [
+        5
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 449917100
+        },
+        {
+          "tier": 2,
+          "winners": 8,
+          "prizeYen": 7992100
+        },
+        {
+          "tier": 3,
+          "winners": 476,
+          "prizeYen": 145000
+        },
+        {
+          "tier": 4,
+          "winners": 19544,
+          "prizeYen": 3700
+        },
+        {
+          "tier": 5,
+          "winners": 251566,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2089,
+      "drawDate": "2026-03-30",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        9,
+        16,
+        18,
+        32,
+        37,
+        43
+      ],
+      "bonusNumbers": [
+        13
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 236800230,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 11,
+          "prizeYen": 6458300
+        },
+        {
+          "tier": 3,
+          "winners": 162,
+          "prizeYen": 473500
+        },
+        {
+          "tier": 4,
+          "winners": 9049,
+          "prizeYen": 8900
+        },
+        {
+          "tier": 5,
+          "winners": 151757,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2088,
+      "drawDate": "2026-03-26",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        8,
+        16,
+        18,
+        27,
+        37,
+        39
+      ],
+      "bonusNumbers": [
+        29
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 0,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 3,
+          "prizeYen": 85315200
+        },
+        {
+          "tier": 2,
+          "winners": 11,
+          "prizeYen": 6129800
+        },
+        {
+          "tier": 3,
+          "winners": 282,
+          "prizeYen": 258200
+        },
+        {
+          "tier": 4,
+          "winners": 12626,
+          "prizeYen": 6000
+        },
+        {
+          "tier": 5,
+          "winners": 184969,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2087,
+      "drawDate": "2026-03-23",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        7,
+        10,
+        15,
+        18,
+        26,
+        39
+      ],
+      "bonusNumbers": [
+        13
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 31193795,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 600000000
+        },
+        {
+          "tier": 2,
+          "winners": 9,
+          "prizeYen": 8467700
+        },
+        {
+          "tier": 3,
+          "winners": 302,
+          "prizeYen": 272500
+        },
+        {
+          "tier": 4,
+          "winners": 14390,
+          "prizeYen": 6000
+        },
+        {
+          "tier": 5,
+          "winners": 216634,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2086,
+      "drawDate": "2026-03-19",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        4,
+        11,
+        19,
+        28,
+        39,
+        40
+      ],
+      "bonusNumbers": [
+        6
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 377168743,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 15,
+          "prizeYen": 4915400
+        },
+        {
+          "tier": 3,
+          "winners": 296,
+          "prizeYen": 269000
+        },
+        {
+          "tier": 4,
+          "winners": 12723,
+          "prizeYen": 6600
+        },
+        {
+          "tier": 5,
+          "winners": 188055,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2085,
+      "drawDate": "2026-03-16",
+      "dayOfWeek": "月",
+      "mainNumbers": [
+        6,
+        8,
+        13,
+        26,
+        35,
+        43
+      ],
+      "bonusNumbers": [
+        14
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 131403738,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 600000000
+        },
+        {
+          "tier": 2,
+          "winners": 3,
+          "prizeYen": 26889600
+        },
+        {
+          "tier": 3,
+          "winners": 276,
+          "prizeYen": 315600
+        },
+        {
+          "tier": 4,
+          "winners": 12985,
+          "prizeYen": 7000
+        },
+        {
+          "tier": 5,
+          "winners": 208313,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    },
+    {
+      "game": "loto6",
+      "drawNumber": 2084,
+      "drawDate": "2026-03-12",
+      "dayOfWeek": "木",
+      "mainNumbers": [
+        8,
+        17,
+        18,
+        19,
+        30,
+        39
+      ],
+      "bonusNumbers": [
+        9
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 462516068,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 0,
+          "prizeYen": 0
+        },
+        {
+          "tier": 2,
+          "winners": 8,
+          "prizeYen": 9460500
+        },
+        {
+          "tier": 3,
+          "winners": 290,
+          "prizeYen": 281800
+        },
+        {
+          "tier": 4,
+          "winners": 11789,
+          "prizeYen": 7300
+        },
+        {
+          "tier": 5,
+          "winners": 183453,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto6\\extracted\\loto6.csv",
+      "sourceDownloadedAt": "2026-06-24T23:20:29.966Z",
+      "sourceHash": "dc74cbfaee6ced67008628f03cf51e395a9cf8082bc4212aaef6ee0846086e03"
+    }
+  ],
+  "drawCount": 2113,
+  "numberAnalysis": [
+    {
+      "number": 1,
+      "totalFrequency": 293,
+      "recent30Frequency": 5,
+      "recent50Frequency": 7,
+      "recent100Frequency": 14,
+      "recent300Frequency": 43,
+      "lastSeenDraw": 2111,
+      "lastSeenGap": 2,
+      "averageGap": 7.222602739726027,
+      "maxGap": 47
+    },
+    {
+      "number": 2,
+      "totalFrequency": 313,
+      "recent30Frequency": 5,
+      "recent50Frequency": 8,
+      "recent100Frequency": 18,
+      "recent300Frequency": 44,
+      "lastSeenDraw": 2113,
+      "lastSeenGap": 0,
+      "averageGap": 6.769230769230769,
+      "maxGap": 47
+    },
+    {
+      "number": 3,
+      "totalFrequency": 287,
+      "recent30Frequency": 5,
+      "recent50Frequency": 6,
+      "recent100Frequency": 12,
+      "recent300Frequency": 36,
+      "lastSeenDraw": 2112,
+      "lastSeenGap": 1,
+      "averageGap": 7.34965034965035,
+      "maxGap": 45
+    },
+    {
+      "number": 4,
+      "totalFrequency": 287,
+      "recent30Frequency": 3,
+      "recent50Frequency": 4,
+      "recent100Frequency": 8,
+      "recent300Frequency": 36,
+      "lastSeenDraw": 2103,
+      "lastSeenGap": 10,
+      "averageGap": 7.300699300699301,
+      "maxGap": 34
+    },
+    {
+      "number": 5,
+      "totalFrequency": 302,
+      "recent30Frequency": 6,
+      "recent50Frequency": 9,
+      "recent100Frequency": 18,
+      "recent300Frequency": 46,
+      "lastSeenDraw": 2113,
+      "lastSeenGap": 0,
+      "averageGap": 7.009966777408638,
+      "maxGap": 30
+    },
+    {
+      "number": 6,
+      "totalFrequency": 326,
+      "recent30Frequency": 6,
+      "recent50Frequency": 11,
+      "recent100Frequency": 16,
+      "recent300Frequency": 45,
+      "lastSeenDraw": 2109,
+      "lastSeenGap": 4,
+      "averageGap": 6.470769230769231,
+      "maxGap": 45
+    },
+    {
+      "number": 7,
+      "totalFrequency": 272,
+      "recent30Frequency": 3,
+      "recent50Frequency": 5,
+      "recent100Frequency": 15,
+      "recent300Frequency": 41,
+      "lastSeenDraw": 2112,
+      "lastSeenGap": 1,
+      "averageGap": 7.767527675276753,
+      "maxGap": 42
+    },
+    {
+      "number": 8,
+      "totalFrequency": 295,
+      "recent30Frequency": 10,
+      "recent50Frequency": 13,
+      "recent100Frequency": 18,
+      "recent300Frequency": 42,
+      "lastSeenDraw": 2112,
+      "lastSeenGap": 1,
+      "averageGap": 7.180272108843537,
+      "maxGap": 53
+    },
+    {
+      "number": 9,
+      "totalFrequency": 258,
+      "recent30Frequency": 3,
+      "recent50Frequency": 4,
+      "recent100Frequency": 7,
+      "recent300Frequency": 33,
+      "lastSeenDraw": 2110,
+      "lastSeenGap": 3,
+      "averageGap": 8.202334630350194,
+      "maxGap": 51
+    },
+    {
+      "number": 10,
+      "totalFrequency": 306,
+      "recent30Frequency": 3,
+      "recent50Frequency": 8,
+      "recent100Frequency": 16,
+      "recent300Frequency": 42,
+      "lastSeenDraw": 2108,
+      "lastSeenGap": 5,
+      "averageGap": 6.908196721311476,
+      "maxGap": 51
+    },
+    {
+      "number": 11,
+      "totalFrequency": 281,
+      "recent30Frequency": 3,
+      "recent50Frequency": 5,
+      "recent100Frequency": 13,
+      "recent300Frequency": 38,
+      "lastSeenDraw": 2109,
+      "lastSeenGap": 4,
+      "averageGap": 7.503571428571429,
+      "maxGap": 35
+    },
+    {
+      "number": 12,
+      "totalFrequency": 289,
+      "recent30Frequency": 1,
+      "recent50Frequency": 4,
+      "recent100Frequency": 13,
+      "recent300Frequency": 35,
+      "lastSeenDraw": 2111,
+      "lastSeenGap": 2,
+      "averageGap": 7.309027777777778,
+      "maxGap": 40
+    },
+    {
+      "number": 13,
+      "totalFrequency": 274,
+      "recent30Frequency": 3,
+      "recent50Frequency": 5,
+      "recent100Frequency": 13,
+      "recent300Frequency": 43,
+      "lastSeenDraw": 2095,
+      "lastSeenGap": 18,
+      "averageGap": 7.670329670329671,
+      "maxGap": 39
+    },
+    {
+      "number": 14,
+      "totalFrequency": 284,
+      "recent30Frequency": 0,
+      "recent50Frequency": 5,
+      "recent100Frequency": 12,
+      "recent300Frequency": 35,
+      "lastSeenDraw": 2082,
+      "lastSeenGap": 31,
+      "averageGap": 7.3144876325088335,
+      "maxGap": 36
+    },
+    {
+      "number": 15,
+      "totalFrequency": 305,
+      "recent30Frequency": 4,
+      "recent50Frequency": 7,
+      "recent100Frequency": 13,
+      "recent300Frequency": 39,
+      "lastSeenDraw": 2108,
+      "lastSeenGap": 5,
+      "averageGap": 6.9243421052631575,
+      "maxGap": 44
+    },
+    {
+      "number": 16,
+      "totalFrequency": 296,
+      "recent30Frequency": 3,
+      "recent50Frequency": 5,
+      "recent100Frequency": 13,
+      "recent300Frequency": 37,
+      "lastSeenDraw": 2091,
+      "lastSeenGap": 22,
+      "averageGap": 7.081355932203389,
+      "maxGap": 35
+    },
+    {
+      "number": 17,
+      "totalFrequency": 274,
+      "recent30Frequency": 4,
+      "recent50Frequency": 8,
+      "recent100Frequency": 13,
+      "recent300Frequency": 40,
+      "lastSeenDraw": 2106,
+      "lastSeenGap": 7,
+      "averageGap": 7.670329670329671,
+      "maxGap": 45
+    },
+    {
+      "number": 18,
+      "totalFrequency": 301,
+      "recent30Frequency": 9,
+      "recent50Frequency": 12,
+      "recent100Frequency": 18,
+      "recent300Frequency": 52,
+      "lastSeenDraw": 2110,
+      "lastSeenGap": 3,
+      "averageGap": 7.02,
+      "maxGap": 33
+    },
+    {
+      "number": 19,
+      "totalFrequency": 309,
+      "recent30Frequency": 6,
+      "recent50Frequency": 7,
+      "recent100Frequency": 13,
+      "recent300Frequency": 38,
+      "lastSeenDraw": 2109,
+      "lastSeenGap": 4,
+      "averageGap": 6.824675324675325,
+      "maxGap": 37
+    },
+    {
+      "number": 20,
+      "totalFrequency": 293,
+      "recent30Frequency": 2,
+      "recent50Frequency": 4,
+      "recent100Frequency": 10,
+      "recent300Frequency": 38,
+      "lastSeenDraw": 2097,
+      "lastSeenGap": 16,
+      "averageGap": 7.174657534246576,
+      "maxGap": 59
+    },
+    {
+      "number": 21,
+      "totalFrequency": 312,
+      "recent30Frequency": 6,
+      "recent50Frequency": 7,
+      "recent100Frequency": 19,
+      "recent300Frequency": 47,
+      "lastSeenDraw": 2104,
+      "lastSeenGap": 9,
+      "averageGap": 6.758842443729904,
+      "maxGap": 41
+    },
+    {
+      "number": 22,
+      "totalFrequency": 297,
+      "recent30Frequency": 1,
+      "recent50Frequency": 2,
+      "recent100Frequency": 12,
+      "recent300Frequency": 38,
+      "lastSeenDraw": 2095,
+      "lastSeenGap": 18,
+      "averageGap": 6.972972972972973,
+      "maxGap": 35
+    },
+    {
+      "number": 23,
+      "totalFrequency": 292,
+      "recent30Frequency": 1,
+      "recent50Frequency": 3,
+      "recent100Frequency": 8,
+      "recent300Frequency": 41,
+      "lastSeenDraw": 2095,
+      "lastSeenGap": 18,
+      "averageGap": 7.18213058419244,
+      "maxGap": 64
+    },
+    {
+      "number": 24,
+      "totalFrequency": 307,
+      "recent30Frequency": 4,
+      "recent50Frequency": 11,
+      "recent100Frequency": 17,
+      "recent300Frequency": 49,
+      "lastSeenDraw": 2100,
+      "lastSeenGap": 13,
+      "averageGap": 6.7254901960784315,
+      "maxGap": 41
+    },
+    {
+      "number": 25,
+      "totalFrequency": 289,
+      "recent30Frequency": 3,
+      "recent50Frequency": 5,
+      "recent100Frequency": 11,
+      "recent300Frequency": 43,
+      "lastSeenDraw": 2104,
+      "lastSeenGap": 9,
+      "averageGap": 7.284722222222222,
+      "maxGap": 37
+    },
+    {
+      "number": 26,
+      "totalFrequency": 308,
+      "recent30Frequency": 4,
+      "recent50Frequency": 8,
+      "recent100Frequency": 15,
+      "recent300Frequency": 47,
+      "lastSeenDraw": 2105,
+      "lastSeenGap": 8,
+      "averageGap": 6.843648208469055,
+      "maxGap": 35
+    },
+    {
+      "number": 27,
+      "totalFrequency": 307,
+      "recent30Frequency": 6,
+      "recent50Frequency": 8,
+      "recent100Frequency": 14,
+      "recent300Frequency": 41,
+      "lastSeenDraw": 2112,
+      "lastSeenGap": 1,
+      "averageGap": 6.898692810457517,
+      "maxGap": 36
+    },
+    {
+      "number": 28,
+      "totalFrequency": 298,
+      "recent30Frequency": 7,
+      "recent50Frequency": 9,
+      "recent100Frequency": 18,
+      "recent300Frequency": 49,
+      "lastSeenDraw": 2108,
+      "lastSeenGap": 5,
+      "averageGap": 7.08080808080808,
+      "maxGap": 43
+    },
+    {
+      "number": 29,
+      "totalFrequency": 278,
+      "recent30Frequency": 2,
+      "recent50Frequency": 6,
+      "recent100Frequency": 15,
+      "recent300Frequency": 47,
+      "lastSeenDraw": 2101,
+      "lastSeenGap": 12,
+      "averageGap": 7.537906137184115,
+      "maxGap": 42
+    },
+    {
+      "number": 30,
+      "totalFrequency": 295,
+      "recent30Frequency": 5,
+      "recent50Frequency": 9,
+      "recent100Frequency": 15,
+      "recent300Frequency": 43,
+      "lastSeenDraw": 2105,
+      "lastSeenGap": 8,
+      "averageGap": 7.156462585034014,
+      "maxGap": 54
+    },
+    {
+      "number": 31,
+      "totalFrequency": 285,
+      "recent30Frequency": 2,
+      "recent50Frequency": 4,
+      "recent100Frequency": 11,
+      "recent300Frequency": 41,
+      "lastSeenDraw": 2112,
+      "lastSeenGap": 1,
+      "averageGap": 7.426056338028169,
+      "maxGap": 45
+    },
+    {
+      "number": 32,
+      "totalFrequency": 297,
+      "recent30Frequency": 4,
+      "recent50Frequency": 8,
+      "recent100Frequency": 12,
+      "recent300Frequency": 30,
+      "lastSeenDraw": 2113,
+      "lastSeenGap": 0,
+      "averageGap": 7.101351351351352,
+      "maxGap": 55
+    },
+    {
+      "number": 33,
+      "totalFrequency": 281,
+      "recent30Frequency": 2,
+      "recent50Frequency": 5,
+      "recent100Frequency": 12,
+      "recent300Frequency": 43,
+      "lastSeenDraw": 2101,
+      "lastSeenGap": 12,
+      "averageGap": 7.478571428571429,
+      "maxGap": 45
+    },
+    {
+      "number": 34,
+      "totalFrequency": 278,
+      "recent30Frequency": 4,
+      "recent50Frequency": 5,
+      "recent100Frequency": 11,
+      "recent300Frequency": 43,
+      "lastSeenDraw": 2106,
+      "lastSeenGap": 7,
+      "averageGap": 7.588447653429603,
+      "maxGap": 39
+    },
+    {
+      "number": 35,
+      "totalFrequency": 305,
+      "recent30Frequency": 3,
+      "recent50Frequency": 7,
+      "recent100Frequency": 14,
+      "recent300Frequency": 48,
+      "lastSeenDraw": 2110,
+      "lastSeenGap": 3,
+      "averageGap": 6.917763157894737,
+      "maxGap": 41
+    },
+    {
+      "number": 36,
+      "totalFrequency": 304,
+      "recent30Frequency": 7,
+      "recent50Frequency": 11,
+      "recent100Frequency": 13,
+      "recent300Frequency": 53,
+      "lastSeenDraw": 2113,
+      "lastSeenGap": 0,
+      "averageGap": 6.963696369636963,
+      "maxGap": 47
+    },
+    {
+      "number": 37,
+      "totalFrequency": 316,
+      "recent30Frequency": 4,
+      "recent50Frequency": 10,
+      "recent100Frequency": 17,
+      "recent300Frequency": 46,
+      "lastSeenDraw": 2111,
+      "lastSeenGap": 2,
+      "averageGap": 6.666666666666667,
+      "maxGap": 41
+    },
+    {
+      "number": 38,
+      "totalFrequency": 311,
+      "recent30Frequency": 4,
+      "recent50Frequency": 6,
+      "recent100Frequency": 14,
+      "recent300Frequency": 44,
+      "lastSeenDraw": 2113,
+      "lastSeenGap": 0,
+      "averageGap": 6.806451612903226,
+      "maxGap": 34
+    },
+    {
+      "number": 39,
+      "totalFrequency": 295,
+      "recent30Frequency": 6,
+      "recent50Frequency": 8,
+      "recent100Frequency": 16,
+      "recent300Frequency": 32,
+      "lastSeenDraw": 2107,
+      "lastSeenGap": 6,
+      "averageGap": 7.136054421768708,
+      "maxGap": 65
+    },
+    {
+      "number": 40,
+      "totalFrequency": 283,
+      "recent30Frequency": 5,
+      "recent50Frequency": 8,
+      "recent100Frequency": 14,
+      "recent300Frequency": 44,
+      "lastSeenDraw": 2112,
+      "lastSeenGap": 1,
+      "averageGap": 7.475177304964539,
+      "maxGap": 35
+    },
+    {
+      "number": 41,
+      "totalFrequency": 277,
+      "recent30Frequency": 2,
+      "recent50Frequency": 5,
+      "recent100Frequency": 11,
+      "recent300Frequency": 38,
+      "lastSeenDraw": 2109,
+      "lastSeenGap": 4,
+      "averageGap": 7.594202898550725,
+      "maxGap": 40
+    },
+    {
+      "number": 42,
+      "totalFrequency": 315,
+      "recent30Frequency": 5,
+      "recent50Frequency": 8,
+      "recent100Frequency": 21,
+      "recent300Frequency": 48,
+      "lastSeenDraw": 2113,
+      "lastSeenGap": 0,
+      "averageGap": 6.703821656050955,
+      "maxGap": 47
+    },
+    {
+      "number": 43,
+      "totalFrequency": 303,
+      "recent30Frequency": 9,
+      "recent50Frequency": 10,
+      "recent100Frequency": 17,
+      "recent300Frequency": 42,
+      "lastSeenDraw": 2111,
+      "lastSeenGap": 2,
+      "averageGap": 6.983443708609271,
+      "maxGap": 33
+    }
+  ],
+  "oddEvenDistribution": [
+    {
+      "label": "2:4",
+      "count": 514,
+      "rate": 0.2432560340747752
+    },
+    {
+      "label": "4:2",
+      "count": 521,
+      "rate": 0.2465688594415523
+    },
+    {
+      "label": "1:5",
+      "count": 176,
+      "rate": 0.0832938949361098
+    },
+    {
+      "label": "5:1",
+      "count": 166,
+      "rate": 0.07856128726928538
+    },
+    {
+      "label": "6:0",
+      "count": 32,
+      "rate": 0.015144344533838144
+    },
+    {
+      "label": "3:3",
+      "count": 695,
+      "rate": 0.3289162328442972
+    },
+    {
+      "label": "0:6",
+      "count": 9,
+      "rate": 0.004259346900141978
+    }
+  ],
+  "sumStats": {
+    "average": 132.43587316611453,
+    "median": 132,
+    "min": 45,
+    "max": 212,
+    "latest": 155
+  },
+  "consecutiveDistribution": [
+    {
+      "label": "連番なし",
+      "count": 967,
+      "rate": 0.45764316138192146
+    },
+    {
+      "label": "1組",
+      "count": 859,
+      "rate": 0.4065309985802177
+    },
+    {
+      "label": "2組以上",
+      "count": 287,
+      "rate": 0.13582584003786086
+    }
+  ],
+  "rangeDistribution": [
+    {
+      "label": "1〜10",
+      "count": 2939,
+      "rate": 0.23181889887994953
+    },
+    {
+      "label": "11〜20",
+      "count": 2906,
+      "rate": 0.22921596466319608
+    },
+    {
+      "label": "21〜30",
+      "count": 2983,
+      "rate": 0.23528947783562076
+    },
+    {
+      "label": "31〜43",
+      "count": 3850,
+      "rate": 0.30367565862123364
+    }
+  ],
+  "lastDigitDistribution": [
+    {
+      "label": "0",
+      "count": 1177,
+      "rate": 0.09283798706420571
+    },
+    {
+      "label": "1",
+      "count": 1448,
+      "rate": 0.11421359835936268
+    },
+    {
+      "label": "2",
+      "count": 1511,
+      "rate": 0.11918283640952831
+    },
+    {
+      "label": "3",
+      "count": 1437,
+      "rate": 0.11334595362044486
+    },
+    {
+      "label": "4",
+      "count": 1156,
+      "rate": 0.09118157438081716
+    },
+    {
+      "label": "5",
+      "count": 1201,
+      "rate": 0.09473103013093548
+    },
+    {
+      "label": "6",
+      "count": 1234,
+      "rate": 0.09733396434768891
+    },
+    {
+      "label": "7",
+      "count": 1169,
+      "rate": 0.09220697270862913
+    },
+    {
+      "label": "8",
+      "count": 1205,
+      "rate": 0.09504653730872377
+    },
+    {
+      "label": "9",
+      "count": 1140,
+      "rate": 0.08991954566966398
+    }
+  ],
+  "previousOverlapDistribution": [
+    {
+      "label": "0個",
+      "count": 769,
+      "rate": 0.3641098484848485
+    },
+    {
+      "label": "1個",
+      "count": 967,
+      "rate": 0.4578598484848485
+    },
+    {
+      "label": "2個",
+      "count": 332,
+      "rate": 0.1571969696969697
+    },
+    {
+      "label": "3個",
+      "count": 39,
+      "rate": 0.018465909090909092
+    },
+    {
+      "label": "4個",
+      "count": 5,
+      "rate": 0.0023674242424242425
+    }
+  ],
+  "carryover": {
+    "occurrenceCount": 927,
+    "maxAmount": 1884619690,
+    "latestAmount": 744495484
+  },
+  "prizeStats": [
+    {
+      "tier": 1,
+      "averagePrizeYen": 140391179.1292002,
+      "maxPrizeYen": 2000000000,
+      "averageWinners": 1.9081874112636061
+    },
+    {
+      "tier": 2,
+      "averagePrizeYen": 18590422.85849503,
+      "maxPrizeYen": 135292500,
+      "averageWinners": 12.764789398958825
+    },
+    {
+      "tier": 3,
+      "averagePrizeYen": 465315.9015617605,
+      "maxPrizeYen": 3411600,
+      "averageWinners": 405.4737340274491
+    },
+    {
+      "tier": 4,
+      "averagePrizeYen": 8799.148130619971,
+      "maxPrizeYen": 72000,
+      "averageWinners": 18985.331282536677
+    },
+    {
+      "tier": 5,
+      "averagePrizeYen": 1000,
+      "maxPrizeYen": 1000,
+      "averageWinners": 294931.50780880265
+    }
+  ]
+}

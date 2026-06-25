@@ -4,7 +4,7 @@
 
 Always show:
 
-> この予想は過去データの傾向をもとにした参考買い目です。当選番号を保証するものではありません。
+> このサービスは、過去データをもとに参考情報を整理するものです。当せん番号を予測保証するものではありません。
 
 For high-return mode:
 
@@ -20,7 +20,7 @@ For number-level candidate tuning:
 
 ## Do Not Use
 
-- 必ず当たる
+- 必ず当せんする
 - 的中率アップ保証
 - 勝てる数字
 - そろそろ出る
@@ -34,4 +34,4 @@ For number-level candidate tuning:
 - Show game, strategy, ticket count, result, reasons, dashboard, backtest summary, and warnings.
 - Keep scores labeled as relative strategy scores.
 - Include budget-aware, non-sensational wording.
-- Present LOTOLOTO Intelligence as a data-analysis experience, not a prediction-sales site.
+- Present LOTOLOTO Light Insight as a friendly data-analysis experience, not a prediction-sales site.

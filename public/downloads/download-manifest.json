@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "loto6_draws_japanese.csv",
+    "bomFileName": "loto6_draws_japanese_bom.csv",
+    "game": "loto6",
+    "title": "全当せんデータ",
+    "description": "回号、抽せん日、本数字、ボーナス数字、販売実績額、キャリーオーバー、等級別配当を含む共通スキーマCSVです。",
+    "rows": 2113,
+    "lastUpdated": "2026-06-25T01:48:50.164Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto6_number_frequency.csv",
+    "bomFileName": "loto6_number_frequency_bom.csv",
+    "game": "loto6",
+    "title": "数字別出現回数",
+    "description": "全期間、直近30回、50回、100回、300回の出現回数と未出現期間です。",
+    "rows": 43,
+    "lastUpdated": "2026-06-25T01:48:50.167Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto6_recent100.csv",
+    "bomFileName": "loto6_recent100_bom.csv",
+    "game": "loto6",
+    "title": "直近100回分析",
+    "description": "直近100回の出現回数、前回からの間隔、過去出現回数です。",
+    "rows": 43,
+    "lastUpdated": "2026-06-25T01:48:50.169Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto6_carryover.csv",
+    "bomFileName": "loto6_carryover_bom.csv",
+    "game": "loto6",
+    "title": "キャリーオーバー履歴",
+    "description": "販売実績額、キャリーオーバー、1等口数、1等当せん金額の履歴です。",
+    "rows": 2113,
+    "lastUpdated": "2026-06-25T01:48:50.172Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto6_prize_tiers.csv",
+    "bomFileName": "loto6_prize_tiers_bom.csv",
+    "game": "loto6",
+    "title": "等級別配当履歴",
+    "description": "等級ごとの当せん口数と当せん金額の履歴です。",
+    "rows": 10565,
+    "lastUpdated": "2026-06-25T01:48:50.177Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto7_draws_japanese.csv",
+    "bomFileName": "loto7_draws_japanese_bom.csv",
+    "game": "loto7",
+    "title": "全当せんデータ",
+    "description": "回号、抽せん日、本数字、ボーナス数字、販売実績額、キャリーオーバー、等級別配当を含む共通スキーマCSVです。",
+    "rows": 682,
+    "lastUpdated": "2026-06-25T01:48:50.180Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto7_number_frequency.csv",
+    "bomFileName": "loto7_number_frequency_bom.csv",
+    "game": "loto7",
+    "title": "数字別出現回数",
+    "description": "全期間、直近30回、50回、100回、300回の出現回数と未出現期間です。",
+    "rows": 37,
+    "lastUpdated": "2026-06-25T01:48:50.182Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto7_recent100.csv",
+    "bomFileName": "loto7_recent100_bom.csv",
+    "game": "loto7",
+    "title": "直近100回分析",
+    "description": "直近100回の出現回数、前回からの間隔、過去出現回数です。",
+    "rows": 37,
+    "lastUpdated": "2026-06-25T01:48:50.183Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto7_carryover.csv",
+    "bomFileName": "loto7_carryover_bom.csv",
+    "game": "loto7",
+    "title": "キャリーオーバー履歴",
+    "description": "販売実績額、キャリーオーバー、1等口数、1等当せん金額の履歴です。",
+    "rows": 682,
+    "lastUpdated": "2026-06-25T01:48:50.185Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  },
+  {
+    "fileName": "loto7_prize_tiers.csv",
+    "bomFileName": "loto7_prize_tiers_bom.csv",
+    "game": "loto7",
+    "title": "等級別配当履歴",
+    "description": "等級ごとの当せん口数と当せん金額の履歴です。",
+    "rows": 4092,
+    "lastUpdated": "2026-06-25T01:48:50.189Z",
+    "source": "履歴: sougaku公開ZIP / 直近: みずほ銀行CSV",
+    "verificationStatus": "品質レポートで照合状況を確認"
+  }
+]

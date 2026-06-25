@@ -1,0 +1,5392 @@
+[
+  {
+    "game": "loto6",
+    "drawNumber": 2004,
+    "drawDate": "2025-06-02",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      16,
+      18,
+      25,
+      27,
+      31,
+      36
+    ],
+    "bonusNumbers": [
+      7
+    ],
+    "salesAmount": 1407885400,
+    "carryoverAmount": 237113181,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 12,
+        "prizeYen": 5928000
+      },
+      {
+        "tier": 3,
+        "winners": 194,
+        "prizeYen": 396000
+      },
+      {
+        "tier": 4,
+        "winners": 10751,
+        "prizeYen": 7500
+      },
+      {
+        "tier": 5,
+        "winners": 167295,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022004.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "1a4788a2c50a27d592e30a6ab0c84d151bd3fc9134a9312535ac773f578023c6"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2005,
+    "drawDate": "2025-06-05",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      7,
+      18,
+      27,
+      33,
+      34
+    ],
+    "bonusNumbers": [
+      6
+    ],
+    "salesAmount": 1567980800,
+    "carryoverAmount": 480117370,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 10,
+        "prizeYen": 7290300
+      },
+      {
+        "tier": 3,
+        "winners": 403,
+        "prizeYen": 195300
+      },
+      {
+        "tier": 4,
+        "winners": 16493,
+        "prizeYen": 5000
+      },
+      {
+        "tier": 5,
+        "winners": 227754,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022005.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "bf0a5f4af340f1555ff3c3dd9617a8042079c3f0355d0b5fb38596060fddbe3e"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2006,
+    "drawDate": "2025-06-09",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      4,
+      7,
+      19,
+      22,
+      26,
+      28
+    ],
+    "bonusNumbers": [
+      33
+    ],
+    "salesAmount": 1689122200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 366756500
+      },
+      {
+        "tier": 2,
+        "winners": 18,
+        "prizeYen": 4223400
+      },
+      {
+        "tier": 3,
+        "winners": 423,
+        "prizeYen": 194000
+      },
+      {
+        "tier": 4,
+        "winners": 18834,
+        "prizeYen": 4600
+      },
+      {
+        "tier": 5,
+        "winners": 261834,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022006.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "50335d948ba56454444846148471b3f41b16835919ac71c2a36ac192bc405298"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2007,
+    "drawDate": "2025-06-12",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      18,
+      23,
+      24,
+      30,
+      35
+    ],
+    "bonusNumbers": [
+      38
+    ],
+    "salesAmount": 1272481200,
+    "carryoverAmount": 2290785,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 12137800
+      },
+      {
+        "tier": 3,
+        "winners": 305,
+        "prizeYen": 214800
+      },
+      {
+        "tier": 4,
+        "winners": 12816,
+        "prizeYen": 5400
+      },
+      {
+        "tier": 5,
+        "winners": 174837,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022007.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "c9614f58d79c42db477ebfa158c0140f8e92e6eb307f5c25b51c78da28d7b79f"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2008,
+    "drawDate": "2025-06-16",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      8,
+      9,
+      17,
+      22,
+      36
+    ],
+    "bonusNumbers": [
+      30
+    ],
+    "salesAmount": 1437931000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 212980400
+      },
+      {
+        "tier": 2,
+        "winners": 15,
+        "prizeYen": 4213900
+      },
+      {
+        "tier": 3,
+        "winners": 403,
+        "prizeYen": 169300
+      },
+      {
+        "tier": 4,
+        "winners": 16397,
+        "prizeYen": 4300
+      },
+      {
+        "tier": 5,
+        "winners": 232774,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022008.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f59186733208c6038bad58bf49b7c34ebfb839f1beccb24f1330798aef59046b"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2009,
+    "drawDate": "2025-06-19",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      17,
+      20,
+      35,
+      36,
+      40
+    ],
+    "bonusNumbers": [
+      12
+    ],
+    "salesAmount": 1295992400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 110607700
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 13273300
+      },
+      {
+        "tier": 3,
+        "winners": 173,
+        "prizeYen": 414200
+      },
+      {
+        "tier": 4,
+        "winners": 9240,
+        "prizeYen": 8100
+      },
+      {
+        "tier": 5,
+        "winners": 148204,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022009.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "d016020eadc89281f1323beb4dc8d364204fc0e5fef7ace1152617c9e754e4b0"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2010,
+    "drawDate": "2025-06-23",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      9,
+      15,
+      24,
+      29,
+      31,
+      40
+    ],
+    "bonusNumbers": [
+      13
+    ],
+    "salesAmount": 1339993400,
+    "carryoverAmount": 228495598,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 22850300
+      },
+      {
+        "tier": 3,
+        "winners": 208,
+        "prizeYen": 355900
+      },
+      {
+        "tier": 4,
+        "winners": 9717,
+        "prizeYen": 8000
+      },
+      {
+        "tier": 5,
+        "winners": 153689,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022010.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "7db49f2660ab7217ee5902a0634850fb67aeb4563a8bce2e754bd81e54e388b1"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2011,
+    "drawDate": "2025-06-26",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      12,
+      14,
+      18,
+      24,
+      30,
+      42
+    ],
+    "bonusNumbers": [
+      4
+    ],
+    "salesAmount": 1519836200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 482082100
+      },
+      {
+        "tier": 2,
+        "winners": 13,
+        "prizeYen": 5852100
+      },
+      {
+        "tier": 3,
+        "winners": 292,
+        "prizeYen": 281300
+      },
+      {
+        "tier": 4,
+        "winners": 12185,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 185280,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022011.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f4f4512b45689ecdf5567593fe01536e1398b8d79f5db938281aae972337ae88"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2012,
+    "drawDate": "2025-06-30",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      14,
+      20,
+      36,
+      38,
+      41
+    ],
+    "bonusNumbers": [
+      30
+    ],
+    "salesAmount": 1399733400,
+    "carryoverAmount": 50715673,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 1,
+        "prizeYen": 75217100
+      },
+      {
+        "tier": 3,
+        "winners": 118,
+        "prizeYen": 688400
+      },
+      {
+        "tier": 4,
+        "winners": 7433,
+        "prizeYen": 11500
+      },
+      {
+        "tier": 5,
+        "winners": 136879,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022012.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "35e9102079e32fca388bf91a0f56905ed3682c06ee0aaec3f941c4d4522bec2c"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2013,
+    "drawDate": "2025-07-03",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      12,
+      30,
+      31,
+      39,
+      43
+    ],
+    "bonusNumbers": [
+      42
+    ],
+    "salesAmount": 1396550600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 144542500
+      },
+      {
+        "tier": 2,
+        "winners": 1,
+        "prizeYen": 71513100
+      },
+      {
+        "tier": 3,
+        "winners": 170,
+        "prizeYen": 454300
+      },
+      {
+        "tier": 4,
+        "winners": 9667,
+        "prizeYen": 8400
+      },
+      {
+        "tier": 5,
+        "winners": 159724,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022013.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f23bfbcef23572f46ba539a21880967236b97d92920a39fbf874c5f10b947a07"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2014,
+    "drawDate": "2025-07-07",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      11,
+      21,
+      24,
+      29,
+      34
+    ],
+    "bonusNumbers": [
+      40
+    ],
+    "salesAmount": 1385128000,
+    "carryoverAmount": 18491184,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 1,
+        "prizeYen": 65549500
+      },
+      {
+        "tier": 3,
+        "winners": 226,
+        "prizeYen": 313200
+      },
+      {
+        "tier": 4,
+        "winners": 12073,
+        "prizeYen": 6100
+      },
+      {
+        "tier": 5,
+        "winners": 193672,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022014.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ecb8e3fd386d167b3fc0a5515af64445e282c9684383b7894aba2c8e515bc997"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2015,
+    "drawDate": "2025-07-10",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      8,
+      13,
+      16,
+      20,
+      23
+    ],
+    "bonusNumbers": [
+      26
+    ],
+    "salesAmount": 1327496400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 4,
+        "prizeYen": 55995600
+      },
+      {
+        "tier": 2,
+        "winners": 10,
+        "prizeYen": 6164900
+      },
+      {
+        "tier": 3,
+        "winners": 480,
+        "prizeYen": 138700
+      },
+      {
+        "tier": 4,
+        "winners": 12155,
+        "prizeYen": 5700
+      },
+      {
+        "tier": 5,
+        "winners": 193300,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022015.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "2b2f73c8721e672bebc83efc7a16275caf05412c9de5558a48ef5f6567dc6a33"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2016,
+    "drawDate": "2025-07-14",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      10,
+      13,
+      27,
+      31,
+      40,
+      42
+    ],
+    "bonusNumbers": [
+      1
+    ],
+    "salesAmount": 1313152600,
+    "carryoverAmount": 229213996,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 17191600
+      },
+      {
+        "tier": 3,
+        "winners": 163,
+        "prizeYen": 455600
+      },
+      {
+        "tier": 4,
+        "winners": 8088,
+        "prizeYen": 9700
+      },
+      {
+        "tier": 5,
+        "winners": 140198,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022016.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "005aef9acdeaa0b8cfd385cb253022e3303a0d3db924495ba7e8c4f0d5cc2621"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2017,
+    "drawDate": "2025-07-17",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      4,
+      11,
+      22,
+      24,
+      35
+    ],
+    "bonusNumbers": [
+      8
+    ],
+    "salesAmount": 1440153200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 148608000
+      },
+      {
+        "tier": 2,
+        "winners": 18,
+        "prizeYen": 3610200
+      },
+      {
+        "tier": 3,
+        "winners": 384,
+        "prizeYen": 182700
+      },
+      {
+        "tier": 4,
+        "winners": 15751,
+        "prizeYen": 4700
+      },
+      {
+        "tier": 5,
+        "winners": 222132,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022017.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "49bbc4a50e046c00c5e0097697f3dd56fd1b35c48f91b58b91356a26fd7813a6"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2018,
+    "drawDate": "2025-07-21",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      2,
+      14,
+      21,
+      22,
+      33
+    ],
+    "bonusNumbers": [
+      37
+    ],
+    "salesAmount": 1247294000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 102179200
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 10218200
+      },
+      {
+        "tier": 3,
+        "winners": 227,
+        "prizeYen": 291600
+      },
+      {
+        "tier": 4,
+        "winners": 10619,
+        "prizeYen": 6500
+      },
+      {
+        "tier": 5,
+        "winners": 159437,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022018.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ae8a1b10fc85d0fb57fb505243a8a99fdf1311669aedff896fbfb8cae69fdda3"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2019,
+    "drawDate": "2025-07-24",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      13,
+      14,
+      21,
+      39,
+      42
+    ],
+    "bonusNumbers": [
+      9
+    ],
+    "salesAmount": 1316593000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 109854100
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 7323800
+      },
+      {
+        "tier": 3,
+        "winners": 248,
+        "prizeYen": 287000
+      },
+      {
+        "tier": 4,
+        "winners": 11742,
+        "prizeYen": 6400
+      },
+      {
+        "tier": 5,
+        "winners": 160438,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022019.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "e5572d3ca38042e9b68a5dea89f47378b441f068a6244c217dec090ae084f4e8"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2020,
+    "drawDate": "2025-07-28",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      21,
+      23,
+      28,
+      38,
+      39
+    ],
+    "bonusNumbers": [
+      32
+    ],
+    "salesAmount": 1321511200,
+    "carryoverAmount": 222163139,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 1,
+        "prizeYen": 66651100
+      },
+      {
+        "tier": 3,
+        "winners": 176,
+        "prizeYen": 408900
+      },
+      {
+        "tier": 4,
+        "winners": 9360,
+        "prizeYen": 8100
+      },
+      {
+        "tier": 5,
+        "winners": 157824,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022020.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "4a3b7809dc2515bd24ea373de30569153d12139b1776dbf63676a6c02c3b3e19"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2021,
+    "drawDate": "2025-07-31",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      17,
+      22,
+      29,
+      30,
+      43
+    ],
+    "bonusNumbers": [
+      31
+    ],
+    "salesAmount": 1479731000,
+    "carryoverAmount": 473732119,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 9434100
+      },
+      {
+        "tier": 3,
+        "winners": 216,
+        "prizeYen": 377300
+      },
+      {
+        "tier": 4,
+        "winners": 10525,
+        "prizeYen": 8100
+      },
+      {
+        "tier": 5,
+        "winners": 171200,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022021.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "7968179224095b12938af3315d6026eff6928280030f55b51356671c207a6178"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2022,
+    "drawDate": "2025-08-04",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      3,
+      18,
+      26,
+      31,
+      33
+    ],
+    "bonusNumbers": [
+      30
+    ],
+    "salesAmount": 1667432200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 370901400
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 16084700
+      },
+      {
+        "tier": 3,
+        "winners": 261,
+        "prizeYen": 332700
+      },
+      {
+        "tier": 4,
+        "winners": 13919,
+        "prizeYen": 6500
+      },
+      {
+        "tier": 5,
+        "winners": 223217,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022022.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "b0874e61fd80a62e88b9bc4e5edcd7162c2cf18efd324feee477a33a0c016f05"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2023,
+    "drawDate": "2025-08-07",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      20,
+      28,
+      29,
+      31,
+      43
+    ],
+    "bonusNumbers": [
+      5
+    ],
+    "salesAmount": 1279835400,
+    "carryoverAmount": 25586133,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 1,
+        "prizeYen": 67678000
+      },
+      {
+        "tier": 3,
+        "winners": 152,
+        "prizeYen": 480800
+      },
+      {
+        "tier": 4,
+        "winners": 7976,
+        "prizeYen": 9600
+      },
+      {
+        "tier": 5,
+        "winners": 132339,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022023.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "996820a279e2e6efddb681426fec27249b79d62f3ee9b36796e65a5f55d68a52"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2024,
+    "drawDate": "2025-08-11",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      10,
+      13,
+      16,
+      29,
+      34,
+      42
+    ],
+    "bonusNumbers": [
+      21
+    ],
+    "salesAmount": 1362660000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 130661400
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 8840400
+      },
+      {
+        "tier": 3,
+        "winners": 191,
+        "prizeYen": 399800
+      },
+      {
+        "tier": 4,
+        "winners": 8973,
+        "prizeYen": 8900
+      },
+      {
+        "tier": 5,
+        "winners": 149650,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022024.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "8545caa52b4d003930b9482a94088d518be4b42cf7fdf9f0b06fe7e24e8e756e"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2025,
+    "drawDate": "2025-08-14",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      12,
+      18,
+      26,
+      28,
+      41,
+      43
+    ],
+    "bonusNumbers": [
+      35
+    ],
+    "salesAmount": 1210973200,
+    "carryoverAmount": 208136262,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 2,
+        "prizeYen": 31221400
+      },
+      {
+        "tier": 3,
+        "winners": 140,
+        "prizeYen": 481600
+      },
+      {
+        "tier": 4,
+        "winners": 7663,
+        "prizeYen": 9200
+      },
+      {
+        "tier": 5,
+        "winners": 135664,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022025.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "d3594ce234c325ac9ce8d66abfb18e5b81e96f94e0a11c0800f08f4feb6f9535"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2026,
+    "drawDate": "2025-08-18",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      5,
+      8,
+      11,
+      20,
+      26
+    ],
+    "bonusNumbers": [
+      28
+    ],
+    "salesAmount": 1558486200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 6,
+        "prizeYen": 71626100
+      },
+      {
+        "tier": 2,
+        "winners": 20,
+        "prizeYen": 3324400
+      },
+      {
+        "tier": 3,
+        "winners": 649,
+        "prizeYen": 110600
+      },
+      {
+        "tier": 4,
+        "winners": 21880,
+        "prizeYen": 3400
+      },
+      {
+        "tier": 5,
+        "winners": 265529,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022026.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5e8b51565237e00f9e42eba415143faaba3fccc4ff02e54e97d3b7d1c81e35bb"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2027,
+    "drawDate": "2025-08-21",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      12,
+      18,
+      23,
+      34,
+      39
+    ],
+    "bonusNumbers": [
+      13
+    ],
+    "salesAmount": 1255577200,
+    "carryoverAmount": 1142580,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 8620600
+      },
+      {
+        "tier": 3,
+        "winners": 389,
+        "prizeYen": 167500
+      },
+      {
+        "tier": 4,
+        "winners": 12260,
+        "prizeYen": 5600
+      },
+      {
+        "tier": 5,
+        "winners": 169488,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022027.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "7d71d3acc49be0e55bf168aa916ef5a259a24d5b2d032d788056e4d596b02bd8"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2028,
+    "drawDate": "2025-08-25",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      10,
+      12,
+      19,
+      21,
+      42
+    ],
+    "bonusNumbers": [
+      16
+    ],
+    "salesAmount": 1403570600,
+    "carryoverAmount": 216271318,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 10756700
+      },
+      {
+        "tier": 3,
+        "winners": 334,
+        "prizeYen": 208600
+      },
+      {
+        "tier": 4,
+        "winners": 15152,
+        "prizeYen": 4800
+      },
+      {
+        "tier": 5,
+        "winners": 208583,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022028.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "fdde1f74de26dee5fb949c9bc72b47f57ae9dfae9693938810eb7e0c412e5ad9"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2029,
+    "drawDate": "2025-08-28",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      21,
+      31,
+      36,
+      40,
+      43
+    ],
+    "bonusNumbers": [
+      41
+    ],
+    "salesAmount": 1552426600,
+    "carryoverAmount": 81535997,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 488049000
+      },
+      {
+        "tier": 2,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 3,
+        "winners": 162,
+        "prizeYen": 543500
+      },
+      {
+        "tier": 4,
+        "winners": 9379,
+        "prizeYen": 9900
+      },
+      {
+        "tier": 5,
+        "winners": 164175,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022029.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "c7152585d9d1dded586956a5fd09f212f2d0be9dfb7ce39398ac360307375379"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2030,
+    "drawDate": "2025-09-01",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      7,
+      28,
+      29,
+      32,
+      36
+    ],
+    "bonusNumbers": [
+      13
+    ],
+    "salesAmount": 1503533400,
+    "carryoverAmount": 324569514,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 18228100
+      },
+      {
+        "tier": 3,
+        "winners": 264,
+        "prizeYen": 298200
+      },
+      {
+        "tier": 4,
+        "winners": 12618,
+        "prizeYen": 6500
+      },
+      {
+        "tier": 5,
+        "winners": 198695,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022030.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "72fe2d173475111d07fb06c07299c0c69de9462da09d411e794570ac23784a61"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2031,
+    "drawDate": "2025-09-04",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      3,
+      16,
+      20,
+      23,
+      29
+    ],
+    "bonusNumbers": [
+      27
+    ],
+    "salesAmount": 1613836600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 194184800
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 12899600
+      },
+      {
+        "tier": 3,
+        "winners": 298,
+        "prizeYen": 280400
+      },
+      {
+        "tier": 4,
+        "winners": 14158,
+        "prizeYen": 6200
+      },
+      {
+        "tier": 5,
+        "winners": 218931,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022031.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "af61396b50b52f0dbfe6bf5110f32e0b80736d6c2dbc3718979ef4e7261b8762"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2032,
+    "drawDate": "2025-09-08",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      15,
+      27,
+      33,
+      37,
+      39
+    ],
+    "bonusNumbers": [
+      31
+    ],
+    "salesAmount": 1381731200,
+    "carryoverAmount": 23188375,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 9565500
+      },
+      {
+        "tier": 3,
+        "winners": 366,
+        "prizeYen": 197500
+      },
+      {
+        "tier": 4,
+        "winners": 12928,
+        "prizeYen": 5900
+      },
+      {
+        "tier": 5,
+        "winners": 182907,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022032.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "2e2034b4f6a9e7b54baa88155ab1bbea73a4fbf621a364c55c8f4f7494033006"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2033,
+    "drawDate": "2025-09-11",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      16,
+      21,
+      22,
+      33,
+      35
+    ],
+    "bonusNumbers": [
+      26
+    ],
+    "salesAmount": 1385965400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 85086700
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 9946200
+      },
+      {
+        "tier": 3,
+        "winners": 242,
+        "prizeYen": 310700
+      },
+      {
+        "tier": 4,
+        "winners": 10699,
+        "prizeYen": 7400
+      },
+      {
+        "tier": 5,
+        "winners": 167344,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022033.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "43969dd3b92e218f7c59d5ac763b085f3ae0bf026073bab2074f6fa372ceb936"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2034,
+    "drawDate": "2025-09-15",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      13,
+      22,
+      25,
+      35,
+      37
+    ],
+    "bonusNumbers": [
+      17
+    ],
+    "salesAmount": 1291656600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 106154000
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 7077100
+      },
+      {
+        "tier": 3,
+        "winners": 198,
+        "prizeYen": 347400
+      },
+      {
+        "tier": 4,
+        "winners": 10984,
+        "prizeYen": 6600
+      },
+      {
+        "tier": 5,
+        "winners": 163768,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022034.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "89814dfadec200235b74ba7e68063d9016b8e6037e259a8594955f94010150be"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2035,
+    "drawDate": "2025-09-18",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      10,
+      12,
+      17,
+      21,
+      35
+    ],
+    "bonusNumbers": [
+      9
+    ],
+    "salesAmount": 1276657200,
+    "carryoverAmount": 196961791,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 6565600
+      },
+      {
+        "tier": 3,
+        "winners": 286,
+        "prizeYen": 223100
+      },
+      {
+        "tier": 4,
+        "winners": 12973,
+        "prizeYen": 5100
+      },
+      {
+        "tier": 5,
+        "winners": 187195,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022035.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "0bf142f0552cb45f190fbfcbb31bca15703fe2aa88aa410131f1cd924c3fc1e7"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2036,
+    "drawDate": "2025-09-22",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      10,
+      17,
+      26,
+      35,
+      42
+    ],
+    "bonusNumbers": [
+      33
+    ],
+    "salesAmount": 1556856800,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 454612800
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 11042500
+      },
+      {
+        "tier": 3,
+        "winners": 275,
+        "prizeYen": 303500
+      },
+      {
+        "tier": 4,
+        "winners": 11927,
+        "prizeYen": 7300
+      },
+      {
+        "tier": 5,
+        "winners": 193947,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022036.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "af9121fd6a85fcf1809777ffd3727db3fabc48771319ec2d089ce880070774d8"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2037,
+    "drawDate": "2025-09-25",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      12,
+      20,
+      23,
+      27,
+      29
+    ],
+    "bonusNumbers": [
+      10
+    ],
+    "salesAmount": 1273490800,
+    "carryoverAmount": 195374667,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 19538100
+      },
+      {
+        "tier": 3,
+        "winners": 251,
+        "prizeYen": 252100
+      },
+      {
+        "tier": 4,
+        "winners": 12515,
+        "prizeYen": 5300
+      },
+      {
+        "tier": 5,
+        "winners": 188891,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022037.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "22f41fa4024125f3b24274cf2e9eb849100632e2d6b49b3277da8401891d39e7"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2038,
+    "drawDate": "2025-09-29",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      31,
+      37,
+      39,
+      41,
+      42
+    ],
+    "bonusNumbers": [
+      33
+    ],
+    "salesAmount": 1531237000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 468137300
+      },
+      {
+        "tier": 2,
+        "winners": 10,
+        "prizeYen": 8183100
+      },
+      {
+        "tier": 3,
+        "winners": 156,
+        "prizeYen": 566500
+      },
+      {
+        "tier": 4,
+        "winners": 8779,
+        "prizeYen": 10600
+      },
+      {
+        "tier": 5,
+        "winners": 152703,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022038.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "adfb1b032fac1adaa2e539dbe73a1fd76880f746e7f35207969d30866546bde1"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2039,
+    "drawDate": "2025-10-02",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      15,
+      25,
+      27,
+      38,
+      42
+    ],
+    "bonusNumbers": [
+      22
+    ],
+    "salesAmount": 1317668200,
+    "carryoverAmount": 215395177,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 11,
+        "prizeYen": 5874600
+      },
+      {
+        "tier": 3,
+        "winners": 271,
+        "prizeYen": 257500
+      },
+      {
+        "tier": 4,
+        "winners": 11331,
+        "prizeYen": 6500
+      },
+      {
+        "tier": 5,
+        "winners": 169403,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022039.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "38ae7b4352e5988f5a6053df4eeae72cb66d2cecfbb20c1276d503c491a3c73b"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2040,
+    "drawDate": "2025-10-06",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      12,
+      14,
+      15,
+      24,
+      30
+    ],
+    "bonusNumbers": [
+      32
+    ],
+    "salesAmount": 1644805200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 474998900
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 9735400
+      },
+      {
+        "tier": 3,
+        "winners": 301,
+        "prizeYen": 279400
+      },
+      {
+        "tier": 4,
+        "winners": 14739,
+        "prizeYen": 6000
+      },
+      {
+        "tier": 5,
+        "winners": 229684,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022040.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "dfbb3be720c25b84fa2e3a1de27c28f5ab7976e242be998f70017c21f9923891"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2041,
+    "drawDate": "2025-10-09",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      4,
+      19,
+      22,
+      24,
+      32,
+      38
+    ],
+    "bonusNumbers": [
+      11
+    ],
+    "salesAmount": 1263703400,
+    "carryoverAmount": 209502018,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 13,
+        "prizeYen": 4834800
+      },
+      {
+        "tier": 3,
+        "winners": 233,
+        "prizeYen": 291300
+      },
+      {
+        "tier": 4,
+        "winners": 10452,
+        "prizeYen": 6800
+      },
+      {
+        "tier": 5,
+        "winners": 156707,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022041.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "0521ac9e4c7a148ab4e08b27773449d35d27db441ef30eb538a4b567834fb073"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2042,
+    "drawDate": "2025-10-13",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      9,
+      14,
+      29,
+      38,
+      41,
+      43
+    ],
+    "bonusNumbers": [
+      12
+    ],
+    "salesAmount": 1488679600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 470308700
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 15648900
+      },
+      {
+        "tier": 3,
+        "winners": 179,
+        "prizeYen": 472000
+      },
+      {
+        "tier": 4,
+        "winners": 9622,
+        "prizeYen": 9200
+      },
+      {
+        "tier": 5,
+        "winners": 157062,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022042.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "38c7467f4d52cf617916ef8107e798b710be3dc4a100879fd6b3fd0ae85acb0e"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2043,
+    "drawDate": "2025-10-16",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      11,
+      19,
+      22,
+      34,
+      40,
+      42
+    ],
+    "bonusNumbers": [
+      31
+    ],
+    "salesAmount": 1294429600,
+    "carryoverAmount": 223699102,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 13422300
+      },
+      {
+        "tier": 3,
+        "winners": 183,
+        "prizeYen": 396000
+      },
+      {
+        "tier": 4,
+        "winners": 8573,
+        "prizeYen": 8900
+      },
+      {
+        "tier": 5,
+        "winners": 142617,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022043.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "2c983277f39dcf20174f27184a6946db67cee0fbe2bbdbcc43967dec39623838"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2044,
+    "drawDate": "2025-10-20",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      6,
+      11,
+      26,
+      33,
+      40
+    ],
+    "bonusNumbers": [
+      14
+    ],
+    "salesAmount": 1611473000,
+    "carryoverAmount": 484403623,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 13035600
+      },
+      {
+        "tier": 3,
+        "winners": 291,
+        "prizeYen": 290200
+      },
+      {
+        "tier": 4,
+        "winners": 13818,
+        "prizeYen": 6400
+      },
+      {
+        "tier": 5,
+        "winners": 212520,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022044.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "83959fa4340a7a1a2a87a74456ff877287a9a36a377e674137ebe1f531204f1c"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2045,
+    "drawDate": "2025-10-23",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      4,
+      7,
+      12,
+      16,
+      28
+    ],
+    "bonusNumbers": [
+      19
+    ],
+    "salesAmount": 1627500600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 239377600
+      },
+      {
+        "tier": 2,
+        "winners": 14,
+        "prizeYen": 5008600
+      },
+      {
+        "tier": 3,
+        "winners": 596,
+        "prizeYen": 127000
+      },
+      {
+        "tier": 4,
+        "winners": 21477,
+        "prizeYen": 3700
+      },
+      {
+        "tier": 5,
+        "winners": 272776,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022045.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "9188c886bbc6aec6f9eefb1736309d7108897ef5891c5f9ddf8b37d179b93f3e"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2046,
+    "drawDate": "2025-10-27",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      5,
+      10,
+      22,
+      25,
+      38
+    ],
+    "bonusNumbers": [
+      14
+    ],
+    "salesAmount": 1328313800,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 65800600
+      },
+      {
+        "tier": 2,
+        "winners": 21,
+        "prizeYen": 2820100
+      },
+      {
+        "tier": 3,
+        "winners": 470,
+        "prizeYen": 136000
+      },
+      {
+        "tier": 4,
+        "winners": 16168,
+        "prizeYen": 4100
+      },
+      {
+        "tier": 5,
+        "winners": 209575,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022046.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "04eda87168455c18da17b63dc2b101b7cc946f99dc456abaf13c7afb621641c2"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2047,
+    "drawDate": "2025-10-30",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      10,
+      11,
+      16,
+      19,
+      37,
+      39
+    ],
+    "bonusNumbers": [
+      27
+    ],
+    "salesAmount": 1265565800,
+    "carryoverAmount": 210723088,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 21072900
+      },
+      {
+        "tier": 3,
+        "winners": 165,
+        "prizeYen": 413700
+      },
+      {
+        "tier": 4,
+        "winners": 8955,
+        "prizeYen": 8000
+      },
+      {
+        "tier": 5,
+        "winners": 155144,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022047.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "cba80c688b8ce2736b48968dfb9e0077745a1112a661f8e3876eba16eee62f8f"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2048,
+    "drawDate": "2025-11-03",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      13,
+      18,
+      32,
+      37,
+      43
+    ],
+    "bonusNumbers": [
+      27
+    ],
+    "salesAmount": 1514767200,
+    "carryoverAmount": 468334806,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 11040800
+      },
+      {
+        "tier": 3,
+        "winners": 162,
+        "prizeYen": 515200
+      },
+      {
+        "tier": 4,
+        "winners": 10649,
+        "prizeYen": 8200
+      },
+      {
+        "tier": 5,
+        "winners": 175084,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022048.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "7546b3462e421742293e061997671ae15994e9b3809f6025e3a2a194446cf01b"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2049,
+    "drawDate": "2025-11-06",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      10,
+      24,
+      25,
+      39,
+      40,
+      42
+    ],
+    "bonusNumbers": [
+      19
+    ],
+    "salesAmount": 1644903600,
+    "carryoverAmount": 753434862,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 9503600
+      },
+      {
+        "tier": 3,
+        "winners": 190,
+        "prizeYen": 486100
+      },
+      {
+        "tier": 4,
+        "winners": 10720,
+        "prizeYen": 9100
+      },
+      {
+        "tier": 5,
+        "winners": 179593,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022049.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "2d185d0bf4335bbef53d97e21ae34be21dd79c1853db55c992fa5b9df4aec589"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2050,
+    "drawDate": "2025-11-10",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      11,
+      15,
+      21,
+      25,
+      32
+    ],
+    "bonusNumbers": [
+      5
+    ],
+    "salesAmount": 1864272800,
+    "carryoverAmount": 1053519923,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 10,
+        "prizeYen": 9002800
+      },
+      {
+        "tier": 3,
+        "winners": 309,
+        "prizeYen": 314600
+      },
+      {
+        "tier": 4,
+        "winners": 15774,
+        "prizeYen": 6500
+      },
+      {
+        "tier": 5,
+        "winners": 248843,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022050.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "2e74112efa82db066ebf240602b9d3df530b7592fb47dad3f2a8b2e525995968"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2051,
+    "drawDate": "2025-11-13",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      15,
+      27,
+      28,
+      31,
+      39
+    ],
+    "bonusNumbers": [
+      20
+    ],
+    "salesAmount": 1986249800,
+    "carryoverAmount": 176502270,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 600000000
+      },
+      {
+        "tier": 2,
+        "winners": 15,
+        "prizeYen": 6459800
+      },
+      {
+        "tier": 3,
+        "winners": 481,
+        "prizeYen": 217500
+      },
+      {
+        "tier": 4,
+        "winners": 17971,
+        "prizeYen": 6100
+      },
+      {
+        "tier": 5,
+        "winners": 258708,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022051.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "e9e18aee80205dc71be97546b44e55964c09472b854339543075f086539f3baa"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2052,
+    "drawDate": "2025-11-17",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      3,
+      18,
+      25,
+      30,
+      34
+    ],
+    "bonusNumbers": [
+      10
+    ],
+    "salesAmount": 1573255200,
+    "carryoverAmount": 437181358,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 15641200
+      },
+      {
+        "tier": 3,
+        "winners": 240,
+        "prizeYen": 351900
+      },
+      {
+        "tier": 4,
+        "winners": 12225,
+        "prizeYen": 7300
+      },
+      {
+        "tier": 5,
+        "winners": 195372,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022052.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "386b09f6c73253415611edbd3d104c50b9d9acbb285527816737b8980e454487"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2053,
+    "drawDate": "2025-11-20",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      20,
+      28,
+      31,
+      35,
+      37,
+      41
+    ],
+    "bonusNumbers": [
+      13
+    ],
+    "salesAmount": 1617074400,
+    "carryoverAmount": 724468616,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 21547200
+      },
+      {
+        "tier": 3,
+        "winners": 145,
+        "prizeYen": 641900
+      },
+      {
+        "tier": 4,
+        "winners": 9252,
+        "prizeYen": 10600
+      },
+      {
+        "tier": 5,
+        "winners": 162769,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022053.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "a990a77bca9e7d2e306088ad2278d6bae5f01853831d1e74fefaa2a0a8164ac0"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2054,
+    "drawDate": "2025-11-24",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      14,
+      27,
+      30,
+      33,
+      37
+    ],
+    "bonusNumbers": [
+      23
+    ],
+    "salesAmount": 1787183600,
+    "carryoverAmount": 429996617,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 600000000
+      },
+      {
+        "tier": 2,
+        "winners": 1,
+        "prizeYen": 91661400
+      },
+      {
+        "tier": 3,
+        "winners": 239,
+        "prizeYen": 414100
+      },
+      {
+        "tier": 4,
+        "winners": 12213,
+        "prizeYen": 8500
+      },
+      {
+        "tier": 5,
+        "winners": 203450,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022054.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "b3d1d090f326841918b1425b6f54597ec44ca7e891c824fdcf26cc7fc8b6f508"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2055,
+    "drawDate": "2025-11-27",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      11,
+      12,
+      14,
+      17,
+      21,
+      26
+    ],
+    "bonusNumbers": [
+      2
+    ],
+    "salesAmount": 1658034200,
+    "carryoverAmount": 693711520,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 8790700
+      },
+      {
+        "tier": 3,
+        "winners": 258,
+        "prizeYen": 331100
+      },
+      {
+        "tier": 4,
+        "winners": 13549,
+        "prizeYen": 6600
+      },
+      {
+        "tier": 5,
+        "winners": 227553,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022055.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ab80d822b0b8bd6e36b10c4583bd30e683a2a74745c1f008569b33fc147884a8"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2056,
+    "drawDate": "2025-12-01",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      7,
+      15,
+      17,
+      19,
+      30
+    ],
+    "bonusNumbers": [
+      38
+    ],
+    "salesAmount": 1863410800,
+    "carryoverAmount": 386535047,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 600000000
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 14641600
+      },
+      {
+        "tier": 3,
+        "winners": 408,
+        "prizeYen": 232500
+      },
+      {
+        "tier": 4,
+        "winners": 17973,
+        "prizeYen": 5500
+      },
+      {
+        "tier": 5,
+        "winners": 262734,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022056.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "1280ea51f54553b78cee03426b0b9312f76ed3f6de042924080a4ddea3481119"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2057,
+    "drawDate": "2025-12-04",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      7,
+      21,
+      22,
+      38,
+      41
+    ],
+    "bonusNumbers": [
+      24
+    ],
+    "salesAmount": 1621718600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 217303700
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 11373600
+      },
+      {
+        "tier": 3,
+        "winners": 263,
+        "prizeYen": 326900
+      },
+      {
+        "tier": 4,
+        "winners": 13310,
+        "prizeYen": 6800
+      },
+      {
+        "tier": 5,
+        "winners": 207944,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022057.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "422335fb5419f0ba427c080a2cf919634892e8aeb3e90b928d412e7a4b2344e4"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2058,
+    "drawDate": "2025-12-08",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      9,
+      12,
+      14,
+      16,
+      19,
+      42
+    ],
+    "bonusNumbers": [
+      18
+    ],
+    "salesAmount": 1393248400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 115587500
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 17338600
+      },
+      {
+        "tier": 3,
+        "winners": 171,
+        "prizeYen": 438000
+      },
+      {
+        "tier": 4,
+        "winners": 9488,
+        "prizeYen": 8300
+      },
+      {
+        "tier": 5,
+        "winners": 172385,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022058.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "41f4317d8c916680ef59be5d333d963c30f8a4d982ca5e6611257d2ea6f1d0d7"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2059,
+    "drawDate": "2025-12-11",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      13,
+      26,
+      28,
+      38,
+      43
+    ],
+    "bonusNumbers": [
+      3
+    ],
+    "salesAmount": 1325666600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 110548300
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 11055100
+      },
+      {
+        "tier": 3,
+        "winners": 193,
+        "prizeYen": 371100
+      },
+      {
+        "tier": 4,
+        "winners": 10577,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 161791,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022059.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "b81aadce99c97f83b1d4d41f5d5810dd94d735e7473a45674958a4b1e24b8c1f"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2060,
+    "drawDate": "2025-12-15",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      16,
+      22,
+      40,
+      41,
+      42
+    ],
+    "bonusNumbers": [
+      10
+    ],
+    "salesAmount": 1390937000,
+    "carryoverAmount": 43279462,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 10426600
+      },
+      {
+        "tier": 3,
+        "winners": 164,
+        "prizeYen": 480600
+      },
+      {
+        "tier": 4,
+        "winners": 8955,
+        "prizeYen": 9300
+      },
+      {
+        "tier": 5,
+        "winners": 147543,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022060.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "db8915f10a1919353be48cd5b9a36be24682936de424bddfa8f7779d8df3651f"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2061,
+    "drawDate": "2025-12-18",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      6,
+      13,
+      21,
+      33,
+      34
+    ],
+    "bonusNumbers": [
+      40
+    ],
+    "salesAmount": 1423753600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 276436400
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 23316400
+      },
+      {
+        "tier": 3,
+        "winners": 319,
+        "prizeYen": 236800
+      },
+      {
+        "tier": 4,
+        "winners": 11939,
+        "prizeYen": 6600
+      },
+      {
+        "tier": 5,
+        "winners": 182215,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022061.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "46834313dbab98a86f84a9d74e9545d614a3b885856fbb0768c34475f3bbdb61"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2062,
+    "drawDate": "2025-12-22",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      9,
+      18,
+      24,
+      35,
+      42
+    ],
+    "bonusNumbers": [
+      8
+    ],
+    "salesAmount": 1514329600,
+    "carryoverAmount": 48674501,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 11,
+        "prizeYen": 6782200
+      },
+      {
+        "tier": 3,
+        "winners": 292,
+        "prizeYen": 275900
+      },
+      {
+        "tier": 4,
+        "winners": 12385,
+        "prizeYen": 6800
+      },
+      {
+        "tier": 5,
+        "winners": 192461,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022062.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "914d3ce4d430ebfe643a7285bee747b4922ffb32b48716d719d0dd0e320e7804"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2063,
+    "drawDate": "2025-12-25",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      4,
+      28,
+      29,
+      30,
+      38,
+      42
+    ],
+    "bonusNumbers": [
+      15
+    ],
+    "salesAmount": 1516501600,
+    "carryoverAmount": 313298859,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 13231600
+      },
+      {
+        "tier": 3,
+        "winners": 144,
+        "prizeYen": 595400
+      },
+      {
+        "tier": 4,
+        "winners": 9010,
+        "prizeYen": 10000
+      },
+      {
+        "tier": 5,
+        "winners": 162075,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022063.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "b4a9fb9aaa7d7c66a74b0127a08cdfba0727825f42271813c23ae25869fbfc19"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2064,
+    "drawDate": "2025-12-29",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      7,
+      24,
+      37,
+      39,
+      41
+    ],
+    "bonusNumbers": [
+      3
+    ],
+    "salesAmount": 1783922000,
+    "carryoverAmount": 5920512,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 600000000
+      },
+      {
+        "tier": 2,
+        "winners": 12,
+        "prizeYen": 7315700
+      },
+      {
+        "tier": 3,
+        "winners": 264,
+        "prizeYen": 359100
+      },
+      {
+        "tier": 4,
+        "winners": 14217,
+        "prizeYen": 7000
+      },
+      {
+        "tier": 5,
+        "winners": 227361,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022064.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "c27945f9cbb57ede5b8395ce1577a81646f3226430fef6b3e7d8fd011175d760"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2065,
+    "drawDate": "2026-01-05",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      18,
+      21,
+      31,
+      37,
+      40
+    ],
+    "bonusNumbers": [
+      3
+    ],
+    "salesAmount": 1503148000,
+    "carryoverAmount": 259218384,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 15198300
+      },
+      {
+        "tier": 3,
+        "winners": 215,
+        "prizeYen": 381700
+      },
+      {
+        "tier": 4,
+        "winners": 10741,
+        "prizeYen": 8000
+      },
+      {
+        "tier": 5,
+        "winners": 178338,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022065.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "4bf91fd4e407b50b3017a1f9ccef1316375116037a3488ff7e8579b9be695709"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2066,
+    "drawDate": "2026-01-08",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      28,
+      30,
+      32,
+      37,
+      38
+    ],
+    "bonusNumbers": [
+      5
+    ],
+    "salesAmount": 1651623000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 542887200
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 21275800
+      },
+      {
+        "tier": 3,
+        "winners": 156,
+        "prizeYen": 589100
+      },
+      {
+        "tier": 4,
+        "winners": 10434,
+        "prizeYen": 9300
+      },
+      {
+        "tier": 5,
+        "winners": 185431,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022066.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5615736c4c6990a1ce4a8db8216ea7cfda2bc9cdd2123310d96ec8f133dc1621"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2067,
+    "drawDate": "2026-01-12",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      4,
+      12,
+      15,
+      32,
+      42
+    ],
+    "bonusNumbers": [
+      31
+    ],
+    "salesAmount": 1381546000,
+    "carryoverAmount": 221877669,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 11094200
+      },
+      {
+        "tier": 3,
+        "winners": 195,
+        "prizeYen": 368600
+      },
+      {
+        "tier": 4,
+        "winners": 10677,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 185401,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022067.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "0ae772d0551933695eabf1d19438a8b3e66df9ce615ac418d5b4012ef0e5bfe3"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2068,
+    "drawDate": "2026-01-15",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      10,
+      13,
+      14,
+      29,
+      33
+    ],
+    "bonusNumbers": [
+      32
+    ],
+    "salesAmount": 1644432800,
+    "carryoverAmount": 484491749,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 13131100
+      },
+      {
+        "tier": 3,
+        "winners": 378,
+        "prizeYen": 225000
+      },
+      {
+        "tier": 4,
+        "winners": 14922,
+        "prizeYen": 6000
+      },
+      {
+        "tier": 5,
+        "winners": 223597,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022068.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "dfeb10cb4d344714165abc15788b111de5bd723b48d0a81b5f0d37a21414acfe"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2069,
+    "drawDate": "2026-01-19",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      17,
+      23,
+      27,
+      33,
+      35
+    ],
+    "bonusNumbers": [
+      4
+    ],
+    "salesAmount": 1833319400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 9,
+        "prizeYen": 86819200
+      },
+      {
+        "tier": 2,
+        "winners": 11,
+        "prizeYen": 8097000
+      },
+      {
+        "tier": 3,
+        "winners": 361,
+        "prizeYen": 266400
+      },
+      {
+        "tier": 4,
+        "winners": 15509,
+        "prizeYen": 6500
+      },
+      {
+        "tier": 5,
+        "winners": 241214,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022069.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "32b640524dee8ebf03445d835b59106c54e9be6b1c627c559aecf031523adad8"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2070,
+    "drawDate": "2026-01-22",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      10,
+      25,
+      30,
+      34,
+      36
+    ],
+    "bonusNumbers": [
+      12
+    ],
+    "salesAmount": 1316417200,
+    "carryoverAmount": 21907185,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 7397100
+      },
+      {
+        "tier": 3,
+        "winners": 151,
+        "prizeYen": 476100
+      },
+      {
+        "tier": 4,
+        "winners": 8966,
+        "prizeYen": 8400
+      },
+      {
+        "tier": 5,
+        "winners": 156035,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022070.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ff9103c8c62832474ee5f9e45120e1867156788b9c6855ca45f01fa3bff26d79"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2071,
+    "drawDate": "2026-01-26",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      15,
+      24,
+      29,
+      32,
+      33,
+      35
+    ],
+    "bonusNumbers": [
+      14
+    ],
+    "salesAmount": 1495918000,
+    "carryoverAmount": 273871384,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 18897900
+      },
+      {
+        "tier": 3,
+        "winners": 253,
+        "prizeYen": 322600
+      },
+      {
+        "tier": 4,
+        "winners": 11221,
+        "prizeYen": 7600
+      },
+      {
+        "tier": 5,
+        "winners": 177707,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022071.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "e580cbd7483c63ad110abf3c7f4e1a4e771a84354ce3f9d22b641651a04e7103"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2072,
+    "drawDate": "2026-01-29",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      18,
+      24,
+      36,
+      40,
+      42
+    ],
+    "bonusNumbers": [
+      43
+    ],
+    "salesAmount": 1573847000,
+    "carryoverAmount": 538049454,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 13209300
+      },
+      {
+        "tier": 3,
+        "winners": 306,
+        "prizeYen": 279700
+      },
+      {
+        "tier": 4,
+        "winners": 12711,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 188758,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022072.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "39a764d3456960e7c5f7f1ad05179435e0ec58c425094e22e54832f4d17a763e"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2073,
+    "drawDate": "2026-02-02",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      12,
+      14,
+      24,
+      26,
+      29
+    ],
+    "bonusNumbers": [
+      8
+    ],
+    "salesAmount": 1863936600,
+    "carryoverAmount": 826984918,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 13,
+        "prizeYen": 6667900
+      },
+      {
+        "tier": 3,
+        "winners": 378,
+        "prizeYen": 247600
+      },
+      {
+        "tier": 4,
+        "winners": 17612,
+        "prizeYen": 5600
+      },
+      {
+        "tier": 5,
+        "winners": 270616,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022073.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f4b2fc2494632a30385cc5989a33217d7bf7592594ae82185be140d413bb6497"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2074,
+    "drawDate": "2026-02-05",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      6,
+      16,
+      26,
+      27,
+      36
+    ],
+    "bonusNumbers": [
+      11
+    ],
+    "salesAmount": 1893753200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 4,
+        "prizeYen": 281563500
+      },
+      {
+        "tier": 2,
+        "winners": 18,
+        "prizeYen": 4987900
+      },
+      {
+        "tier": 3,
+        "winners": 649,
+        "prizeYen": 149400
+      },
+      {
+        "tier": 4,
+        "winners": 19672,
+        "prizeYen": 5200
+      },
+      {
+        "tier": 5,
+        "winners": 263713,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022074.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "564ce0ec7e7da1ced1ca607e75fdb2e3d0d5be4ae3ee0ca1bcb7c871c8452b47"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2075,
+    "drawDate": "2026-02-09",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      10,
+      14,
+      16,
+      35,
+      37
+    ],
+    "bonusNumbers": [
+      11
+    ],
+    "salesAmount": 1348747200,
+    "carryoverAmount": 222215112,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 2,
+        "prizeYen": 33333300
+      },
+      {
+        "tier": 3,
+        "winners": 177,
+        "prizeYen": 406700
+      },
+      {
+        "tier": 4,
+        "winners": 10275,
+        "prizeYen": 7400
+      },
+      {
+        "tier": 5,
+        "winners": 169978,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022075.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "18484940187e7528dd4f813e3e088b72d6253e99a7dc163f4fd4d9e28bb15ce7"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2076,
+    "drawDate": "2026-02-12",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      9,
+      20,
+      22,
+      28,
+      41
+    ],
+    "bonusNumbers": [
+      30
+    ],
+    "salesAmount": 1536115200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 5,
+        "prizeYen": 94842000
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 10800100
+      },
+      {
+        "tier": 3,
+        "winners": 579,
+        "prizeYen": 141000
+      },
+      {
+        "tier": 4,
+        "winners": 14943,
+        "prizeYen": 5700
+      },
+      {
+        "tier": 5,
+        "winners": 195735,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022076.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "b75ebf2faedd24d6b0d3adf496f51f05c795bf4788f88144d379bc33443dd59c"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2077,
+    "drawDate": "2026-02-16",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      17,
+      18,
+      23,
+      24,
+      26,
+      43
+    ],
+    "bonusNumbers": [
+      10
+    ],
+    "salesAmount": 1403282000,
+    "carryoverAmount": 238876055,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 17916200
+      },
+      {
+        "tier": 3,
+        "winners": 155,
+        "prizeYen": 499300
+      },
+      {
+        "tier": 4,
+        "winners": 9258,
+        "prizeYen": 8800
+      },
+      {
+        "tier": 5,
+        "winners": 161757,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022077.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "b3e371b17465e282daee0e63b303a84956ebf5c884772e28a3fe48513c099669"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2078,
+    "drawDate": "2026-02-19",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      10,
+      20,
+      24,
+      30,
+      35
+    ],
+    "bonusNumbers": [
+      41
+    ],
+    "salesAmount": 1522940600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 495292100
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 12821200
+      },
+      {
+        "tier": 3,
+        "winners": 245,
+        "prizeYen": 339000
+      },
+      {
+        "tier": 4,
+        "winners": 12042,
+        "prizeYen": 7200
+      },
+      {
+        "tier": 5,
+        "winners": 181113,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022078.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5a0c53871c6da122c6cafed21e60a28e02f5311dc1fc428fd4516a82d9787ba6"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2079,
+    "drawDate": "2026-02-23",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      11,
+      15,
+      17,
+      24,
+      39
+    ],
+    "bonusNumbers": [
+      31
+    ],
+    "salesAmount": 1339344000,
+    "carryoverAmount": 207185202,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 16,
+        "prizeYen": 3884800
+      },
+      {
+        "tier": 3,
+        "winners": 311,
+        "prizeYen": 215800
+      },
+      {
+        "tier": 4,
+        "winners": 13225,
+        "prizeYen": 5300
+      },
+      {
+        "tier": 5,
+        "winners": 195301,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022079.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "31b2bda825f833711ded72bdbfaec41e86a84d3729dac9849e600b4d3d95099d"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2080,
+    "drawDate": "2026-02-26",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      12,
+      30,
+      36,
+      37,
+      38
+    ],
+    "bonusNumbers": [
+      8
+    ],
+    "salesAmount": 1524550200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 455170700
+      },
+      {
+        "tier": 2,
+        "winners": 10,
+        "prizeYen": 7439800
+      },
+      {
+        "tier": 3,
+        "winners": 241,
+        "prizeYen": 333300
+      },
+      {
+        "tier": 4,
+        "winners": 13400,
+        "prizeYen": 6300
+      },
+      {
+        "tier": 5,
+        "winners": 198415,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022080.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5851d569e72d9bcc63dba147ed6f7e693880c3ae06e01b191cd061743b5c0ab0"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2081,
+    "drawDate": "2026-03-02",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      14,
+      31,
+      32,
+      37,
+      41,
+      42
+    ],
+    "bonusNumbers": [
+      22
+    ],
+    "salesAmount": 1391552800,
+    "carryoverAmount": 247024989,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 24703300
+      },
+      {
+        "tier": 3,
+        "winners": 154,
+        "prizeYen": 519700
+      },
+      {
+        "tier": 4,
+        "winners": 8262,
+        "prizeYen": 10200
+      },
+      {
+        "tier": 5,
+        "winners": 140455,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022081.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f5d797171143b955b4c98a0183ad503d0009e0e68aea5c07900517d9cbcf458e"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2082,
+    "drawDate": "2026-03-05",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      11,
+      14,
+      19,
+      25,
+      40
+    ],
+    "bonusNumbers": [
+      17
+    ],
+    "salesAmount": 1768884400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 266807600
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 14329900
+      },
+      {
+        "tier": 3,
+        "winners": 293,
+        "prizeYen": 316900
+      },
+      {
+        "tier": 4,
+        "winners": 14596,
+        "prizeYen": 6700
+      },
+      {
+        "tier": 5,
+        "winners": 232454,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022082.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "c785f665ab5e31a6880d685a234f5443a378d9cac6956dcf562e01f16be033a5"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2083,
+    "drawDate": "2026-03-09",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      10,
+      13,
+      17,
+      26,
+      29
+    ],
+    "bonusNumbers": [
+      43
+    ],
+    "salesAmount": 1361777800,
+    "carryoverAmount": 210243220,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 7,
+        "prizeYen": 9010700
+      },
+      {
+        "tier": 3,
+        "winners": 302,
+        "prizeYen": 225500
+      },
+      {
+        "tier": 4,
+        "winners": 13544,
+        "prizeYen": 5300
+      },
+      {
+        "tier": 5,
+        "winners": 199383,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022083.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "a2f7f2e3ed888983976ebadcff275213daa1534fa567a42a71313be2ab096289"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2084,
+    "drawDate": "2026-03-12",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      17,
+      18,
+      19,
+      30,
+      39
+    ],
+    "bonusNumbers": [
+      9
+    ],
+    "salesAmount": 1510035600,
+    "carryoverAmount": 462516068,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 9460500
+      },
+      {
+        "tier": 3,
+        "winners": 290,
+        "prizeYen": 281800
+      },
+      {
+        "tier": 4,
+        "winners": 11789,
+        "prizeYen": 7300
+      },
+      {
+        "tier": 5,
+        "winners": 183453,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022084.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "fb8c2dd375b9d83e77fe7de3379a4feb7c398789685e983a34f3e668ace27ee1"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2085,
+    "drawDate": "2026-03-16",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      8,
+      13,
+      26,
+      35,
+      43
+    ],
+    "bonusNumbers": [
+      14
+    ],
+    "salesAmount": 1637882200,
+    "carryoverAmount": 131403738,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 600000000
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 26889600
+      },
+      {
+        "tier": 3,
+        "winners": 276,
+        "prizeYen": 315600
+      },
+      {
+        "tier": 4,
+        "winners": 12985,
+        "prizeYen": 7000
+      },
+      {
+        "tier": 5,
+        "winners": 208313,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022085.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5a5b532ab9b15b7afe06a90e20f959713a4fc0931ef47d7cb4c3a42ba2e65982"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2086,
+    "drawDate": "2026-03-19",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      4,
+      11,
+      19,
+      28,
+      39,
+      40
+    ],
+    "bonusNumbers": [
+      6
+    ],
+    "salesAmount": 1491824800,
+    "carryoverAmount": 377168743,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 15,
+        "prizeYen": 4915400
+      },
+      {
+        "tier": 3,
+        "winners": 296,
+        "prizeYen": 269000
+      },
+      {
+        "tier": 4,
+        "winners": 12723,
+        "prizeYen": 6600
+      },
+      {
+        "tier": 5,
+        "winners": 188055,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022086.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "d1c7c225f7c379ae986808282c82617f5f13d0eacf2b0e6d8e0cea54107c19bb"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2087,
+    "drawDate": "2026-03-23",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      7,
+      10,
+      15,
+      18,
+      26,
+      39
+    ],
+    "bonusNumbers": [
+      13
+    ],
+    "salesAmount": 1591427800,
+    "carryoverAmount": 31193795,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 600000000
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 8467700
+      },
+      {
+        "tier": 3,
+        "winners": 302,
+        "prizeYen": 272500
+      },
+      {
+        "tier": 4,
+        "winners": 14390,
+        "prizeYen": 6000
+      },
+      {
+        "tier": 5,
+        "winners": 216634,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022087.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "88628e647e35c3252d387473b444c2663880adc0b7d15222dacd1cb41a2cf103"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2088,
+    "drawDate": "2026-03-26",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      16,
+      18,
+      27,
+      37,
+      39
+    ],
+    "bonusNumbers": [
+      29
+    ],
+    "salesAmount": 1393146000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 85315200
+      },
+      {
+        "tier": 2,
+        "winners": 11,
+        "prizeYen": 6129800
+      },
+      {
+        "tier": 3,
+        "winners": 282,
+        "prizeYen": 258200
+      },
+      {
+        "tier": 4,
+        "winners": 12626,
+        "prizeYen": 6000
+      },
+      {
+        "tier": 5,
+        "winners": 184969,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022088.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "936bb87b922672fdaf7df174c0b531c1f2734f5034524c1bb9e5af68bf3ce41d"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2089,
+    "drawDate": "2026-03-30",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      9,
+      16,
+      18,
+      32,
+      37,
+      43
+    ],
+    "bonusNumbers": [
+      13
+    ],
+    "salesAmount": 1371989000,
+    "carryoverAmount": 236800230,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 11,
+        "prizeYen": 6458300
+      },
+      {
+        "tier": 3,
+        "winners": 162,
+        "prizeYen": 473500
+      },
+      {
+        "tier": 4,
+        "winners": 9049,
+        "prizeYen": 8900
+      },
+      {
+        "tier": 5,
+        "winners": 151757,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022089.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ba5e3d99e40f95a1266ab821bbd22f88d48d6d34899a24a968cdd8acdb9b0552"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2090,
+    "drawDate": "2026-04-02",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      3,
+      6,
+      9,
+      24,
+      36
+    ],
+    "bonusNumbers": [
+      5
+    ],
+    "salesAmount": 1490297200,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 449917100
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 7992100
+      },
+      {
+        "tier": 3,
+        "winners": 476,
+        "prizeYen": 145000
+      },
+      {
+        "tier": 4,
+        "winners": 19544,
+        "prizeYen": 3700
+      },
+      {
+        "tier": 5,
+        "winners": 251566,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022090.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "2f5d0d943e9c19ca7e004717850c2e02bfd66e2c8094e3939fc848bd6c15e6ec"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2091,
+    "drawDate": "2026-04-06",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      16,
+      21,
+      25,
+      28,
+      43
+    ],
+    "bonusNumbers": [
+      9
+    ],
+    "salesAmount": 1351177000,
+    "carryoverAmount": 227840393,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 2,
+        "prizeYen": 34177100
+      },
+      {
+        "tier": 3,
+        "winners": 187,
+        "prizeYen": 394700
+      },
+      {
+        "tier": 4,
+        "winners": 9022,
+        "prizeYen": 8600
+      },
+      {
+        "tier": 5,
+        "winners": 160010,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022091.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ea800fb2d78edb74c456fe06f36efde7c4977f9450db4721767b2a3bef35954a"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2092,
+    "drawDate": "2026-04-09",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      13,
+      27,
+      36,
+      37,
+      43
+    ],
+    "bonusNumbers": [
+      3
+    ],
+    "salesAmount": 1507217200,
+    "carryoverAmount": 480712171,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 12644000
+      },
+      {
+        "tier": 3,
+        "winners": 264,
+        "prizeYen": 310300
+      },
+      {
+        "tier": 4,
+        "winners": 11718,
+        "prizeYen": 7300
+      },
+      {
+        "tier": 5,
+        "winners": 181007,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022092.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f53a5193d525a7449d98f785183f5412cd4cafeaa5529ed9b24339ab53d16634"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2093,
+    "drawDate": "2026-04-13",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      10,
+      21,
+      26,
+      29,
+      38
+    ],
+    "bonusNumbers": [
+      12
+    ],
+    "salesAmount": 1681759400,
+    "carryoverAmount": 751519994,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 16,
+        "prizeYen": 5077800
+      },
+      {
+        "tier": 3,
+        "winners": 329,
+        "prizeYen": 266600
+      },
+      {
+        "tier": 4,
+        "winners": 14455,
+        "prizeYen": 6400
+      },
+      {
+        "tier": 5,
+        "winners": 224282,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022093.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "6125da57b87ec80e3b0981910bf863cf5f014dfde1b93cb12c8cec553fd39b94"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2094,
+    "drawDate": "2026-04-16",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      4,
+      7,
+      11,
+      24,
+      30
+    ],
+    "bonusNumbers": [
+      16
+    ],
+    "salesAmount": 1797014800,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 5,
+        "prizeYen": 200321600
+      },
+      {
+        "tier": 2,
+        "winners": 18,
+        "prizeYen": 4168200
+      },
+      {
+        "tier": 3,
+        "winners": 710,
+        "prizeYen": 114100
+      },
+      {
+        "tier": 4,
+        "winners": 25626,
+        "prizeYen": 3300
+      },
+      {
+        "tier": 5,
+        "winners": 316889,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022094.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5f7f17a5f6865ab36cf4d819ebcd58d64cd2929df0b0dcb887fe04eaabc549ec"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2095,
+    "drawDate": "2026-04-20",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      13,
+      20,
+      22,
+      23,
+      28,
+      30
+    ],
+    "bonusNumbers": [
+      29
+    ],
+    "salesAmount": 1399616800,
+    "carryoverAmount": 242447428,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 14547300
+      },
+      {
+        "tier": 3,
+        "winners": 175,
+        "prizeYen": 448800
+      },
+      {
+        "tier": 4,
+        "winners": 8524,
+        "prizeYen": 9700
+      },
+      {
+        "tier": 5,
+        "winners": 153085,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022095.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "d42f74455e33551207f75a84da28905503a86da6522d15894a24c4ed26cbffb2"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2096,
+    "drawDate": "2026-04-23",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      15,
+      18,
+      21,
+      33,
+      43
+    ],
+    "bonusNumbers": [
+      38
+    ],
+    "salesAmount": 1523189800,
+    "carryoverAmount": 493922051,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 12574100
+      },
+      {
+        "tier": 3,
+        "winners": 239,
+        "prizeYen": 340900
+      },
+      {
+        "tier": 4,
+        "winners": 12495,
+        "prizeYen": 6800
+      },
+      {
+        "tier": 5,
+        "winners": 190942,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022096.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "19feba6dbf35c4de4e16c12fe518ac2768bb69e1ef5ef020bd1dd46b29f29cbf"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2097,
+    "drawDate": "2026-04-27",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      20,
+      24,
+      27,
+      34,
+      42
+    ],
+    "bonusNumbers": [
+      37
+    ],
+    "salesAmount": 1725714600,
+    "carryoverAmount": 785838686,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 21894400
+      },
+      {
+        "tier": 3,
+        "winners": 261,
+        "prizeYen": 362300
+      },
+      {
+        "tier": 4,
+        "winners": 12217,
+        "prizeYen": 8100
+      },
+      {
+        "tier": 5,
+        "winners": 202554,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022097.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "61cfdcab0a541822c11ad50f6044d2e2a71c6230b5fa23f89ae3ada22d64a503"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2098,
+    "drawDate": "2026-04-30",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      6,
+      15,
+      18,
+      19,
+      42
+    ],
+    "bonusNumbers": [
+      24
+    ],
+    "salesAmount": 1776606000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 536215400
+      },
+      {
+        "tier": 2,
+        "winners": 18,
+        "prizeYen": 4776600
+      },
+      {
+        "tier": 3,
+        "winners": 254,
+        "prizeYen": 365500
+      },
+      {
+        "tier": 4,
+        "winners": 14486,
+        "prizeYen": 6700
+      },
+      {
+        "tier": 5,
+        "winners": 235925,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022098.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "5f4183f6b80d83de09aff2896962799867a98b37c49c2561cf9aae21f61d023d"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2099,
+    "drawDate": "2026-05-04",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      19,
+      21,
+      34,
+      36,
+      39,
+      42
+    ],
+    "bonusNumbers": [
+      43
+    ],
+    "salesAmount": 1383009800,
+    "carryoverAmount": 245719871,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 2,
+        "prizeYen": 36859100
+      },
+      {
+        "tier": 3,
+        "winners": 126,
+        "prizeYen": 631800
+      },
+      {
+        "tier": 4,
+        "winners": 7983,
+        "prizeYen": 10500
+      },
+      {
+        "tier": 5,
+        "winners": 139177,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022099.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "bb31b2d512c87da44df6d6bf4372411bd5fcfd4914d4ea9252451f646e7d6956"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2100,
+    "drawDate": "2026-05-07",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      8,
+      17,
+      24,
+      32,
+      35,
+      41
+    ],
+    "bonusNumbers": [
+      28
+    ],
+    "salesAmount": 1596772600,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 5,
+        "prizeYen": 100644600
+      },
+      {
+        "tier": 2,
+        "winners": 15,
+        "prizeYen": 5150200
+      },
+      {
+        "tier": 3,
+        "winners": 461,
+        "prizeYen": 180900
+      },
+      {
+        "tier": 4,
+        "winners": 15912,
+        "prizeYen": 5500
+      },
+      {
+        "tier": 5,
+        "winners": 212199,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022100.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "8d77110809964952bfd680d06b52511605df0fd6d0a96a1e1ead6f4c345ada99"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2101,
+    "drawDate": "2026-05-11",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      17,
+      29,
+      33,
+      40,
+      42
+    ],
+    "bonusNumbers": [
+      21
+    ],
+    "salesAmount": 1362235400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 119417600
+      },
+      {
+        "tier": 2,
+        "winners": 3,
+        "prizeYen": 23884300
+      },
+      {
+        "tier": 3,
+        "winners": 158,
+        "prizeYen": 489700
+      },
+      {
+        "tier": 4,
+        "winners": 8609,
+        "prizeYen": 9400
+      },
+      {
+        "tier": 5,
+        "winners": 143366,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022101.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "0c3baab885c4db27effaa1244b15c191315f4045d8bd7eeff49d98a72d9e55cd"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2102,
+    "drawDate": "2026-05-14",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      18,
+      21,
+      25,
+      28,
+      30,
+      43
+    ],
+    "bonusNumbers": [
+      8
+    ],
+    "salesAmount": 1304357800,
+    "carryoverAmount": 23538243,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 8382900
+      },
+      {
+        "tier": 3,
+        "winners": 148,
+        "prizeYen": 489300
+      },
+      {
+        "tier": 4,
+        "winners": 8874,
+        "prizeYen": 8600
+      },
+      {
+        "tier": 5,
+        "winners": 147401,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022102.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "f2a61fc07562f78161ef95030945c5289997a7f9b5c5277055780cdaff169929"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2103,
+    "drawDate": "2026-05-18",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      38
+    ],
+    "bonusNumbers": [
+      39
+    ],
+    "salesAmount": 1480396000,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 121423400
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 10965700
+      },
+      {
+        "tier": 3,
+        "winners": 523,
+        "prizeYen": 135800
+      },
+      {
+        "tier": 4,
+        "winners": 18465,
+        "prizeYen": 4000
+      },
+      {
+        "tier": 5,
+        "winners": 234935,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022103.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "29f70a4ae23f1045f28d354095e7dd6c0f254496c55fc74df80afe04ae293064"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2104,
+    "drawDate": "2026-05-21",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      18,
+      19,
+      21,
+      25,
+      28,
+      34
+    ],
+    "bonusNumbers": [
+      4
+    ],
+    "salesAmount": 1283811800,
+    "carryoverAmount": 15845051,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 9,
+        "prizeYen": 7195000
+      },
+      {
+        "tier": 3,
+        "winners": 180,
+        "prizeYen": 388500
+      },
+      {
+        "tier": 4,
+        "winners": 9725,
+        "prizeYen": 7500
+      },
+      {
+        "tier": 5,
+        "winners": 153283,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022104.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "e5d1f90788438e7e78a58baa7cc87f5f50b9aa97d7c7b4a1b2bdbc6e59b9ecf5"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2105,
+    "drawDate": "2026-05-25",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      26,
+      28,
+      30,
+      36,
+      40
+    ],
+    "bonusNumbers": [
+      32
+    ],
+    "salesAmount": 1434150000,
+    "carryoverAmount": 267091381,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 15075200
+      },
+      {
+        "tier": 3,
+        "winners": 159,
+        "prizeYen": 511900
+      },
+      {
+        "tier": 4,
+        "winners": 8406,
+        "prizeYen": 10200
+      },
+      {
+        "tier": 5,
+        "winners": 151323,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022105.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "e09111aa5d0d44f19125230818ed087ef5673d5502b385a2358770587b55ae60"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2106,
+    "drawDate": "2026-05-28",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      6,
+      17,
+      27,
+      34,
+      43
+    ],
+    "bonusNumbers": [
+      24
+    ],
+    "salesAmount": 1548881800,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 261492400
+      },
+      {
+        "tier": 2,
+        "winners": 12,
+        "prizeYen": 6397500
+      },
+      {
+        "tier": 3,
+        "winners": 269,
+        "prizeYen": 308200
+      },
+      {
+        "tier": 4,
+        "winners": 12294,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 193814,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022106.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "90e756da70243419313a027dc317211d0caf75c693eaf531915ac5f8b8f65bc9"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2107,
+    "drawDate": "2026-06-01",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      5,
+      8,
+      27,
+      32,
+      36,
+      39
+    ],
+    "bonusNumbers": [
+      38
+    ],
+    "salesAmount": 1422502200,
+    "carryoverAmount": 33399525,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 11670300
+      },
+      {
+        "tier": 3,
+        "winners": 241,
+        "prizeYen": 313700
+      },
+      {
+        "tier": 4,
+        "winners": 11251,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 181175,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022107.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "3932396090f98b12b7343a72c38c1190c9bc489f80104a902e916a1911bf4901"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2108,
+    "drawDate": "2026-06-04",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      5,
+      10,
+      15,
+      28,
+      43
+    ],
+    "bonusNumbers": [
+      27
+    ],
+    "salesAmount": 1382146400,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 3,
+        "prizeYen": 83434500
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 10845500
+      },
+      {
+        "tier": 3,
+        "winners": 313,
+        "prizeYen": 224500
+      },
+      {
+        "tier": 4,
+        "winners": 13552,
+        "prizeYen": 5400
+      },
+      {
+        "tier": 5,
+        "winners": 195451,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022108.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "ba59dbb9a7a5cc9c1de78cde0843131c35fd85b89d097435107de4af542e7723"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2109,
+    "drawDate": "2026-06-08",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      6,
+      11,
+      19,
+      31,
+      38,
+      41
+    ],
+    "bonusNumbers": [
+      3
+    ],
+    "salesAmount": 1330924800,
+    "carryoverAmount": 17268406,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 1,
+        "prizeYen": 200000000
+      },
+      {
+        "tier": 2,
+        "winners": 6,
+        "prizeYen": 10863700
+      },
+      {
+        "tier": 3,
+        "winners": 234,
+        "prizeYen": 300800
+      },
+      {
+        "tier": 4,
+        "winners": 10718,
+        "prizeYen": 6900
+      },
+      {
+        "tier": 5,
+        "winners": 171685,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022109.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "c787a6599cee60951077fed0bf4d0f29e18c8dd82073fd13913c2acb87f6214d"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2110,
+    "drawDate": "2026-06-11",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      9,
+      18,
+      35,
+      36,
+      40
+    ],
+    "bonusNumbers": [
+      29
+    ],
+    "salesAmount": 1389374800,
+    "carryoverAmount": 0,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": 2,
+        "prizeYen": 124941200
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 17446600
+      },
+      {
+        "tier": 3,
+        "winners": 217,
+        "prizeYen": 347300
+      },
+      {
+        "tier": 4,
+        "winners": 11138,
+        "prizeYen": 7100
+      },
+      {
+        "tier": 5,
+        "winners": 167812,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022110.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "4e1b0a7c430936c53cf0a72b6fb29142035dc8e9df0701ea86e5df99d73d8e81"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2111,
+    "drawDate": "2026-06-15",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      1,
+      5,
+      8,
+      12,
+      37,
+      43
+    ],
+    "bonusNumbers": [
+      36
+    ],
+    "salesAmount": 1388456600,
+    "carryoverAmount": 207517626,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 5,
+        "prizeYen": 12451400
+      },
+      {
+        "tier": 3,
+        "winners": 259,
+        "prizeYen": 259500
+      },
+      {
+        "tier": 4,
+        "winners": 13929,
+        "prizeYen": 5100
+      },
+      {
+        "tier": 5,
+        "winners": 216748,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022111.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "c507aec11fb3c26494b346f1075fc5a8ea93ae768e1d31f6bb8242e05bb41323"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2112,
+    "drawDate": "2026-06-18",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      3,
+      7,
+      8,
+      27,
+      31,
+      40
+    ],
+    "bonusNumbers": [
+      18
+    ],
+    "salesAmount": 1569455000,
+    "carryoverAmount": 455366461,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 4,
+        "prizeYen": 18589200
+      },
+      {
+        "tier": 3,
+        "winners": 293,
+        "prizeYen": 274000
+      },
+      {
+        "tier": 4,
+        "winners": 14317,
+        "prizeYen": 5900
+      },
+      {
+        "tier": 5,
+        "winners": 218891,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022112.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "4d6c98c905a8ee8873f825743fb1158303c0a574c5fdf2b4f7cb623621c132e3"
+  },
+  {
+    "game": "loto6",
+    "drawNumber": 2113,
+    "drawDate": "2026-06-22",
+    "dayOfWeek": null,
+    "mainNumbers": [
+      2,
+      5,
+      32,
+      36,
+      38,
+      42
+    ],
+    "bonusNumbers": [
+      14
+    ],
+    "salesAmount": 1738942400,
+    "carryoverAmount": 744495484,
+    "prizeTiers": [
+      {
+        "tier": 1,
+        "winners": null,
+        "prizeYen": null
+      },
+      {
+        "tier": 2,
+        "winners": 8,
+        "prizeYen": 10842600
+      },
+      {
+        "tier": 3,
+        "winners": 225,
+        "prizeYen": 416300
+      },
+      {
+        "tier": 4,
+        "winners": 12885,
+        "prizeYen": 7600
+      },
+      {
+        "tier": 5,
+        "winners": 213988,
+        "prizeYen": 1000
+      }
+    ],
+    "source": "official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022113.CSV",
+    "sourceDownloadedAt": "2026-06-25T01:24:28.363Z",
+    "sourceHash": "230d35131caabd7fd21e2e288388753f62e7527bda4350a82880606e912b4c35"
+  }
+]

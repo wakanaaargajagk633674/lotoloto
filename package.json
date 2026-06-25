@@ -11,6 +11,10 @@
     "test": "vitest run",
     "data:download": "tsx scripts/download-loto-data.ts",
     "data:parse": "tsx scripts/parse-loto-data.ts",
+    "data:official": "tsx scripts/download-official-loto-data.ts",
+    "data:compare": "tsx scripts/compare-loto-sources.ts",
+    "data:analysis": "tsx scripts/generate-analysis-data.ts",
+    "data:downloads": "tsx scripts/generate-download-csv.ts",
     "backtest": "tsx scripts/run-backtest.ts"
   },
   "dependencies": {
