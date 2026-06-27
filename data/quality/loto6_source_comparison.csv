@@ -2112,3 +2112,4 @@ game,drawNumber,officialDate,historyDate,status,differentFields,officialSource,h
 "loto6","2111","2026-06-15","2026-06-15","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022111.CSV","sougaku:data\raw\loto6\extracted\loto6.csv"
 "loto6","2112","2026-06-18","2026-06-18","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022112.CSV","sougaku:data\raw\loto6\extracted\loto6.csv"
 "loto6","2113","2026-06-22","2026-06-22","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022113.CSV","sougaku:data\raw\loto6\extracted\loto6.csv"
+"loto6","2114","2026-06-25","2026-06-25","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022114.CSV","sougaku:data\raw\loto6\extracted\loto6.csv"

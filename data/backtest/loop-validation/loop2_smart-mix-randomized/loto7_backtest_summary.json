@@ -1,0 +1,76 @@
+{
+  "game": "loto7",
+  "startedAtDraw": 120,
+  "endedAtDraw": 683,
+  "ticketPriceYen": 300,
+  "strategies": {
+    "balance": {
+      "trials": 563,
+      "averageMainMatches": 1.3339253996447602,
+      "match3PlusRate": 0.09769094138543517,
+      "prizeHitCount": 24,
+      "totalPayoutYen": 27700,
+      "averagePayoutPerTicketYen": 49.200710479573715,
+      "maxDrawdownYen": 141200
+    },
+    "hot_trend": {
+      "trials": 563,
+      "averageMainMatches": 1.374777975133215,
+      "match3PlusRate": 0.12788632326820604,
+      "prizeHitCount": 32,
+      "totalPayoutYen": 36800,
+      "averagePayoutPerTicketYen": 65.36412078152753,
+      "maxDrawdownYen": 132500
+    },
+    "deep_gap": {
+      "trials": 563,
+      "averageMainMatches": 1.3499111900532859,
+      "match3PlusRate": 0.1172291296625222,
+      "prizeHitCount": 21,
+      "totalPayoutYen": 27000,
+      "averagePayoutPerTicketYen": 47.95737122557726,
+      "maxDrawdownYen": 142600
+    },
+    "high_return": {
+      "trials": 563,
+      "averageMainMatches": 1.4120781527531083,
+      "match3PlusRate": 0.1349911190053286,
+      "prizeHitCount": 24,
+      "totalPayoutYen": 41100,
+      "averagePayoutPerTicketYen": 73.00177619893428,
+      "maxDrawdownYen": 127800
+    },
+    "pure_random": {
+      "trials": 563,
+      "averageMainMatches": 1.3339253996447602,
+      "match3PlusRate": 0.11900532859680284,
+      "prizeHitCount": 33,
+      "totalPayoutYen": 51000,
+      "averagePayoutPerTicketYen": 90.58614564831261,
+      "maxDrawdownYen": 120200
+    },
+    "pattern_filter": {
+      "trials": 563,
+      "averageMainMatches": 1.374777975133215,
+      "match3PlusRate": 0.11545293072824156,
+      "prizeHitCount": 23,
+      "totalPayoutYen": 26400,
+      "averagePayoutPerTicketYen": 46.89165186500888,
+      "maxDrawdownYen": 142500
+    },
+    "smart_mix": {
+      "trials": 563,
+      "averageMainMatches": 1.3818827708703374,
+      "match3PlusRate": 0.12966252220248667,
+      "prizeHitCount": 21,
+      "totalPayoutYen": 26000,
+      "averagePayoutPerTicketYen": 46.181172291296626,
+      "maxDrawdownYen": 144200
+    }
+  },
+  "notes": [
+    "ウォークフォワード方式で、各 targetDraw の予想には trainThroughDraw までの履歴だけを使う。",
+    "ランダムとの差は短期では大きく揺れるため、優位に見える結果でも過剰最適化を疑う。",
+    "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。"
+  ]
+}

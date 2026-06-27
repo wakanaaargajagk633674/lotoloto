@@ -15,7 +15,8 @@
     "data:compare": "tsx scripts/compare-loto-sources.ts",
     "data:analysis": "tsx scripts/generate-analysis-data.ts",
     "data:downloads": "tsx scripts/generate-download-csv.ts",
-    "backtest": "tsx scripts/run-backtest.ts"
+    "backtest": "tsx scripts/run-backtest.ts",
+    "backtest:portfolio": "tsx scripts/run-portfolio-validation.ts"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",

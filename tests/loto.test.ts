@@ -83,6 +83,12 @@ describe("generator", () => {
     expect(tickets).toHaveLength(4);
   });
 
+  it("spreads multi-ticket portfolios without exact duplicate tickets", () => {
+    const tickets = generateTickets(makeDraws("loto6", 120), { game: "loto6", strategy: "smart_mix", ticketCount: 20, seed: 606 });
+    const keys = tickets.map((ticket) => ticket.numbers.join("-"));
+    expect(new Set(keys).size).toBe(keys.length);
+  });
+
   it("is reproducible with a fixed seed", () => {
     const draws = makeDraws("loto6", 80);
     const a = generateTickets(draws, { game: "loto6", strategy: "pure_random", ticketCount: 3, seed: 99 });

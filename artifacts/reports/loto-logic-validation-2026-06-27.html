@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loto Logic Validation 2026-06-27</title>
+    <style>
+      body { margin: 0; font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color: #17202a; background: #f6f8fb; }
+      main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+      h1 { font-size: 28px; margin: 0 0 8px; }
+      h2 { font-size: 20px; margin: 28px 0 12px; }
+      p { line-height: 1.7; }
+      .notice { background: #fff7e6; border-left: 5px solid #d99100; padding: 14px 16px; border-radius: 6px; }
+      .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+      .card { background: #fff; border: 1px solid #dfe6ef; border-radius: 8px; padding: 16px; }
+      table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #dfe6ef; }
+      th, td { padding: 9px 10px; border-bottom: 1px solid #e8eef5; text-align: right; font-size: 14px; }
+      th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+      th { background: #edf3f8; }
+      a { color: #0b63ce; }
+      .small { font-size: 13px; color: #52616f; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Loto Logic Validation 2026-06-27</h1>
+      <p class="small">Web/Xリサーチ、3ループ検証、50人専門家レビューのローカルHTML要約。</p>
+      <div class="notice">
+        ロト6・ロト7はランダム抽せんです。このレポートは過去データ上の検証と買い目ポートフォリオ改善の記録であり、将来の当せんや的中率向上を保証しません。
+      </div>
+
+      <h2>採用判断</h2>
+      <div class="grid">
+        <div class="card"><strong>Loto6</strong><p>smart_mixの20点運用向けに、番号・ペア・レンジ構成の重複を抑えるロジックを採用。全履歴smart_mixでは低等級ヒット件数が37から57へ増加。ただし平均一致数は低下。</p></div>
+        <div class="card"><strong>Loto7</strong><p>追加の予測寄り補正は採用せず、旧式スコアへ戻した。直近120回の10点検証ではpure_random_controlが最も安定。</p></div>
+        <div class="card"><strong>X/Web</strong><p>Quick Pick、継続購入、バンド分散、高合計値、ペア頻度が話題。いずれも弱い仮説シグナルとしてのみ利用。</p></div>
+      </div>
+
+      <h2>3ループ比較</h2>
+      <table>
+        <thead><tr><th>game</th><th>loop</th><th>avg main</th><th>prize hits</th><th>match3+</th><th>avg payout</th></tr></thead>
+        <tbody>
+          <tr><td>loto6</td><td>baseline</td><td>0.8379</td><td>37</td><td>2.04%</td><td>51.0</td></tr>
+          <tr><td>loto6</td><td>loop3 adopted</td><td>0.8164</td><td>57</td><td>3.14%</td><td>44.0</td></tr>
+          <tr><td>loto7</td><td>baseline</td><td>1.4032</td><td>29</td><td>13.68%</td><td>89.5</td></tr>
+          <tr><td>loto7</td><td>loop3 final</td><td>1.4032</td><td>29</td><td>13.68%</td><td>89.5</td></tr>
+        </tbody>
+      </table>
+
+      <h2>20点/10点ポートフォリオ検証</h2>
+      <table>
+        <thead><tr><th>game</th><th>profile</th><th>tickets</th><th>prize hits</th><th>ticket hit</th><th>at least one/draw</th><th>payout/spend</th></tr></thead>
+        <tbody>
+          <tr><td>loto6</td><td>smart_mix</td><td>2400</td><td>62</td><td>2.58%</td><td>43.33%</td><td>82.5%</td></tr>
+          <tr><td>loto6</td><td>pure_random</td><td>2400</td><td>72</td><td>3.00%</td><td>49.17%</td><td>21.4%</td></tr>
+          <tr><td>loto6</td><td>high_return</td><td>2400</td><td>80</td><td>3.33%</td><td>51.67%</td><td>22.0%</td></tr>
+          <tr><td>loto7</td><td>smart_mix</td><td>1200</td><td>37</td><td>3.08%</td><td>23.33%</td><td>12.7%</td></tr>
+          <tr><td>loto7</td><td>pure_random</td><td>1200</td><td>46</td><td>3.83%</td><td>33.33%</td><td>14.1%</td></tr>
+          <tr><td>loto7</td><td>high_return</td><td>1200</td><td>40</td><td>3.33%</td><td>28.33%</td><td>13.9%</td></tr>
+        </tbody>
+      </table>
+
+      <h2>参照</h2>
+      <p class="small">
+        詳細: docs/research/2026-06-27_loto-method-research.md,
+        docs/backtest/logic-loop-validation-2026-06-27.md,
+        docs/reviews/2026-06-27_loto-logic-50-expert-panel.md
+      </p>
+    </main>
+  </body>
+</html>

@@ -5,7 +5,7 @@ import { computeNumberFeatures } from "./features";
 import { createSeededRandom, shuffleWithRandom } from "./random";
 import { scoreCombination, scoreNumbers } from "./scoring";
 import { validateNumbers } from "./validation";
-import type { CandidateTuningMode, Draw, GenerateOptions, PredictionTicket, StrategyType } from "./types";
+import type { CandidateTuningMode, Draw, GameType, GenerateOptions, PredictionTicket, StrategyType } from "./types";
 
 export function generateTickets(draws: Draw[], options: GenerateOptions, sourcePatternSignals: number[] = []): PredictionTicket[] {
   const history = draws.filter((draw) => draw.game === options.game).sort((a, b) => a.drawNumber - b.drawNumber);
@@ -13,9 +13,11 @@ export function generateTickets(draws: Draw[], options: GenerateOptions, sourceP
     throw new Error(`No draw history available for ${options.game}`);
   }
   const random = createSeededRandom(options.seed ?? 1);
-  const strategies = expandStrategies(options.strategy, options.ticketCount, random);
+  const strategies = expandStrategies(options.game, options.strategy, options.ticketCount, random);
   const tickets: PredictionTicket[] = [];
   const usedNumbers = new Map<number, number>();
+  const usedPairs = new Map<string, number>();
+  const usedProfiles = new Map<string, number>();
 
   for (let index = 0; index < options.ticketCount; index += 1) {
     const strategy = strategies[index] ?? options.strategy;
@@ -25,11 +27,26 @@ export function generateTickets(draws: Draw[], options: GenerateOptions, sourceP
       options.randomStrength ?? 50,
       strategy === "high_return" ? (options.highReturnStrength ?? 50) : 50
     );
-    const ticketNumbers = pickTicket(options.game, strategy, numberScores, random, usedNumbers, options.candidateTuningMode ?? "light");
+    const ticketNumbers = pickTicket(
+      options.game,
+      strategy,
+      numberScores,
+      history,
+      random,
+      usedNumbers,
+      usedPairs,
+      usedProfiles,
+      options.candidateTuningMode ?? "light"
+    );
     validateNumbers(options.game, ticketNumbers);
     for (const number of ticketNumbers) {
       usedNumbers.set(number, (usedNumbers.get(number) ?? 0) + 1);
     }
+    for (const pair of pairKeys(ticketNumbers)) {
+      usedPairs.set(pair, (usedPairs.get(pair) ?? 0) + 1);
+    }
+    const profile = rangeProfileKey(options.game, ticketNumbers);
+    usedProfiles.set(profile, (usedProfiles.get(profile) ?? 0) + 1);
     const selectedScores = ticketNumbers
       .map((number) => numberScores.find((score) => score.number === number))
       .filter((score): score is NonNullable<typeof score> => Boolean(score));
@@ -59,15 +76,18 @@ function pickTicket(
   game: "loto6" | "loto7",
   strategy: StrategyType,
   numberScores: ReturnType<typeof scoreNumbers>,
+  history: Draw[],
   random: () => number,
   usedNumbers: Map<number, number>,
+  usedPairs: Map<string, number>,
+  usedProfiles: Map<string, number>,
   candidateTuningMode: CandidateTuningMode
 ): number[] {
   const spec = GAME_SPECS[game];
   const filtered = numberScores.filter((score) => candidateTuningMode !== "strict" || score.feature.sourcePatternSignalScore < 1);
   const ranked = filtered
     .map((score) => {
-      const reusePenalty = (usedNumbers.get(score.number) ?? 0) * 0.08;
+      const reusePenalty = (usedNumbers.get(score.number) ?? 0) * 0.11;
       const tuningPenalty =
         candidateTuningMode === "focused"
           ? score.feature.candidateAdjustmentScore * 0.45
@@ -77,6 +97,8 @@ function pickTicket(
       return { ...score, rankScore: score.total - reusePenalty - tuningPenalty + random() * 0.03 };
     })
     .sort((a, b) => b.rankScore - a.rankScore);
+  const rankScoreByNumber = new Map(ranked.map((item) => [item.number, item.rankScore]));
+  const pairSignalContext = buildPairSignalContext(history);
   const poolSize = strategy === "pure_random" ? spec.maxNumber : Math.min(spec.maxNumber, spec.mainCount * 4);
   const pool = strategy === "pure_random" ? shuffleWithRandom(ranked, random) : ranked.slice(0, poolSize);
 
@@ -88,12 +110,26 @@ function pickTicket(
     if (strategy === "high_return" && candidate.filter((number) => number > 31).length < 1) {
       continue;
     }
-    const combo = scoreCombination(game, strategy, candidate, numberScores, []);
+    const combo = scoreCombination(game, strategy, candidate, numberScores, history);
+    const portfolio = scorePortfolioSpread(game, candidate, usedNumbers, usedPairs, usedProfiles);
+    const pairSignal = scoreHistoricalPairSignal(candidate, pairSignalContext);
+    const popularityWeight = game === "loto6" ? 0.12 : 0.15;
+    const diversityWeight = game === "loto6" ? 0.1 : 0;
+    const pairSignalWeight = game === "loto6" ? 0.04 : 0;
+    const portfolioScoreWeight = game === "loto6" ? 0.2 : 0;
+    const portfolioPenaltyWeight = game === "loto6" ? 1 : 0;
+    const highReturnSumBonus =
+      game === "loto6" && strategy === "high_return" ? scoreHighReturnSumBand(game, candidate) * 0.08 : 0;
     const score =
-      candidate.reduce((sum, number) => sum + (ranked.find((item) => item.number === number)?.rankScore ?? 0), 0) /
+      candidate.reduce((sum, number) => sum + (rankScoreByNumber.get(number) ?? 0), 0) /
         spec.mainCount +
       combo.balanceScore * strategyWeights[strategy].combo_balance +
-      combo.popularityAvoidanceScore * 0.15;
+      combo.popularityAvoidanceScore * popularityWeight +
+      combo.diversityScore * diversityWeight +
+      pairSignal * pairSignalWeight +
+      portfolio.score * portfolioScoreWeight +
+      highReturnSumBonus -
+      portfolio.penalty * portfolioPenaltyWeight;
     if (score > bestScore) {
       best = candidate;
       bestScore = score;
@@ -104,6 +140,88 @@ function pickTicket(
     best = ranked.slice(0, spec.mainCount).map((score) => score.number).sort((a, b) => a - b);
   }
   return best;
+}
+
+function scorePortfolioSpread(
+  game: GameType,
+  candidate: number[],
+  usedNumbers: Map<number, number>,
+  usedPairs: Map<string, number>,
+  usedProfiles: Map<string, number>
+): { score: number; penalty: number } {
+  if (usedNumbers.size === 0) {
+    return { score: 1, penalty: 0 };
+  }
+  const unusedShare = candidate.filter((number) => !usedNumbers.has(number)).length / candidate.length;
+  const averageNumberReuse =
+    candidate.reduce((sum, number) => sum + (usedNumbers.get(number) ?? 0), 0) / candidate.length;
+  const pairs = pairKeys(candidate);
+  const averagePairReuse = pairs.reduce((sum, pair) => sum + (usedPairs.get(pair) ?? 0), 0) / Math.max(1, pairs.length);
+  const profileReuse = usedProfiles.get(rangeProfileKey(game, candidate)) ?? 0;
+  return {
+    score: unusedShare,
+    penalty: averageNumberReuse * 0.04 + averagePairReuse * 0.12 + profileReuse * 0.04
+  };
+}
+
+type PairSignalContext = {
+  counts: Map<string, number>;
+  denominator: number;
+};
+
+function buildPairSignalContext(history: Draw[]): PairSignalContext | null {
+  const recent = history.slice(-300);
+  if (recent.length === 0) {
+    return null;
+  }
+  const pairCounts = new Map<string, number>();
+  for (const draw of recent) {
+    for (const pair of pairKeys(draw.mainNumbers)) {
+      pairCounts.set(pair, (pairCounts.get(pair) ?? 0) + 1);
+    }
+  }
+  return {
+    counts: pairCounts,
+    denominator: Math.max(1, recent.length * 0.025)
+  };
+}
+
+function scoreHistoricalPairSignal(candidate: number[], context: PairSignalContext | null): number {
+  if (!context) {
+    return 0;
+  }
+  const values = pairKeys(candidate).map((pair) => context.counts.get(pair) ?? 0);
+  const average = values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length);
+  return Math.min(1, average / context.denominator);
+}
+
+function scoreHighReturnSumBand(game: GameType, candidate: number[]): number {
+  const sum = candidate.reduce((total, number) => total + number, 0);
+  const center = game === "loto6" ? 160 : 150;
+  const width = game === "loto6" ? 45 : 40;
+  return 1 - Math.min(1, Math.abs(sum - center) / width);
+}
+
+function pairKeys(numbers: number[]): string[] {
+  const sorted = [...numbers].sort((a, b) => a - b);
+  const pairs: string[] = [];
+  for (let left = 0; left < sorted.length; left += 1) {
+    for (let right = left + 1; right < sorted.length; right += 1) {
+      pairs.push(`${sorted[left]}-${sorted[right]}`);
+    }
+  }
+  return pairs;
+}
+
+function rangeProfileKey(game: GameType, numbers: number[]): string {
+  const spec = GAME_SPECS[game];
+  const lowCut = Math.ceil(spec.maxNumber / 3);
+  const midCut = Math.ceil((spec.maxNumber * 2) / 3);
+  const low = numbers.filter((number) => number <= lowCut).length;
+  const mid = numbers.filter((number) => number > lowCut && number <= midCut).length;
+  const high = numbers.length - low - mid;
+  const odd = numbers.filter((number) => number % 2 === 1).length;
+  return `${low}-${mid}-${high}-${odd}`;
 }
 
 function weightedSample(
@@ -131,11 +249,14 @@ function weightedSample(
   return selected;
 }
 
-function expandStrategies(strategy: StrategyType, ticketCount: number, random: () => number): StrategyType[] {
+function expandStrategies(game: GameType, strategy: StrategyType, ticketCount: number, random: () => number): StrategyType[] {
   if (strategy !== "smart_mix") {
     return Array.from({ length: ticketCount }, () => strategy);
   }
-  const choices: StrategyType[] = ["balance", "hot_trend", "deep_gap", "high_return", "pure_random", "pattern_filter"];
+  const choices: StrategyType[] =
+    game === "loto6"
+      ? ["pure_random", "pure_random", "high_return", "balance", "deep_gap", "hot_trend", "pattern_filter", "pure_random"]
+      : ["balance", "hot_trend", "deep_gap", "high_return", "pure_random", "pattern_filter"];
   return Array.from({ length: ticketCount }, (_, index) => choices[(index + Math.floor(random() * choices.length)) % choices.length] ?? "balance");
 }
 
