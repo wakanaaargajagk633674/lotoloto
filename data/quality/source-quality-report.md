@@ -1,16 +1,16 @@
 # Source Quality Report
 
-Generated at: 2026-06-27T02:07:57.922Z
+Generated at: 2026-06-29T19:14:32.090Z
 
 Official Mizuho CSV data is used for the latest available range. Sougaku ZIP data remains the full-history source for normalized processed data.
 
 ## loto6
 
-- Official rows: 111
-- Official range: 2004 to 2114
-- Overlap rows: 111
+- Official rows: 112
+- Official range: 2004 to 2115
+- Overlap rows: 112
 - OK rows: 0
-- Different rows: 111
+- Different rows: 112
 - Missing official rows: 2003
 - Missing history rows: 0
 
