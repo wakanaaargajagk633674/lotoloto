@@ -4,6 +4,7 @@ import { runWalkForwardBacktest } from "@/loto/backtest";
 import { downloadLotoZipWithFallback } from "@/loto/downloader";
 import { generateTickets } from "@/loto/generator";
 import { parseLotoCsvText } from "@/loto/parser";
+import { scoreCombination } from "@/loto/scoring";
 import type { Draw, GameType } from "@/loto/types";
 
 function makeDraws(game: GameType, count: number): Draw[] {
@@ -47,6 +48,27 @@ function makeDraws(game: GameType, count: number): Draw[] {
       sourceHash: null
     };
   });
+}
+
+function makeTestDraw(game: GameType, drawNumber: number, mainNumbers: number[], bonusNumbers: number[]): Draw {
+  return {
+    game,
+    drawNumber,
+    drawDate: `2024-02-${String(drawNumber).padStart(2, "0")}`,
+    dayOfWeek: null,
+    mainNumbers: [...mainNumbers].sort((a, b) => a - b),
+    bonusNumbers: [...bonusNumbers].sort((a, b) => a - b),
+    salesAmount: null,
+    carryoverAmount: 0,
+    prizeTiers: Array.from({ length: game === "loto6" ? 5 : 6 }, (_, tierIndex) => ({
+      tier: tierIndex + 1,
+      winners: 0,
+      prizeYen: tierIndex === 4 ? 1000 : 0
+    })),
+    source: "test",
+    sourceDownloadedAt: null,
+    sourceHash: null
+  };
 }
 
 describe("parser", () => {
@@ -94,6 +116,23 @@ describe("generator", () => {
     const a = generateTickets(draws, { game: "loto6", strategy: "pure_random", ticketCount: 3, seed: 99 });
     const b = generateTickets(draws, { game: "loto6", strategy: "pure_random", ticketCount: 3, seed: 99 });
     expect(a.map((ticket) => ticket.numbers)).toEqual(b.map((ticket) => ticket.numbers));
+  });
+});
+
+describe("combination scoring", () => {
+  it("scores previous-draw overlap as a soft distribution signal", () => {
+    const history = [
+      makeTestDraw("loto6", 1, [1, 2, 3, 4, 5, 6], [43]),
+      makeTestDraw("loto6", 2, [1, 7, 8, 9, 10, 11], [42]),
+      makeTestDraw("loto6", 3, [1, 12, 13, 14, 15, 16], [41]),
+      makeTestDraw("loto6", 4, [1, 17, 18, 19, 20, 21], [40])
+    ];
+    const common = scoreCombination("loto6", "balance", [1, 22, 23, 24, 25, 26], [], history);
+    const extreme = scoreCombination("loto6", "balance", [1, 17, 18, 19, 20, 21], [], history);
+
+    expect(common.previousDrawOverlap).toBe(1);
+    expect(common.previousDrawOverlapScore).toBeGreaterThan(extreme.previousDrawOverlapScore);
+    expect(extreme.previousDrawOverlapBand).toBe("extreme");
   });
 });
 

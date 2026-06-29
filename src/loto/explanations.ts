@@ -33,6 +33,11 @@ export function explainTicket(strategy: StrategyType, scores: NumberScore[], com
   explanations.push(
     `この買い目は、奇数 ${combo.oddCount} 個、偶数 ${combo.evenCount} 個、合計値 ${combo.sum}、連番 ${combo.consecutivePairCount} 組です。`
   );
+  explanations.push(
+    `前回本数字との重なりは ${combo.previousDrawOverlap} 個です。過去の重なり分布では約 ${Math.round(
+      combo.previousDrawOverlapRate * 100
+    )}% の出方として扱い、極端さの確認だけに使っています。`
+  );
   explanations.push("表示しているスコアは参考指標です。当選確率や回収を保証するものではありません。");
   return explanations;
 }

@@ -10,6 +10,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.1,
     candidate_tuning: 0.1,
     pattern_filter: 0.15,
+    previous_overlap: 0.08,
     combo_balance: 0.35,
     random: 0.1
   },
@@ -22,6 +23,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.05,
     candidate_tuning: 0.05,
     pattern_filter: 0.1,
+    previous_overlap: 0.05,
     combo_balance: 0.15,
     random: 0.05
   },
@@ -34,6 +36,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.05,
     candidate_tuning: 0.05,
     pattern_filter: 0.1,
+    previous_overlap: 0.05,
     combo_balance: 0.2,
     random: 0.1
   },
@@ -46,6 +49,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.4,
     candidate_tuning: 0.05,
     pattern_filter: 0.1,
+    previous_overlap: 0.04,
     combo_balance: 0.25,
     random: 0.15
   },
@@ -58,6 +62,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.05,
     candidate_tuning: 0,
     pattern_filter: 0.05,
+    previous_overlap: 0.02,
     combo_balance: 0.1,
     random: 0.65
   },
@@ -70,6 +75,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.1,
     candidate_tuning: 0.35,
     pattern_filter: 0.35,
+    previous_overlap: 0.08,
     combo_balance: 0.2,
     random: 0.05
   },
@@ -82,6 +88,7 @@ export const strategyWeights: Record<StrategyType, StrategyWeights> = {
     anti_pop: 0.17,
     candidate_tuning: 0.12,
     pattern_filter: 0.14,
+    previous_overlap: 0.06,
     combo_balance: 0.25,
     random: 0.18
   }

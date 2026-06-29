@@ -78,6 +78,9 @@ export type CombinationScores = {
   tensGroupDistribution: Record<string, number>;
   previousDrawOverlap: number;
   previousBonusOverlap: number;
+  previousDrawOverlapRate: number;
+  previousDrawOverlapScore: number;
+  previousDrawOverlapBand: "common" | "normal" | "rare" | "extreme";
   averageNumberScore: number;
   lowPrioritySignalScore: number;
   popularityAvoidanceScore: number;
@@ -125,6 +128,7 @@ export type StrategyWeights = {
   anti_pop: number;
   candidate_tuning: number;
   pattern_filter: number;
+  previous_overlap: number;
   combo_balance: number;
   random: number;
 };

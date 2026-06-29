@@ -53,7 +53,10 @@ export function generateTickets(draws: Draw[], options: GenerateOptions, sourceP
     const combinationScores = scoreCombination(options.game, strategy, ticketNumbers, numberScores, history);
     const weights = strategyWeights[strategy];
     const totalScore =
-      combinationScores.averageNumberScore + weights.combo_balance * combinationScores.balanceScore + combinationScores.diversityScore * 0.1;
+      combinationScores.averageNumberScore +
+      weights.combo_balance * combinationScores.balanceScore +
+      weights.previous_overlap * combinationScores.previousDrawOverlapScore +
+      combinationScores.diversityScore * 0.1;
 
     tickets.push({
       game: options.game,
@@ -129,6 +132,7 @@ function pickTicket(
       pairSignal * pairSignalWeight +
       portfolio.score * portfolioScoreWeight +
       highReturnSumBonus -
+      (1 - combo.previousDrawOverlapScore) * strategyWeights[strategy].previous_overlap -
       portfolio.penalty * portfolioPenaltyWeight;
     if (score > bestScore) {
       best = candidate;

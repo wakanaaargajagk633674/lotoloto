@@ -56,6 +56,8 @@ export function scoreCombination(
   const tensGroupDistribution = Object.fromEntries(
     [...groupCounts(sorted.map((number) => `${Math.floor(number / 10) * 10}s`)).entries()].sort()
   );
+  const previousDrawOverlap = previousDraw ? sorted.filter((number) => previousDraw.mainNumbers.includes(number)).length : 0;
+  const previousOverlap = scorePreviousDrawOverlapPattern(game, previousDrawOverlap, history);
   const averageNumberScore =
     sorted.reduce((sum, number) => sum + (scoreByNumber.get(number)?.total ?? 0), 0) / sorted.length;
   const lowPrioritySignalScore =
@@ -79,8 +81,11 @@ export function scoreCombination(
     maxConsecutiveRun,
     sameLastDigitCount: Math.max(...lastDigitCounts.values()),
     tensGroupDistribution,
-    previousDrawOverlap: previousDraw ? sorted.filter((number) => previousDraw.mainNumbers.includes(number)).length : 0,
+    previousDrawOverlap,
     previousBonusOverlap: previousDraw ? sorted.filter((number) => previousDraw.bonusNumbers.includes(number)).length : 0,
+    previousDrawOverlapRate: previousOverlap.rate,
+    previousDrawOverlapScore: previousOverlap.score,
+    previousDrawOverlapBand: previousOverlap.band,
     averageNumberScore,
     lowPrioritySignalScore,
     popularityAvoidanceScore,
@@ -88,6 +93,48 @@ export function scoreCombination(
     diversityScore,
     explanationScore: (balanceScore + diversityScore + popularityAvoidanceScore) / 3
   };
+}
+
+export function scorePreviousDrawOverlapPattern(
+  game: GameType,
+  overlap: number,
+  history: Draw[]
+): { rate: number; score: number; band: "common" | "normal" | "rare" | "extreme" } {
+  const distribution = buildPreviousDrawOverlapRates(game, history);
+  const rate = distribution.get(overlap) ?? 0;
+  const maxRate = Math.max(...distribution.values(), 0.001);
+  const normalized = rate / maxRate;
+  const score = Math.max(0.15, Math.min(1, normalized));
+  return {
+    rate,
+    score,
+    band: rate >= 0.25 ? "common" : rate >= 0.08 ? "normal" : rate >= 0.01 ? "rare" : "extreme"
+  };
+}
+
+function buildPreviousDrawOverlapRates(game: GameType, history: Draw[]): Map<number, number> {
+  const spec = GAME_SPECS[game];
+  const sortedHistory = [...history].sort((a, b) => a.drawNumber - b.drawNumber);
+  const counts = new Map<number, number>();
+  for (let index = 1; index < sortedHistory.length; index += 1) {
+    const previousMain = sortedHistory[index - 1].mainNumbers;
+    const overlap = sortedHistory[index].mainNumbers.filter((number) => previousMain.includes(number)).length;
+    counts.set(overlap, (counts.get(overlap) ?? 0) + 1);
+  }
+
+  if (sortedHistory.length > 1) {
+    const total = sortedHistory.length - 1;
+    return new Map(Array.from({ length: spec.mainCount + 1 }, (_, overlap) => [overlap, (counts.get(overlap) ?? 0) / total]));
+  }
+
+  const denominator = combinations(spec.maxNumber, spec.mainCount);
+  return new Map(
+    Array.from({ length: spec.mainCount + 1 }, (_, overlap) => [
+      overlap,
+      (combinations(spec.mainCount, overlap) * combinations(spec.maxNumber - spec.mainCount, spec.mainCount - overlap)) /
+        denominator
+    ])
+  );
 }
 
 function computeBalanceScore(
@@ -129,4 +176,15 @@ function groupCounts<T>(values: T[]): Map<T, number> {
     counts.set(value, (counts.get(value) ?? 0) + 1);
   }
   return counts;
+}
+
+function combinations(n: number, k: number): number {
+  if (k < 0 || k > n) {
+    return 0;
+  }
+  let result = 1;
+  for (let index = 1; index <= k; index += 1) {
+    result = (result * (n - k + index)) / index;
+  }
+  return result;
 }

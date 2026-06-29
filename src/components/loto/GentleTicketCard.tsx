@@ -60,6 +60,12 @@ export default function GentleTicketCard({ ticket, index, onNumberSelect }: Prop
           help="買い目に含まれる数字をすべて足した値です。過去の分布と比べる参考にします。"
         />
         <MetricWithLabel
+          label="前回数字との重なり"
+          value={`${ticket.combinationScores.previousDrawOverlap} 個`}
+          detail={`過去分布では約 ${Math.round(ticket.combinationScores.previousDrawOverlapRate * 100)}%`}
+          help="前回の本数字と今回の買い目が何個重なっているかです。極端な買い目を避けるための参考情報で、当選確率を示すものではありません。"
+        />
+        <MetricWithLabel
           label="32以上の数字"
           value={ticket.combinationScores.over31Count}
           unit="個"
