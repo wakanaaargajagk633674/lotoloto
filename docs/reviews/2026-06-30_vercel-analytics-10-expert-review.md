@@ -6,7 +6,7 @@ Date: 2026-06-30 JST
 
 1. Frontend engineer: Mounting `Analytics` in the root layout covers all App Router pages.
 2. Next.js engineer: `@vercel/analytics/next` is the correct import path for this setup.
-3. Build engineer: Package lock changes are expected after adding the analytics dependency.
+3. Build engineer: Package lock changes are expected after adding the analytics dependency, and `.npmrc` should preserve the peer dependency resolution used locally.
 4. Privacy reviewer: No custom event payloads or personal data were added.
 5. Product safety reviewer: The analytics change does not affect lottery predictions or claims.
 6. QA reviewer: Run test, typecheck, and production build after installation.
