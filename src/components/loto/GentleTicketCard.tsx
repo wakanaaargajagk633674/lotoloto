@@ -92,6 +92,7 @@ export default function GentleTicketCard({ ticket, index, onNumberSelect }: Prop
 }
 
 function reasonLabelForScore(score: NumberScore): string {
+  if (score.feature.appearedInPreviousDraw) return "（前回出現数字）";
   if (score.feature.over31Flag && score.feature.antiPopularityScore > 0.7) return "32以上";
   if ((score.parts.gap ?? 0) > (score.parts.recent ?? 0)) return "間隔参考";
   if ((score.parts.recent ?? 0) > 0.08) return "出現多め";

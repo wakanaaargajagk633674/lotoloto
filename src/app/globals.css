@@ -1024,8 +1024,9 @@ a {
   display: grid;
   place-items: center;
   gap: 2px;
-  min-width: 58px;
-  min-height: 62px;
+  min-width: 72px;
+  min-height: 66px;
+  padding: 6px;
   border: 1px solid #bfdbfe;
   border-radius: 18px;
   background: #ffffff;
@@ -1040,8 +1041,12 @@ a {
 }
 
 .number-ball span {
+  max-width: 64px;
   color: var(--text-muted);
-  font-size: 11px;
+  font-size: 10px;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .number-ball.trend {
@@ -1470,8 +1475,8 @@ a {
   }
 
   .number-ball {
-    min-width: 52px;
-    min-height: 58px;
+    min-width: 64px;
+    min-height: 64px;
   }
 
   .metric-help span {

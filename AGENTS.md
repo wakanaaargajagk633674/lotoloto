@@ -31,3 +31,4 @@
 - 手動編集は `apply_patch` を使う。
 - 型安全な TypeScript を優先し、スコア重みは `src/config/strategyWeights.ts` で管理する。
 - `npm test`、`npm run typecheck`、`npm run build` を通してから完了報告する。
+- 作業完了時は必ず変更をコミットする。push はユーザーが依頼した場合に実行する。
