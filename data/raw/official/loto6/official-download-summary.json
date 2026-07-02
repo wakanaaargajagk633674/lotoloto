@@ -1,15 +1,16 @@
 {
   "game": "loto6",
-  "downloadedAt": "2026-06-29T19:13:28.909Z",
+  "downloadedAt": "2026-07-02T21:22:36.684Z",
   "currentPageStatus": 200,
   "indexStatus": 200,
-  "drawCount": 112,
-  "firstDraw": 2004,
-  "latestDraw": 2115,
+  "drawCount": 104,
+  "firstDraw": 2013,
+  "latestDraw": 2116,
   "rawDir": "F:\\LP\\lotoloto\\data\\raw\\official\\loto6",
   "sourceUrls": [
     "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/loto6.csv",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022116.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022115.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022114.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022113.CSV",
@@ -112,15 +113,6 @@
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022016.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022015.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022014.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022013.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022012.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022011.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022010.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022009.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022008.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022007.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022006.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022005.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022004.CSV"
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022013.CSV"
   ]
 }
