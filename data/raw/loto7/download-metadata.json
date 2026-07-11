@@ -3,9 +3,9 @@
   "url": "http://sougaku.com/loto7/download/loto7.zip",
   "zipPath": "F:\\LP\\lotoloto\\data\\raw\\loto7\\loto7.zip",
   "extractedDir": "F:\\LP\\lotoloto\\data\\raw\\loto7\\extracted",
-  "downloadedAt": "2026-07-06T21:48:23.763Z",
-  "sha256": "d596ab88a6f2770bfc548852566c5481d9875faee66569d0248c47d72af5e7c4",
-  "sizeBytes": 30347,
+  "downloadedAt": "2026-07-11T07:26:53.079Z",
+  "sha256": "0727d7ed89b231185a3a06f195c9c60bbc0ca37c0f3a8143193e840b3a9014e3",
+  "sizeBytes": 30388,
   "entries": [
     "loto7.csv"
   ]
