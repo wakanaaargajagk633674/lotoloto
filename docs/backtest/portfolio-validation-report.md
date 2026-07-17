@@ -5,12 +5,12 @@
 
 | game | profile | draws | tickets | prize hits | ticket hit rate | at least one hit/draw | avg main matches | max main matches | payout/spend | avg unique coverage |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| loto6 | smart_mix_recommended | 120 | 2400 | 62 | 2.58% | 43.33% | 0.836 | 5 | 82.5% | 42.8 |
-| loto6 | pure_random_control | 120 | 2400 | 72 | 3.00% | 49.17% | 0.845 | 4 | 21.4% | 43.0 |
-| loto6 | high_return_control | 120 | 2400 | 80 | 3.33% | 51.67% | 0.833 | 4 | 22.0% | 42.8 |
-| loto7 | smart_mix_recommended | 120 | 1200 | 37 | 3.08% | 23.33% | 1.312 | 5 | 12.7% | 29.6 |
-| loto7 | pure_random_control | 120 | 1200 | 46 | 3.83% | 33.33% | 1.357 | 4 | 14.1% | 34.5 |
-| loto7 | high_return_control | 120 | 1200 | 40 | 3.33% | 28.33% | 1.341 | 5 | 13.9% | 30.7 |
+| loto6 | smart_mix_recommended | 120 | 2400 | 75 | 3.13% | 50.00% | 0.842 | 4 | 17.5% | 42.8 |
+| loto6 | pure_random_control | 120 | 2400 | 68 | 2.83% | 48.33% | 0.855 | 4 | 20.7% | 43.0 |
+| loto6 | high_return_control | 120 | 2400 | 62 | 2.58% | 40.00% | 0.843 | 5 | 109.2% | 42.7 |
+| loto7 | smart_mix_recommended | 120 | 1200 | 46 | 3.83% | 27.50% | 1.317 | 5 | 15.3% | 29.6 |
+| loto7 | pure_random_control | 120 | 1200 | 47 | 3.92% | 35.83% | 1.333 | 4 | 14.4% | 34.5 |
+| loto7 | high_return_control | 120 | 1200 | 35 | 2.92% | 25.00% | 1.333 | 5 | 12.6% | 30.9 |
 
 採用判断:
 
