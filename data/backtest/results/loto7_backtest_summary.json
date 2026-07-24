@@ -1,71 +1,71 @@
 {
   "game": "loto7",
   "startedAtDraw": 120,
-  "endedAtDraw": 686,
+  "endedAtDraw": 687,
   "ticketPriceYen": 300,
   "strategies": {
     "balance": {
-      "trials": 566,
-      "averageMainMatches": 1.312720848056537,
-      "match3PlusRate": 0.10247349823321555,
+      "trials": 567,
+      "averageMainMatches": 1.3139329805996474,
+      "match3PlusRate": 0.10229276895943562,
       "prizeHitCount": 20,
       "totalPayoutYen": 22300,
-      "averagePayoutPerTicketYen": 39.399293286219084,
-      "maxDrawdownYen": 147500
+      "averagePayoutPerTicketYen": 39.329805996472665,
+      "maxDrawdownYen": 147800
     },
     "hot_trend": {
-      "trials": 566,
-      "averageMainMatches": 1.362190812720848,
-      "match3PlusRate": 0.11484098939929328,
-      "prizeHitCount": 27,
-      "totalPayoutYen": 31300,
-      "averagePayoutPerTicketYen": 55.30035335689046,
+      "trials": 567,
+      "averageMainMatches": 1.3668430335097002,
+      "match3PlusRate": 0.1164021164021164,
+      "prizeHitCount": 28,
+      "totalPayoutYen": 32700,
+      "averagePayoutPerTicketYen": 57.67195767195767,
       "maxDrawdownYen": 138900
     },
     "deep_gap": {
-      "trials": 566,
-      "averageMainMatches": 1.342756183745583,
-      "match3PlusRate": 0.11307420494699646,
+      "trials": 567,
+      "averageMainMatches": 1.342151675485009,
+      "match3PlusRate": 0.1128747795414462,
       "prizeHitCount": 21,
       "totalPayoutYen": 27000,
-      "averagePayoutPerTicketYen": 47.70318021201413,
-      "maxDrawdownYen": 142800
+      "averagePayoutPerTicketYen": 47.61904761904762,
+      "maxDrawdownYen": 143100
     },
     "high_return": {
-      "trials": 566,
-      "averageMainMatches": 1.3992932862190812,
-      "match3PlusRate": 0.13780918727915195,
+      "trials": 567,
+      "averageMainMatches": 1.400352733686067,
+      "match3PlusRate": 0.13756613756613756,
       "prizeHitCount": 26,
       "totalPayoutYen": 38000,
-      "averagePayoutPerTicketYen": 67.13780918727915,
-      "maxDrawdownYen": 131800
+      "averagePayoutPerTicketYen": 67.01940035273368,
+      "maxDrawdownYen": 132100
     },
     "pure_random": {
-      "trials": 566,
-      "averageMainMatches": 1.3356890459363957,
-      "match3PlusRate": 0.10600706713780919,
+      "trials": 567,
+      "averageMainMatches": 1.3368606701940036,
+      "match3PlusRate": 0.10582010582010581,
       "prizeHitCount": 31,
       "totalPayoutYen": 57300,
-      "averagePayoutPerTicketYen": 101.23674911660777,
-      "maxDrawdownYen": 114800
+      "averagePayoutPerTicketYen": 101.05820105820106,
+      "maxDrawdownYen": 115100
     },
     "pattern_filter": {
-      "trials": 566,
-      "averageMainMatches": 1.38339222614841,
-      "match3PlusRate": 0.11484098939929328,
+      "trials": 567,
+      "averageMainMatches": 1.3844797178130512,
+      "match3PlusRate": 0.1146384479717813,
       "prizeHitCount": 18,
       "totalPayoutYen": 19800,
-      "averagePayoutPerTicketYen": 34.98233215547703,
-      "maxDrawdownYen": 150000
+      "averagePayoutPerTicketYen": 34.92063492063492,
+      "maxDrawdownYen": 150300
     },
     "smart_mix": {
-      "trials": 566,
-      "averageMainMatches": 1.3904593639575973,
-      "match3PlusRate": 0.13427561837455831,
+      "trials": 567,
+      "averageMainMatches": 1.3897707231040564,
+      "match3PlusRate": 0.13403880070546736,
       "prizeHitCount": 28,
       "totalPayoutYen": 40100,
-      "averagePayoutPerTicketYen": 70.84805653710248,
-      "maxDrawdownYen": 129700
+      "averagePayoutPerTicketYen": 70.72310405643739,
+      "maxDrawdownYen": 130000
     }
   },
   "notes": [

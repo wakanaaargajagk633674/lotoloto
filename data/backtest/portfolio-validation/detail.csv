@@ -1,5 +1,4 @@
 game,profile,targetDraw,ticketCount,prizeHitCount,bestMainMatches,payoutYen,uniqueCoverage
-loto6,smart_mix_recommended,2002,20,1,3,1000,43
 loto6,smart_mix_recommended,2003,20,0,2,0,43
 loto6,smart_mix_recommended,2004,20,1,3,1000,43
 loto6,smart_mix_recommended,2005,20,0,2,0,43
@@ -119,7 +118,7 @@ loto6,smart_mix_recommended,2118,20,0,2,0,42
 loto6,smart_mix_recommended,2119,20,1,3,1000,43
 loto6,smart_mix_recommended,2120,20,0,2,0,43
 loto6,smart_mix_recommended,2121,20,2,3,2000,43
-loto6,pure_random_control,2002,20,1,3,1000,43
+loto6,smart_mix_recommended,2122,20,1,3,1000,42
 loto6,pure_random_control,2003,20,0,2,0,43
 loto6,pure_random_control,2004,20,2,3,2000,43
 loto6,pure_random_control,2005,20,1,3,1000,43
@@ -239,7 +238,7 @@ loto6,pure_random_control,2118,20,1,3,1000,43
 loto6,pure_random_control,2119,20,0,2,0,43
 loto6,pure_random_control,2120,20,0,2,0,43
 loto6,pure_random_control,2121,20,1,3,1000,43
-loto6,high_return_control,2002,20,1,3,1000,43
+loto6,pure_random_control,2122,20,0,2,0,43
 loto6,high_return_control,2003,20,0,2,0,43
 loto6,high_return_control,2004,20,0,2,0,43
 loto6,high_return_control,2005,20,0,2,0,43
@@ -359,7 +358,7 @@ loto6,high_return_control,2118,20,1,3,1000,42
 loto6,high_return_control,2119,20,2,3,2000,43
 loto6,high_return_control,2120,20,0,2,0,43
 loto6,high_return_control,2121,20,1,3,1000,43
-loto7,smart_mix_recommended,567,10,1,4,1500,28
+loto6,high_return_control,2122,20,1,3,1000,43
 loto7,smart_mix_recommended,568,10,0,2,0,28
 loto7,smart_mix_recommended,569,10,2,4,3000,27
 loto7,smart_mix_recommended,570,10,0,2,0,29
@@ -479,7 +478,7 @@ loto7,smart_mix_recommended,683,10,2,3,2000,32
 loto7,smart_mix_recommended,684,10,0,2,0,31
 loto7,smart_mix_recommended,685,10,0,2,0,28
 loto7,smart_mix_recommended,686,10,2,3,2200,29
-loto7,pure_random_control,567,10,1,3,1100,35
+loto7,smart_mix_recommended,687,10,1,4,1400,32
 loto7,pure_random_control,568,10,0,3,0,35
 loto7,pure_random_control,569,10,1,3,900,34
 loto7,pure_random_control,570,10,1,3,1000,36
@@ -599,7 +598,7 @@ loto7,pure_random_control,683,10,0,2,0,36
 loto7,pure_random_control,684,10,0,2,0,36
 loto7,pure_random_control,685,10,0,3,0,34
 loto7,pure_random_control,686,10,1,3,1100,33
-loto7,high_return_control,567,10,0,2,0,30
+loto7,pure_random_control,687,10,1,3,1100,35
 loto7,high_return_control,568,10,0,2,0,32
 loto7,high_return_control,569,10,1,3,900,31
 loto7,high_return_control,570,10,0,2,0,33
@@ -719,3 +718,4 @@ loto7,high_return_control,683,10,1,3,1000,31
 loto7,high_return_control,684,10,0,3,0,31
 loto7,high_return_control,685,10,1,3,1200,31
 loto7,high_return_control,686,10,1,3,1100,31
+loto7,high_return_control,687,10,1,3,1100,31
