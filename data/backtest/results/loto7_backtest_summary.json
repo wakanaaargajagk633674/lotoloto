@@ -6,71 +6,87 @@
   "strategies": {
     "balance": {
       "trials": 567,
-      "averageMainMatches": 1.3139329805996474,
-      "match3PlusRate": 0.10229276895943562,
-      "prizeHitCount": 20,
-      "totalPayoutYen": 22300,
-      "averagePayoutPerTicketYen": 39.329805996472665,
-      "maxDrawdownYen": 147800
+      "averageMainMatches": 1.398589065255732,
+      "match3PlusRate": 0.12698412698412698,
+      "prizeHitCount": 17,
+      "totalPayoutYen": 19500,
+      "averagePayoutPerTicketYen": 34.39153439153439,
+      "maxDrawdownYen": 153100,
+      "averageCombinationPopularityIndex": 0.10848264218634611,
+      "selectionEntropyGap": 0.3796994273184749
     },
     "hot_trend": {
       "trials": 567,
-      "averageMainMatches": 1.3668430335097002,
-      "match3PlusRate": 0.1164021164021164,
-      "prizeHitCount": 28,
-      "totalPayoutYen": 32700,
-      "averagePayoutPerTicketYen": 57.67195767195767,
-      "maxDrawdownYen": 138900
+      "averageMainMatches": 1.3650793650793651,
+      "match3PlusRate": 0.12345679012345678,
+      "prizeHitCount": 26,
+      "totalPayoutYen": 39800,
+      "averagePayoutPerTicketYen": 70.19400352733686,
+      "maxDrawdownYen": 131200,
+      "averageCombinationPopularityIndex": 0.17987970876859788,
+      "selectionEntropyGap": 0.36488188869141247
     },
     "deep_gap": {
       "trials": 567,
-      "averageMainMatches": 1.342151675485009,
-      "match3PlusRate": 0.1128747795414462,
-      "prizeHitCount": 21,
-      "totalPayoutYen": 27000,
-      "averagePayoutPerTicketYen": 47.61904761904762,
-      "maxDrawdownYen": 143100
+      "averageMainMatches": 1.3774250440917108,
+      "match3PlusRate": 0.12874779541446207,
+      "prizeHitCount": 29,
+      "totalPayoutYen": 36800,
+      "averagePayoutPerTicketYen": 64.90299823633157,
+      "maxDrawdownYen": 135000,
+      "averageCombinationPopularityIndex": 0.15794214995273204,
+      "selectionEntropyGap": 0.22662798853275046
     },
     "high_return": {
       "trials": 567,
-      "averageMainMatches": 1.400352733686067,
-      "match3PlusRate": 0.13756613756613756,
+      "averageMainMatches": 1.3721340388007055,
+      "match3PlusRate": 0.14638447971781304,
       "prizeHitCount": 26,
-      "totalPayoutYen": 38000,
-      "averagePayoutPerTicketYen": 67.01940035273368,
-      "maxDrawdownYen": 132100
+      "totalPayoutYen": 43400,
+      "averagePayoutPerTicketYen": 76.54320987654322,
+      "maxDrawdownYen": 126700,
+      "averageCombinationPopularityIndex": 0.041907798257004684,
+      "selectionEntropyGap": 0.4800923372351944
     },
     "pure_random": {
       "trials": 567,
-      "averageMainMatches": 1.3368606701940036,
-      "match3PlusRate": 0.10582010582010581,
-      "prizeHitCount": 31,
-      "totalPayoutYen": 57300,
-      "averagePayoutPerTicketYen": 101.05820105820106,
-      "maxDrawdownYen": 115100
+      "averageMainMatches": 1.271604938271605,
+      "match3PlusRate": 0.08818342151675485,
+      "prizeHitCount": 20,
+      "totalPayoutYen": 24900,
+      "averagePayoutPerTicketYen": 43.91534391534392,
+      "maxDrawdownYen": 145600,
+      "averageCombinationPopularityIndex": 0.13935760692374452,
+      "selectionEntropyGap": 0.20143272524224906
     },
     "pattern_filter": {
       "trials": 567,
-      "averageMainMatches": 1.3844797178130512,
-      "match3PlusRate": 0.1146384479717813,
-      "prizeHitCount": 18,
-      "totalPayoutYen": 19800,
-      "averagePayoutPerTicketYen": 34.92063492063492,
-      "maxDrawdownYen": 150300
+      "averageMainMatches": 1.36331569664903,
+      "match3PlusRate": 0.10934744268077601,
+      "prizeHitCount": 19,
+      "totalPayoutYen": 26600,
+      "averagePayoutPerTicketYen": 46.91358024691358,
+      "maxDrawdownYen": 143500,
+      "averageCombinationPopularityIndex": 0.13080937091519113,
+      "selectionEntropyGap": 0.38517428993619485
     },
     "smart_mix": {
       "trials": 567,
-      "averageMainMatches": 1.3897707231040564,
-      "match3PlusRate": 0.13403880070546736,
-      "prizeHitCount": 28,
-      "totalPayoutYen": 40100,
-      "averagePayoutPerTicketYen": 70.72310405643739,
-      "maxDrawdownYen": 130000
+      "averageMainMatches": 1.3527336860670194,
+      "match3PlusRate": 0.10052910052910052,
+      "prizeHitCount": 23,
+      "totalPayoutYen": 26800,
+      "averagePayoutPerTicketYen": 47.2663139329806,
+      "maxDrawdownYen": 143300,
+      "averageCombinationPopularityIndex": 0.1275617014770456,
+      "selectionEntropyGap": 0.3107801679230251
     }
   },
   "notes": [
     "ウォークフォワード方式で、各 targetDraw の予想には trainThroughDraw までの履歴だけを使う。",
     "ランダムとの差は短期では大きく揺れるため、優位に見える結果でも過剰最適化を疑う。",
-    "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。"
+    "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。",
+    "averageCombinationPopularityIndex は当せんした場合の分配人数の目安で、当せん確率とは無関係。",
+    "selectionEntropyGap は数字の選び方が一様からどれだけ離れているかで、0 に近いほど偏りが小さい。"
   ]
 }

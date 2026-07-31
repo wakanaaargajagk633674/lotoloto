@@ -1,4 +1,5 @@
 import { GAME_SPECS, numbersForGame } from "./constants";
+import { buildPopularityModel } from "./popularity";
 import { createSeededRandom } from "./random";
 import type { Draw, GameType, NumberFeature } from "./types";
 
@@ -65,13 +66,17 @@ export function computeNumberFeatures(
   }
   const gapZ = zScoreMap(gapZSource, domain);
   const sourcePatternSet = new Set(sourcePatternSignals);
+  // 人気度はその時点までの履歴だけから推定する。未来の抽せん結果は参照しない。
+  const popularityModel = buildPopularityModel(game, history);
 
   return domain.map((number) => {
     const rangeGroup = number <= Math.ceil(spec.maxNumber / 3) ? "low" : number <= Math.ceil((spec.maxNumber * 2) / 3) ? "mid" : "high";
     const birthdayPopularityRisk = number <= 31 ? 1 : 0.15;
-    const roundedRisk = number % 10 === 0 || number % 5 === 0 ? 0.25 : 0;
-    const edgeRisk = number === 1 || number === spec.maxNumber ? 0.1 : 0;
-    const humanPopularityRisk = Math.min(1, birthdayPopularityRisk * 0.65 + roundedRisk + edgeRisk);
+    // 選ばれやすさは決め打ちではなく、事前分布と履歴からの推定を合成した値を使う。
+    const popularityPrior = popularityModel.priorPopularity.get(number) ?? 0.5;
+    const popularityEmpirical = popularityModel.empiricalPopularity?.get(number) ?? null;
+    const popularityIndex = popularityModel.numberPopularity.get(number) ?? popularityPrior;
+    const humanPopularityRisk = popularityIndex;
     const candidateAdjustmentScore = normalize01((recentZ.get(number) ?? 0) * -0.25 + (gapZ.get(number) ?? 0) * 0.35 + humanPopularityRisk * 0.15);
     const sourcePatternSignalScore = sourcePatternSet.has(number) ? 1 : 0;
     const sourcePatternBalanceScore = partitionScore(game, number);
@@ -102,6 +107,9 @@ export function computeNumberFeatures(
       birthdayPopularityRisk,
       humanPopularityRisk,
       antiPopularityScore: 1 - humanPopularityRisk,
+      popularityPrior,
+      popularityEmpirical,
+      popularityIndex,
       candidateAdjustmentScore,
       sourcePatternSignalScore,
       sourcePatternBalanceScore,

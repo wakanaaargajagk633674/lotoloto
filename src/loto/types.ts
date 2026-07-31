@@ -56,6 +56,9 @@ export type NumberFeature = {
   birthdayPopularityRisk: number;
   humanPopularityRisk: number;
   antiPopularityScore: number;
+  popularityPrior: number;
+  popularityEmpirical: number | null;
+  popularityIndex: number;
   candidateAdjustmentScore: number;
   sourcePatternSignalScore: number;
   sourcePatternBalanceScore: number;
@@ -84,6 +87,9 @@ export type CombinationScores = {
   averageNumberScore: number;
   lowPrioritySignalScore: number;
   popularityAvoidanceScore: number;
+  combinationPopularityIndex: number;
+  expectedShareScore: number;
+  expectedShareReasons: string[];
   balanceScore: number;
   diversityScore: number;
   explanationScore: number;
@@ -131,6 +137,10 @@ export type StrategyWeights = {
   previous_overlap: number;
   combo_balance: number;
   random: number;
+  /** 当せん時の分配人数を抑えることを狙う重み。当せん確率には影響しない。 */
+  ev_share: number;
+  /** 根拠の弱いシグナルによる偏りを一様抽出へ引き戻す割合。1 に近いほど中立。 */
+  neutral_blend: number;
 };
 
 export type BacktestStep = {
@@ -145,6 +155,7 @@ export type BacktestStep = {
   bonusMatches: number;
   prizeTier: number | null;
   payoutYen: number;
+  combinationPopularityIndex: number;
 };
 
 export type BacktestSummary = {
@@ -162,6 +173,10 @@ export type BacktestSummary = {
       totalPayoutYen: number;
       averagePayoutPerTicketYen: number;
       maxDrawdownYen: number;
+      /** 買い目の推定人気度の平均。低いほど当せん時の分配人数が少ないと見込まれる。 */
+      averageCombinationPopularityIndex: number;
+      /** 選ばれた数字の周辺分布が一様からどれだけ離れているか。0 が完全一様。 */
+      selectionEntropyGap: number;
     }
   >;
   notes: string[];

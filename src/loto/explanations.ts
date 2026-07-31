@@ -38,6 +38,14 @@ export function explainTicket(strategy: StrategyType, scores: NumberScore[], com
       combo.previousDrawOverlapRate * 100
     )}% の出方として扱い、極端さの確認だけに使っています。`
   );
+  if (combo.expectedShareReasons.length > 0) {
+    explanations.push(
+      `他の購入者との重なりにくさの目安は ${Math.round(combo.expectedShareScore * 100)} です。${combo.expectedShareReasons[0]}`
+    );
+  }
+  explanations.push(
+    "重なりにくさは、当たりやすさではなく、当せんした場合の分配人数に関する目安です。当せん確率はどの数字を選んでも変わりません。"
+  );
   explanations.push("表示しているスコアは参考指標です。当選確率や回収を保証するものではありません。");
   return explanations;
 }

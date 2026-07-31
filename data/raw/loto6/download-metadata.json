@@ -3,9 +3,9 @@
   "url": "http://sougaku.com/loto6/download/loto6.zip",
   "zipPath": "F:\\LP\\lotoloto\\data\\raw\\loto6\\loto6.zip",
   "extractedDir": "F:\\LP\\lotoloto\\data\\raw\\loto6\\extracted",
-  "downloadedAt": "2026-07-24T23:15:55.333Z",
-  "sha256": "4aa898cdc9d14da1317bb86073ed666a8add2e83d6b637f011ce082d7fde545b",
-  "sizeBytes": 79137,
+  "downloadedAt": "2026-07-30T23:16:04.315Z",
+  "sha256": "69a0be5bb827a47b856ca172e735f440bdfcf7387a6029d51a25533ffafbc52c",
+  "sizeBytes": 79210,
   "entries": [
     "loto6.csv"
   ]

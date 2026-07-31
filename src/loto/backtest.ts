@@ -47,7 +47,8 @@ export function runWalkForwardBacktest(
         mainMatches,
         bonusMatches,
         prizeTier,
-        payoutYen: payoutForTier(actual, prizeTier)
+        payoutYen: payoutForTier(actual, prizeTier),
+        combinationPopularityIndex: ticket.combinationScores.combinationPopularityIndex
       });
     }
   }
@@ -105,7 +106,9 @@ function summarizeBacktest(game: GameType, detail: BacktestStep[], startedAtDraw
             prizeHitCount: rows.filter((row) => row.prizeTier !== null).length,
             totalPayoutYen,
             averagePayoutPerTicketYen: trials ? totalPayoutYen / trials : 0,
-            maxDrawdownYen: computeMaxDrawdown(rows.map((row) => row.payoutYen - spec.ticketPriceYen))
+            maxDrawdownYen: computeMaxDrawdown(rows.map((row) => row.payoutYen - spec.ticketPriceYen)),
+            averageCombinationPopularityIndex: safeAverage(rows.map((row) => row.combinationPopularityIndex)),
+            selectionEntropyGap: computeSelectionEntropyGap(game, rows)
           }
         ];
       })
@@ -113,9 +116,34 @@ function summarizeBacktest(game: GameType, detail: BacktestStep[], startedAtDraw
     notes: [
       "ウォークフォワード方式で、各 targetDraw の予想には trainThroughDraw までの履歴だけを使う。",
       "ランダムとの差は短期では大きく揺れるため、優位に見える結果でも過剰最適化を疑う。",
-      "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。"
+      "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。",
+    "averageCombinationPopularityIndex は当せんした場合の分配人数の目安で、当せん確率とは無関係。",
+    "selectionEntropyGap は数字の選び方が一様からどれだけ離れているかで、0 に近いほど偏りが小さい。"
     ]
   };
+}
+
+/**
+ * 選ばれた数字の周辺分布が一様からどれだけ離れているかを、全変動距離で測る。
+ * 0 が完全一様で、値が大きいほど特定の数字に偏って買い目を作っている。
+ * 当せん確率は数字の偏りでは改善しないため、この値は小さいほど素直な作り方になる。
+ */
+function computeSelectionEntropyGap(game: GameType, rows: BacktestStep[]): number {
+  const spec = GAME_SPECS[game];
+  const picks = rows.flatMap((row) => row.ticket);
+  if (picks.length === 0) {
+    return 0;
+  }
+  const counts = new Map<number, number>();
+  for (const number of picks) {
+    counts.set(number, (counts.get(number) ?? 0) + 1);
+  }
+  const uniform = 1 / spec.maxNumber;
+  let distance = 0;
+  for (let number = 1; number <= spec.maxNumber; number += 1) {
+    distance += Math.abs((counts.get(number) ?? 0) / picks.length - uniform);
+  }
+  return distance / 2;
 }
 
 function safeAverage(values: number[]): number {
@@ -146,7 +174,8 @@ export function serializeBacktestDetailCsv(rows: BacktestStep[]): string {
     "mainMatches",
     "bonusMatches",
     "prizeTier",
-    "payoutYen"
+    "payoutYen",
+    "combinationPopularityIndex"
   ];
   const lines = rows.map((row) =>
     [
@@ -160,7 +189,8 @@ export function serializeBacktestDetailCsv(rows: BacktestStep[]): string {
       row.mainMatches,
       row.bonusMatches,
       row.prizeTier ?? "",
-      row.payoutYen
+      row.payoutYen,
+      row.combinationPopularityIndex.toFixed(4)
     ].join(",")
   );
   return `${headers.join(",")}\n${lines.join("\n")}\n`;

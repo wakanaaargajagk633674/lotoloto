@@ -54,6 +54,7 @@ export function generateTickets(draws: Draw[], options: GenerateOptions, sourceP
     const weights = strategyWeights[strategy];
     const totalScore =
       combinationScores.averageNumberScore +
+      weights.ev_share * combinationScores.expectedShareScore +
       weights.combo_balance * combinationScores.balanceScore +
       weights.previous_overlap * combinationScores.previousDrawOverlapScore +
       combinationScores.diversityScore * 0.1;
@@ -88,51 +89,64 @@ function pickTicket(
 ): number[] {
   const spec = GAME_SPECS[game];
   const filtered = numberScores.filter((score) => candidateTuningMode !== "strict" || score.feature.sourcePatternSignalScore < 1);
-  const ranked = filtered
-    .map((score) => {
-      const reusePenalty = (usedNumbers.get(score.number) ?? 0) * 0.11;
-      const tuningPenalty =
-        candidateTuningMode === "focused"
-          ? score.feature.candidateAdjustmentScore * 0.45
-          : candidateTuningMode === "light"
-            ? score.feature.candidateAdjustmentScore * 0.15
-            : 0;
-      return { ...score, rankScore: score.total - reusePenalty - tuningPenalty + random() * 0.03 };
-    })
+  const neutralBlend = Math.max(0, Math.min(1, strategyWeights[strategy].neutral_blend));
+  const rawRanked = filtered.map((score) => {
+    const reusePenalty = (usedNumbers.get(score.number) ?? 0) * 0.11;
+    const tuningPenalty =
+      candidateTuningMode === "focused"
+        ? score.feature.candidateAdjustmentScore * 0.45
+        : candidateTuningMode === "light"
+          ? score.feature.candidateAdjustmentScore * 0.15
+          : 0;
+    return { ...score, rankScore: score.total - reusePenalty - tuningPenalty + random() * 0.03 };
+  });
+  // 根拠の弱いシグナルによる偏りを、一様抽出の平均値へ向けて引き戻す。
+  // 当せん確率は数字の選び方で変わらないため、偏りは意図した分だけに抑える。
+  const rawAverage = rawRanked.reduce((sum, item) => sum + item.rankScore, 0) / Math.max(1, rawRanked.length);
+  const ranked = rawRanked
+    .map((item) => ({
+      ...item,
+      rankScore: item.rankScore * (1 - neutralBlend) + rawAverage * neutralBlend
+    }))
     .sort((a, b) => b.rankScore - a.rankScore);
   const rankScoreByNumber = new Map(ranked.map((item) => [item.number, item.rankScore]));
   const pairSignalContext = buildPairSignalContext(history);
-  const poolSize = strategy === "pure_random" ? spec.maxNumber : Math.min(spec.maxNumber, spec.mainCount * 4);
-  const pool = strategy === "pure_random" ? shuffleWithRandom(ranked, random) : ranked.slice(0, poolSize);
+  // 候補を上位数字だけに絞ると、当せん確率は変わらないまま分散だけが増えるため、
+  // すべての数字を候補に残したうえで重み付き抽出で好みを反映する。
+  const pool = shuffleWithRandom(ranked, random);
 
   let best: number[] | null = null;
   let bestScore = -Infinity;
   const attempts = strategy === "pure_random" ? 120 : 240;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
     const candidate = weightedSample(pool, spec.mainCount, random).sort((a, b) => a - b);
+    if (!isWithinPlausibleRangeBand(candidate)) {
+      continue;
+    }
     if (strategy === "high_return" && candidate.filter((number) => number > 31).length < 1) {
       continue;
     }
     const combo = scoreCombination(game, strategy, candidate, numberScores, history);
     const portfolio = scorePortfolioSpread(game, candidate, usedNumbers, usedPairs, usedProfiles);
     const pairSignal = scoreHistoricalPairSignal(candidate, pairSignalContext);
-    const popularityWeight = game === "loto6" ? 0.12 : 0.15;
-    const diversityWeight = game === "loto6" ? 0.1 : 0;
+    const weights = strategyWeights[strategy];
+    const diversityWeight = game === "loto6" ? 0.1 : 0.05;
     const pairSignalWeight = game === "loto6" ? 0.04 : 0;
-    const portfolioScoreWeight = game === "loto6" ? 0.2 : 0;
-    const portfolioPenaltyWeight = game === "loto6" ? 1 : 0;
-    const highReturnSumBonus =
-      game === "loto6" && strategy === "high_return" ? scoreHighReturnSumBand(game, candidate) * 0.08 : 0;
+    const portfolioScoreWeight = 0.2;
+    const portfolioPenaltyWeight = 1;
+    const highReturnSumBonus = strategy === "high_return" ? scoreHighReturnSumBand(game, candidate) * 0.08 : 0;
+    // 当せん確率は候補ごとに同じなので、比較しているのは主に
+    // 当せんした場合に他の購入者と重なりにくいかどうか。
     const score =
       candidate.reduce((sum, number) => sum + (rankScoreByNumber.get(number) ?? 0), 0) /
         spec.mainCount +
-      combo.balanceScore * strategyWeights[strategy].combo_balance +
-      combo.popularityAvoidanceScore * popularityWeight +
+      combo.expectedShareScore * weights.ev_share +
+      combo.balanceScore * weights.combo_balance +
       combo.diversityScore * diversityWeight +
       pairSignal * pairSignalWeight +
       portfolio.score * portfolioScoreWeight +
       highReturnSumBonus -
-      (1 - combo.previousDrawOverlapScore) * strategyWeights[strategy].previous_overlap -
+      (1 - combo.previousDrawOverlapScore) * weights.previous_overlap -
       portfolio.penalty * portfolioPenaltyWeight;
     if (score > bestScore) {
       best = candidate;
@@ -144,6 +158,15 @@ function pickTicket(
     best = ranked.slice(0, spec.mainCount).map((score) => score.number).sort((a, b) => a - b);
   }
   return best;
+}
+
+/**
+ * 32以上の数字だけを並べると人気は最も避けられるが、
+ * 同じ考え方で買う人がまとまりやすく、ランダムな抽せん結果としても出にくい形になる。
+ * 31以下を最低2個は残し、ランダムな抽せんで普通に起こりうる範囲に収める。
+ */
+function isWithinPlausibleRangeBand(candidate: number[]): boolean {
+  return candidate.filter((number) => number <= 31).length >= 2;
 }
 
 function scorePortfolioSpread(

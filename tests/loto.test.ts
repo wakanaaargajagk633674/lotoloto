@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { strategyWeights, weightMagnitude } from "@/config/strategyWeights";
+import {
+  NARRATIVE_SIGNAL_BUDGET,
+  narrativeSignalMagnitude,
+  strategyWeights,
+  weightMagnitude
+} from "@/config/strategyWeights";
+import { buildPopularityModel, priorPopularityScore, scoreCombinationPopularity } from "@/loto/popularity";
 import { runWalkForwardBacktest } from "@/loto/backtest";
 import { downloadLotoZipWithFallback } from "@/loto/downloader";
 import { generateTickets } from "@/loto/generator";
@@ -144,6 +150,64 @@ describe("weights", () => {
         expect(Number.isFinite(value)).toBe(true);
         expect(value).toBeGreaterThanOrEqual(0);
         expect(value).toBeLessThanOrEqual(1);
+      }
+    }
+  });
+
+  it("keeps evidence-light signals inside the narrative budget", () => {
+    for (const weights of Object.values(strategyWeights)) {
+      expect(narrativeSignalMagnitude(weights)).toBeLessThanOrEqual(NARRATIVE_SIGNAL_BUDGET);
+    }
+  });
+});
+
+describe("popularity model", () => {
+  it("treats birthday-range numbers as more likely to be picked by buyers", () => {
+    expect(priorPopularityScore("loto6", 7)).toBeGreaterThan(priorPopularityScore("loto6", 41));
+    expect(priorPopularityScore("loto6", 12)).toBeGreaterThan(priorPopularityScore("loto6", 25));
+  });
+
+  it("only uses draws available at prediction time", () => {
+    const draws = makeDraws("loto6", 400);
+    const early = buildPopularityModel("loto6", draws.slice(0, 200));
+    const late = buildPopularityModel("loto6", draws);
+    expect(early.drawsUsed).toBe(200);
+    expect(late.drawsUsed).toBe(400);
+    expect(early.observationCount).toBeLessThanOrEqual(200);
+  });
+
+  it("scores birthday-only combinations as more likely to be shared", () => {
+    const model = buildPopularityModel("loto6", makeDraws("loto6", 120));
+    const crowded = scoreCombinationPopularity("loto6", [3, 7, 8, 11, 12, 22], model);
+    const spread = scoreCombinationPopularity("loto6", [4, 17, 33, 34, 39, 42], model);
+    expect(crowded.index).toBeGreaterThan(spread.index);
+    expect(spread.expectedShareScore).toBeGreaterThan(crowded.expectedShareScore);
+  });
+});
+
+describe("hit neutrality", () => {
+  it("keeps every number reachable so the hit chance is not narrowed", () => {
+    const draws = makeDraws("loto6", 200);
+    const picked = new Set<number>();
+    for (let seed = 0; seed < 60; seed += 1) {
+      const tickets = generateTickets(draws, { game: "loto6", strategy: "balance", ticketCount: 3, seed });
+      for (const ticket of tickets) {
+        for (const number of ticket.numbers) {
+          picked.add(number);
+        }
+      }
+    }
+    expect(picked.size).toBeGreaterThanOrEqual(38);
+  });
+});
+
+describe("range band guard", () => {
+  it("does not collapse into a numbers-over-31 only ticket", () => {
+    const draws = makeDraws("loto6", 200);
+    for (let seed = 0; seed < 30; seed += 1) {
+      const tickets = generateTickets(draws, { game: "loto6", strategy: "high_return", ticketCount: 2, seed });
+      for (const ticket of tickets) {
+        expect(ticket.numbers.filter((number) => number <= 31).length).toBeGreaterThanOrEqual(2);
       }
     }
   });

@@ -1,6 +1,7 @@
 import { strategyWeights } from "@/config/strategyWeights";
 import { GAME_SPECS } from "./constants";
 import { zScoreMap } from "./features";
+import { buildPopularityModel, scoreCombinationPopularity } from "./popularity";
 import type { CombinationScores, Draw, GameType, NumberFeature, NumberScore, StrategyType } from "./types";
 
 export function scoreNumbers(strategy: StrategyType, features: NumberFeature[]): NumberScore[] {
@@ -18,6 +19,7 @@ export function scoreNumbers(strategy: StrategyType, features: NumberFeature[]):
       prev: weights.prev * (feature.appearedInPreviousDraw ? -1 : 0.15),
       bonus: weights.bonus * (feature.appearedInPreviousBonus ? 0.05 : 0),
       anti_pop: weights.anti_pop * feature.antiPopularityScore,
+      ev_share: weights.ev_share * (1 - feature.popularityIndex),
       candidate_tuning: weights.candidate_tuning * -feature.candidateAdjustmentScore,
       pattern_filter: weights.pattern_filter * (feature.sourcePatternBalanceScore - feature.sourcePatternSignalScore),
       random: weights.random * feature.randomNoise
@@ -66,6 +68,8 @@ export function scoreCombination(
   const popularityAvoidanceScore =
     sorted.reduce((sum, number) => sum + (scoreByNumber.get(number)?.feature.antiPopularityScore ?? 0), 0) /
     sorted.length;
+  const popularityModel = buildPopularityModel(game, history);
+  const combinationPopularity = scoreCombinationPopularity(game, sorted, popularityModel);
   const balanceScore = computeBalanceScore(game, sorted, oddCount, lowCount, midCount, highCount, consecutivePairCount);
   const diversityScore = 1 - Math.max(...lastDigitCounts.values()) / sorted.length;
 
@@ -89,9 +93,12 @@ export function scoreCombination(
     averageNumberScore,
     lowPrioritySignalScore,
     popularityAvoidanceScore,
+    combinationPopularityIndex: combinationPopularity.index,
+    expectedShareScore: combinationPopularity.expectedShareScore,
+    expectedShareReasons: combinationPopularity.reasons,
     balanceScore: strategy === "pure_random" ? balanceScore * 0.5 : balanceScore,
     diversityScore,
-    explanationScore: (balanceScore + diversityScore + popularityAvoidanceScore) / 3
+    explanationScore: (balanceScore + diversityScore + combinationPopularity.expectedShareScore) / 3
   };
 }
 
