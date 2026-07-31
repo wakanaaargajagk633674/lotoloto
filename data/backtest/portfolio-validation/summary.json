@@ -50,14 +50,14 @@
     "drawTrials": 120,
     "ticketTrials": 1200,
     "spendYen": 360000,
-    "totalPayoutYen": 54500,
-    "roi": 0.15138888888888888,
-    "prizeHitCount": 39,
-    "ticketPrizeRate": 0.0325,
+    "totalPayoutYen": 56000,
+    "roi": 0.15555555555555556,
+    "prizeHitCount": 40,
+    "ticketPrizeRate": 0.03333333333333333,
     "atLeastOnePrizeDrawRate": 0.2916666666666667,
     "averageMainMatches": 1.3225,
     "maxMainMatches": 5,
-    "averageUniqueCoverage": 36.725
+    "averageUniqueCoverage": 36.733333333333334
   },
   {
     "game": "loto7",
@@ -65,12 +65,12 @@
     "drawTrials": 120,
     "ticketTrials": 1200,
     "spendYen": 360000,
-    "totalPayoutYen": 52900,
-    "roi": 0.14694444444444443,
-    "prizeHitCount": 46,
-    "ticketPrizeRate": 0.03833333333333333,
-    "atLeastOnePrizeDrawRate": 0.35833333333333334,
-    "averageMainMatches": 1.3166666666666667,
+    "totalPayoutYen": 51800,
+    "roi": 0.1438888888888889,
+    "prizeHitCount": 45,
+    "ticketPrizeRate": 0.0375,
+    "atLeastOnePrizeDrawRate": 0.35,
+    "averageMainMatches": 1.3141666666666667,
     "maxMainMatches": 4,
     "averageUniqueCoverage": 37
   },
@@ -85,8 +85,8 @@
     "prizeHitCount": 41,
     "ticketPrizeRate": 0.034166666666666665,
     "atLeastOnePrizeDrawRate": 0.2916666666666667,
-    "averageMainMatches": 1.3133333333333332,
+    "averageMainMatches": 1.3158333333333334,
     "maxMainMatches": 5,
-    "averageUniqueCoverage": 36.041666666666664
+    "averageUniqueCoverage": 36.05
   }
 ]

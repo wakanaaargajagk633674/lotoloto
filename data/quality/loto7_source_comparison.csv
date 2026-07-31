@@ -686,3 +686,4 @@ game,drawNumber,officialDate,historyDate,status,differentFields,officialSource,h
 "loto7","685","2026-07-10","2026-07-10","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030685.CSV","sougaku:data\raw\loto7\extracted\loto7.csv"
 "loto7","686","2026-07-17","2026-07-17","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030686.CSV","sougaku:data\raw\loto7\extracted\loto7.csv"
 "loto7","687","2026-07-24","2026-07-24","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030687.CSV","sougaku:data\raw\loto7\extracted\loto7.csv"
+"loto7","688","2026-07-31","2026-07-31","different","salesAmount","official-mizuho:https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030688.CSV","sougaku:data\raw\loto7\extracted\loto7.csv"
