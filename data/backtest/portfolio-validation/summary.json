@@ -55,7 +55,7 @@
     "prizeHitCount": 40,
     "ticketPrizeRate": 0.03333333333333333,
     "atLeastOnePrizeDrawRate": 0.2916666666666667,
-    "averageMainMatches": 1.3225,
+    "averageMainMatches": 1.3208333333333333,
     "maxMainMatches": 5,
     "averageUniqueCoverage": 36.733333333333334
   },
@@ -70,7 +70,7 @@
     "prizeHitCount": 45,
     "ticketPrizeRate": 0.0375,
     "atLeastOnePrizeDrawRate": 0.35,
-    "averageMainMatches": 1.3141666666666667,
+    "averageMainMatches": 1.315,
     "maxMainMatches": 4,
     "averageUniqueCoverage": 37
   },
@@ -80,13 +80,13 @@
     "drawTrials": 120,
     "ticketTrials": 1200,
     "spendYen": 360000,
-    "totalPayoutYen": 55100,
-    "roi": 0.15305555555555556,
+    "totalPayoutYen": 54600,
+    "roi": 0.15166666666666667,
     "prizeHitCount": 41,
     "ticketPrizeRate": 0.034166666666666665,
     "atLeastOnePrizeDrawRate": 0.2916666666666667,
-    "averageMainMatches": 1.3158333333333334,
+    "averageMainMatches": 1.3166666666666667,
     "maxMainMatches": 5,
-    "averageUniqueCoverage": 36.05
+    "averageUniqueCoverage": 36.05833333333333
   }
 ]
