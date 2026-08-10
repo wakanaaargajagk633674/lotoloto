@@ -7,10 +7,11 @@ import type { Draw, GameType, PredictionTicket } from "../src/loto/types";
 
 const BUDGET_YEN = 10_000;
 
-// 予算配分: ロト6 20口 (200円 x 20 = 4,000円) + ロト7 20口 (300円 x 20 = 6,000円) = 10,000円
-const PLAN: Record<GameType, { ticketCount: number; seed: number }> = {
-  loto6: { ticketCount: 20, seed: 20260810 },
-  loto7: { ticketCount: 20, seed: 20260814 }
+// 予想対象はロト7のみ。予算配分: 33口 x 300円 = 9,900円（残り100円は1口に満たないため未使用）
+const TARGET_GAMES: GameType[] = ["loto7"];
+
+const PLAN: Partial<Record<GameType, { ticketCount: number; seed: number }>> = {
+  loto7: { ticketCount: 33, seed: 20260814 }
 };
 
 // ロト6は月・木、ロト7は金に抽せんされる。
@@ -113,13 +114,18 @@ function gameSection(
 }
 
 function buildHtml(sections: string[], generatedAt: string, dataVersions: string[]): string {
+  const totalTickets = TARGET_GAMES.reduce((sum, game) => sum + (PLAN[game]?.ticketCount ?? 0), 0);
+  const totalCost = TARGET_GAMES.reduce(
+    (sum, game) => sum + GAME_SPECS[game].ticketPriceYen * (PLAN[game]?.ticketCount ?? 0),
+    0
+  );
   return `<!doctype html>
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>10,000円分 参考買い目プラン</title>
+<title>ロト7 10,000円分 参考買い目プラン</title>
 <style>
   :root { color-scheme: light dark; --bg:#f6f7f9; --fg:#16181d; --card:#fff; --line:#dfe3ea; --muted:#5b6472; --accent:#1d4ed8; }
   @media (prefers-color-scheme: dark) {
@@ -155,7 +161,7 @@ function buildHtml(sections: string[], generatedAt: string, dataVersions: string
 </head>
 <body>
 <main>
-  <h1>10,000円分 参考買い目プラン</h1>
+  <h1>ロト7 10,000円分 参考買い目プラン</h1>
   <p class="lede">過去の抽せんデータをもとに作成した参考買い目です。当選を保証するものではありません。作成日時: ${generatedAt}</p>
 
   <section class="summary">
@@ -164,12 +170,18 @@ function buildHtml(sections: string[], generatedAt: string, dataVersions: string
     <table>
       <thead><tr><th>くじ</th><th>口数</th><th>単価</th><th>金額</th></tr></thead>
       <tbody>
-        <tr><td>ロト6</td><td>${PLAN.loto6.ticketCount}口</td><td>${formatYen(GAME_SPECS.loto6.ticketPriceYen)}</td><td>${formatYen(GAME_SPECS.loto6.ticketPriceYen * PLAN.loto6.ticketCount)}</td></tr>
-        <tr><td>ロト7</td><td>${PLAN.loto7.ticketCount}口</td><td>${formatYen(GAME_SPECS.loto7.ticketPriceYen)}</td><td>${formatYen(GAME_SPECS.loto7.ticketPriceYen * PLAN.loto7.ticketCount)}</td></tr>
-        <tr><td><strong>合計</strong></td><td>${PLAN.loto6.ticketCount + PLAN.loto7.ticketCount}口</td><td>-</td><td><strong>${formatYen(BUDGET_YEN)}</strong></td></tr>
+        ${TARGET_GAMES.map((game) => {
+          const count = PLAN[game]?.ticketCount ?? 0;
+          const price = GAME_SPECS[game].ticketPriceYen;
+          return `<tr><td>${GAME_SPECS[game].label}</td><td>${count}口</td><td>${formatYen(price)}</td><td>${formatYen(price * count)}</td></tr>`;
+        }).join("\n        ")}
+        <tr><td><strong>合計</strong></td><td>${totalTickets}口</td><td>-</td><td><strong>${formatYen(totalCost)}</strong></td></tr>
       </tbody>
     </table>
     </div>
+    <p class="note">予算 ${formatYen(BUDGET_YEN)} のうち ${formatYen(totalCost)} を使用${
+      BUDGET_YEN - totalCost > 0 ? `（残り ${formatYen(BUDGET_YEN - totalCost)} は1口の金額に満たないため未使用）` : ""
+    }。</p>
     <p class="note">使用データ: ${dataVersions.join(" / ")}</p>
   </section>
 
@@ -177,7 +189,7 @@ function buildHtml(sections: string[], generatedAt: string, dataVersions: string
 
   <section class="disclaimer">
     <p>${BASE_DISCLAIMER}</p>
-    <p>ロト6・ロト7は毎回独立したランダム抽せんです。過去データから未来の当せん番号を当てることはできず、この買い目によって当せん確率が上がることもありません。購入は必ず無理のない金額の範囲で行ってください。</p>
+    <p>ロト7は毎回独立したランダム抽せんです。過去データから未来の当せん番号を当てることはできず、この買い目によって当せん確率が上がることもありません。購入は必ず無理のない金額の範囲で行ってください。</p>
   </section>
 </main>
 </body>
@@ -189,13 +201,17 @@ async function main() {
   const sections: string[] = [];
   const dataVersions: string[] = [];
 
-  for (const game of ["loto6", "loto7"] as GameType[]) {
+  for (const game of TARGET_GAMES) {
     const draws = await readDraws(game);
     const latest = draws.at(-1);
     if (!latest) {
       throw new Error(`No draws for ${game}`);
     }
-    const { ticketCount, seed } = PLAN[game];
+    const plan = PLAN[game];
+    if (!plan) {
+      throw new Error(`No plan configured for ${game}`);
+    }
+    const { ticketCount, seed } = plan;
     const tickets = generateTickets(draws, {
       game,
       strategy: "smart_mix",
