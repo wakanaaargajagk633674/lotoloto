@@ -5,14 +5,18 @@ import { generateTickets } from "../src/loto/generator";
 import { formatYen, padNumber } from "../src/loto/format";
 import type { Draw, GameType, PredictionTicket } from "../src/loto/types";
 
-const BUDGET_YEN = 10_000;
-
-// 予想対象はロト7のみ。予算配分: 33口 x 300円 = 9,900円（残り100円は1口に満たないため未使用）
+// 予想対象はロト7のみ。50口 x 300円 = 15,000円
 const TARGET_GAMES: GameType[] = ["loto7"];
 
 const PLAN: Partial<Record<GameType, { ticketCount: number; seed: number }>> = {
-  loto7: { ticketCount: 33, seed: 20260814 }
+  loto7: { ticketCount: 50, seed: 20260814 }
 };
+
+// 予算は口数から算出する（余りが出る場合のみ注記を出す）
+const BUDGET_YEN = TARGET_GAMES.reduce(
+  (sum, game) => sum + GAME_SPECS[game].ticketPriceYen * (PLAN[game]?.ticketCount ?? 0),
+  0
+);
 
 // ロト6は月・木、ロト7は金に抽せんされる。
 const DRAW_WEEKDAYS: Record<GameType, number[]> = {
@@ -125,7 +129,7 @@ function buildHtml(sections: string[], generatedAt: string, dataVersions: string
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>ロト7 10,000円分 参考買い目プラン</title>
+<title>ロト7 参考買い目 ${totalTickets}パターン</title>
 <style>
   :root { color-scheme: light dark; --bg:#f6f7f9; --fg:#16181d; --card:#fff; --line:#dfe3ea; --muted:#5b6472; --accent:#1d4ed8; }
   @media (prefers-color-scheme: dark) {
@@ -161,11 +165,11 @@ function buildHtml(sections: string[], generatedAt: string, dataVersions: string
 </head>
 <body>
 <main>
-  <h1>ロト7 10,000円分 参考買い目プラン</h1>
+  <h1>ロト7 参考買い目 ${totalTickets}パターン</h1>
   <p class="lede">過去の抽せんデータをもとに作成した参考買い目です。当選を保証するものではありません。作成日時: ${generatedAt}</p>
 
   <section class="summary">
-    <h2>予算配分</h2>
+    <h2>購入内訳</h2>
     <div class="table-wrap">
     <table>
       <thead><tr><th>くじ</th><th>口数</th><th>単価</th><th>金額</th></tr></thead>
@@ -229,7 +233,7 @@ async function main() {
   const html = buildHtml(sections, generatedAt, dataVersions);
   const outDir = path.join("artifacts", "reports");
   await mkdir(outDir, { recursive: true });
-  const outPath = path.join(outDir, "purchase-plan-10000yen.html");
+  const outPath = path.join(outDir, "loto7-purchase-plan.html");
   await writeFile(outPath, html, "utf8");
   console.log(`purchase plan written: ${outPath}`);
 }
