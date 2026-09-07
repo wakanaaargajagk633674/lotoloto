@@ -2,61 +2,117 @@
   "game": "loto7",
   "latestDraw": {
     "game": "loto7",
-    "drawNumber": 692,
-    "drawDate": "2026-08-28",
+    "drawNumber": 693,
+    "drawDate": "2026-09-04",
     "dayOfWeek": "金",
     "mainNumbers": [
-      7,
-      9,
-      15,
-      18,
-      20,
-      28,
-      31
+      16,
+      17,
+      22,
+      23,
+      25,
+      33,
+      35
     ],
     "bonusNumbers": [
-      21,
-      34
+      13,
+      31
     ],
     "salesAmount": null,
-    "carryoverAmount": 2458943110,
+    "carryoverAmount": 1968477730,
     "prizeTiers": [
       {
         "tier": 1,
-        "winners": 0,
-        "prizeYen": 0
+        "winners": 1,
+        "prizeYen": 1200000000
       },
       {
         "tier": 2,
-        "winners": 15,
-        "prizeYen": 4887100
+        "winners": 9,
+        "prizeYen": 9294500
       },
       {
         "tier": 3,
-        "winners": 150,
-        "prizeYen": 562900
+        "winners": 176,
+        "prizeYen": 547400
       },
       {
         "tier": 4,
-        "winners": 7833,
-        "prizeYen": 6500
+        "winners": 10089,
+        "prizeYen": 5700
       },
       {
         "tier": 5,
-        "winners": 125576,
+        "winners": 147545,
         "prizeYen": 1300
       },
       {
         "tier": 6,
-        "winners": 213279,
-        "prizeYen": 900
+        "winners": 227550,
+        "prizeYen": 1000
       }
     ],
     "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-    "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-    "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+    "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+    "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
   },
   "recentDraws": [
+    {
+      "game": "loto7",
+      "drawNumber": 693,
+      "drawDate": "2026-09-04",
+      "dayOfWeek": "金",
+      "mainNumbers": [
+        16,
+        17,
+        22,
+        23,
+        25,
+        33,
+        35
+      ],
+      "bonusNumbers": [
+        13,
+        31
+      ],
+      "salesAmount": null,
+      "carryoverAmount": 1968477730,
+      "prizeTiers": [
+        {
+          "tier": 1,
+          "winners": 1,
+          "prizeYen": 1200000000
+        },
+        {
+          "tier": 2,
+          "winners": 9,
+          "prizeYen": 9294500
+        },
+        {
+          "tier": 3,
+          "winners": 176,
+          "prizeYen": 547400
+        },
+        {
+          "tier": 4,
+          "winners": 10089,
+          "prizeYen": 5700
+        },
+        {
+          "tier": 5,
+          "winners": 147545,
+          "prizeYen": 1300
+        },
+        {
+          "tier": 6,
+          "winners": 227550,
+          "prizeYen": 1000
+        }
+      ],
+      "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
+    },
     {
       "game": "loto7",
       "drawNumber": 692,
@@ -110,8 +166,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -166,8 +222,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -222,8 +278,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -278,8 +334,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -334,8 +390,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -390,8 +446,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -446,8 +502,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -502,8 +558,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -558,8 +614,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -614,8 +670,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -670,8 +726,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -726,8 +782,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -782,8 +838,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -838,8 +894,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -894,8 +950,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -950,8 +1006,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1006,8 +1062,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1062,8 +1118,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1118,8 +1174,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1174,8 +1230,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1230,8 +1286,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1286,8 +1342,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1342,8 +1398,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1398,8 +1454,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1454,8 +1510,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1510,8 +1566,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1566,8 +1622,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1622,8 +1678,8 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     },
     {
       "game": "loto7",
@@ -1678,77 +1734,21 @@
         }
       ],
       "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
-    },
-    {
-      "game": "loto7",
-      "drawNumber": 663,
-      "drawDate": "2026-02-06",
-      "dayOfWeek": "金",
-      "mainNumbers": [
-        4,
-        6,
-        10,
-        11,
-        13,
-        17,
-        23
-      ],
-      "bonusNumbers": [
-        25,
-        32
-      ],
-      "salesAmount": null,
-      "carryoverAmount": 2123132130,
-      "prizeTiers": [
-        {
-          "tier": 1,
-          "winners": 0,
-          "prizeYen": 0
-        },
-        {
-          "tier": 2,
-          "winners": 9,
-          "prizeYen": 8294400
-        },
-        {
-          "tier": 3,
-          "winners": 193,
-          "prizeYen": 445500
-        },
-        {
-          "tier": 4,
-          "winners": 8470,
-          "prizeYen": 6100
-        },
-        {
-          "tier": 5,
-          "winners": 134057,
-          "prizeYen": 1300
-        },
-        {
-          "tier": 6,
-          "winners": 215089,
-          "prizeYen": 1000
-        }
-      ],
-      "source": "sougaku:data\\raw\\loto7\\extracted\\loto7.csv",
-      "sourceDownloadedAt": "2026-09-04T03:32:53.222Z",
-      "sourceHash": "c49e963ae41b3c6c34dfc4d0576811c52e2f5c00580f9ac0d9229b72c3acd156"
+      "sourceDownloadedAt": "2026-09-07T20:50:42.651Z",
+      "sourceHash": "356d69f992b4a40eede34bbb893bcf3c1530f26a4903f61bd8ac9cd6a30cb0fd"
     }
   ],
-  "drawCount": 692,
+  "drawCount": 693,
   "numberAnalysis": [
     {
       "number": 1,
       "totalFrequency": 129,
       "recent30Frequency": 5,
-      "recent50Frequency": 10,
+      "recent50Frequency": 9,
       "recent100Frequency": 22,
       "recent300Frequency": 56,
       "lastSeenDraw": 686,
-      "lastSeenGap": 6,
+      "lastSeenGap": 7,
       "averageGap": 5.3203125,
       "maxGap": 21
     },
@@ -1760,7 +1760,7 @@
       "recent100Frequency": 17,
       "recent300Frequency": 51,
       "lastSeenDraw": 678,
-      "lastSeenGap": 14,
+      "lastSeenGap": 15,
       "averageGap": 5.9734513274336285,
       "maxGap": 22
     },
@@ -1769,22 +1769,22 @@
       "totalFrequency": 120,
       "recent30Frequency": 5,
       "recent50Frequency": 7,
-      "recent100Frequency": 13,
+      "recent100Frequency": 12,
       "recent300Frequency": 49,
       "lastSeenDraw": 690,
-      "lastSeenGap": 2,
+      "lastSeenGap": 3,
       "averageGap": 5.756302521008403,
       "maxGap": 20
     },
     {
       "number": 4,
       "totalFrequency": 138,
-      "recent30Frequency": 4,
+      "recent30Frequency": 3,
       "recent50Frequency": 9,
       "recent100Frequency": 20,
       "recent300Frequency": 56,
       "lastSeenDraw": 689,
-      "lastSeenGap": 3,
+      "lastSeenGap": 4,
       "averageGap": 4.992700729927007,
       "maxGap": 23
     },
@@ -1792,23 +1792,23 @@
       "number": 5,
       "totalFrequency": 116,
       "recent30Frequency": 4,
-      "recent50Frequency": 8,
+      "recent50Frequency": 7,
       "recent100Frequency": 14,
       "recent300Frequency": 54,
       "lastSeenDraw": 685,
-      "lastSeenGap": 7,
+      "lastSeenGap": 8,
       "averageGap": 5.913043478260869,
       "maxGap": 25
     },
     {
       "number": 6,
       "totalFrequency": 129,
-      "recent30Frequency": 10,
+      "recent30Frequency": 9,
       "recent50Frequency": 13,
       "recent100Frequency": 19,
       "recent300Frequency": 50,
       "lastSeenDraw": 679,
-      "lastSeenGap": 13,
+      "lastSeenGap": 14,
       "averageGap": 5.2265625,
       "maxGap": 21
     },
@@ -1818,9 +1818,9 @@
       "recent30Frequency": 6,
       "recent50Frequency": 9,
       "recent100Frequency": 23,
-      "recent300Frequency": 59,
+      "recent300Frequency": 58,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 5.234848484848484,
       "maxGap": 22
     },
@@ -1829,10 +1829,10 @@
       "totalFrequency": 135,
       "recent30Frequency": 8,
       "recent50Frequency": 10,
-      "recent100Frequency": 20,
+      "recent100Frequency": 19,
       "recent300Frequency": 61,
       "lastSeenDraw": 691,
-      "lastSeenGap": 1,
+      "lastSeenGap": 2,
       "averageGap": 5.134328358208955,
       "maxGap": 34
     },
@@ -1841,34 +1841,34 @@
       "totalFrequency": 151,
       "recent30Frequency": 8,
       "recent50Frequency": 11,
-      "recent100Frequency": 25,
+      "recent100Frequency": 24,
       "recent300Frequency": 62,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 4.54,
       "maxGap": 20
     },
     {
       "number": 10,
       "totalFrequency": 132,
-      "recent30Frequency": 7,
+      "recent30Frequency": 6,
       "recent50Frequency": 10,
       "recent100Frequency": 21,
       "recent300Frequency": 53,
       "lastSeenDraw": 691,
-      "lastSeenGap": 1,
+      "lastSeenGap": 2,
       "averageGap": 5.267175572519084,
       "maxGap": 30
     },
     {
       "number": 11,
       "totalFrequency": 131,
-      "recent30Frequency": 5,
+      "recent30Frequency": 4,
       "recent50Frequency": 7,
       "recent100Frequency": 14,
       "recent300Frequency": 52,
       "lastSeenDraw": 683,
-      "lastSeenGap": 9,
+      "lastSeenGap": 10,
       "averageGap": 5.230769230769231,
       "maxGap": 27
     },
@@ -1880,19 +1880,19 @@
       "recent100Frequency": 29,
       "recent300Frequency": 63,
       "lastSeenDraw": 681,
-      "lastSeenGap": 11,
+      "lastSeenGap": 12,
       "averageGap": 5.714285714285714,
       "maxGap": 28
     },
     {
       "number": 13,
       "totalFrequency": 145,
-      "recent30Frequency": 5,
+      "recent30Frequency": 4,
       "recent50Frequency": 10,
       "recent100Frequency": 13,
       "recent300Frequency": 61,
       "lastSeenDraw": 681,
-      "lastSeenGap": 11,
+      "lastSeenGap": 12,
       "averageGap": 4.701388888888889,
       "maxGap": 24
     },
@@ -1901,10 +1901,10 @@
       "totalFrequency": 132,
       "recent30Frequency": 6,
       "recent50Frequency": 10,
-      "recent100Frequency": 19,
-      "recent300Frequency": 58,
+      "recent100Frequency": 18,
+      "recent300Frequency": 57,
       "lastSeenDraw": 690,
-      "lastSeenGap": 2,
+      "lastSeenGap": 3,
       "averageGap": 5.244274809160306,
       "maxGap": 19
     },
@@ -1912,47 +1912,47 @@
       "number": 15,
       "totalFrequency": 153,
       "recent30Frequency": 6,
-      "recent50Frequency": 9,
-      "recent100Frequency": 18,
-      "recent300Frequency": 62,
+      "recent50Frequency": 8,
+      "recent100Frequency": 17,
+      "recent300Frequency": 61,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 4.5131578947368425,
       "maxGap": 35
     },
     {
       "number": 16,
-      "totalFrequency": 116,
-      "recent30Frequency": 7,
+      "totalFrequency": 117,
+      "recent30Frequency": 8,
       "recent50Frequency": 13,
-      "recent100Frequency": 18,
-      "recent300Frequency": 54,
-      "lastSeenDraw": 686,
-      "lastSeenGap": 6,
-      "averageGap": 5.921739130434783,
+      "recent100Frequency": 19,
+      "recent300Frequency": 55,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 5.931034482758621,
       "maxGap": 31
     },
     {
       "number": 17,
-      "totalFrequency": 137,
+      "totalFrequency": 138,
       "recent30Frequency": 7,
-      "recent50Frequency": 11,
-      "recent100Frequency": 17,
-      "recent300Frequency": 61,
-      "lastSeenDraw": 690,
-      "lastSeenGap": 2,
-      "averageGap": 5.0661764705882355,
+      "recent50Frequency": 12,
+      "recent100Frequency": 18,
+      "recent300Frequency": 62,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 5.0510948905109485,
       "maxGap": 23
     },
     {
       "number": 18,
       "totalFrequency": 134,
       "recent30Frequency": 9,
-      "recent50Frequency": 12,
+      "recent50Frequency": 11,
       "recent100Frequency": 23,
       "recent300Frequency": 64,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 5.015037593984962,
       "maxGap": 25
     },
@@ -1964,7 +1964,7 @@
       "recent100Frequency": 15,
       "recent300Frequency": 58,
       "lastSeenDraw": 684,
-      "lastSeenGap": 8,
+      "lastSeenGap": 9,
       "averageGap": 5.603305785123967,
       "maxGap": 24
     },
@@ -1976,7 +1976,7 @@
       "recent100Frequency": 22,
       "recent300Frequency": 57,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 5.655737704918033,
       "maxGap": 25
     },
@@ -1988,32 +1988,32 @@
       "recent100Frequency": 15,
       "recent300Frequency": 52,
       "lastSeenDraw": 688,
-      "lastSeenGap": 4,
+      "lastSeenGap": 5,
       "averageGap": 5.213740458015267,
       "maxGap": 20
     },
     {
       "number": 22,
-      "totalFrequency": 138,
-      "recent30Frequency": 14,
-      "recent50Frequency": 19,
+      "totalFrequency": 139,
+      "recent30Frequency": 15,
+      "recent50Frequency": 20,
       "recent100Frequency": 25,
       "recent300Frequency": 69,
-      "lastSeenDraw": 691,
-      "lastSeenGap": 1,
-      "averageGap": 5.014598540145985,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 4.992753623188406,
       "maxGap": 20
     },
     {
       "number": 23,
-      "totalFrequency": 129,
+      "totalFrequency": 130,
       "recent30Frequency": 6,
-      "recent50Frequency": 8,
-      "recent100Frequency": 19,
-      "recent300Frequency": 46,
-      "lastSeenDraw": 691,
-      "lastSeenGap": 1,
-      "averageGap": 5.390625,
+      "recent50Frequency": 9,
+      "recent100Frequency": 20,
+      "recent300Frequency": 47,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 5.364341085271318,
       "maxGap": 38
     },
     {
@@ -2024,20 +2024,20 @@
       "recent100Frequency": 18,
       "recent300Frequency": 45,
       "lastSeenDraw": 689,
-      "lastSeenGap": 3,
+      "lastSeenGap": 4,
       "averageGap": 5.585365853658536,
       "maxGap": 28
     },
     {
       "number": 25,
-      "totalFrequency": 112,
-      "recent30Frequency": 6,
-      "recent50Frequency": 9,
-      "recent100Frequency": 13,
-      "recent300Frequency": 51,
-      "lastSeenDraw": 690,
-      "lastSeenGap": 2,
-      "averageGap": 6.081081081081081,
+      "totalFrequency": 113,
+      "recent30Frequency": 7,
+      "recent50Frequency": 10,
+      "recent100Frequency": 14,
+      "recent300Frequency": 52,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 6.053571428571429,
       "maxGap": 33
     },
     {
@@ -2048,7 +2048,7 @@
       "recent100Frequency": 18,
       "recent300Frequency": 59,
       "lastSeenDraw": 680,
-      "lastSeenGap": 12,
+      "lastSeenGap": 13,
       "averageGap": 4.919117647058823,
       "maxGap": 25
     },
@@ -2056,11 +2056,11 @@
       "number": 27,
       "totalFrequency": 131,
       "recent30Frequency": 3,
-      "recent50Frequency": 7,
+      "recent50Frequency": 6,
       "recent100Frequency": 17,
-      "recent300Frequency": 51,
+      "recent300Frequency": 50,
       "lastSeenDraw": 691,
-      "lastSeenGap": 1,
+      "lastSeenGap": 2,
       "averageGap": 5.2615384615384615,
       "maxGap": 22
     },
@@ -2072,7 +2072,7 @@
       "recent100Frequency": 19,
       "recent300Frequency": 52,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 5.3565891472868215,
       "maxGap": 45
     },
@@ -2084,7 +2084,7 @@
       "recent100Frequency": 23,
       "recent300Frequency": 67,
       "lastSeenDraw": 687,
-      "lastSeenGap": 5,
+      "lastSeenGap": 6,
       "averageGap": 5.036764705882353,
       "maxGap": 21
     },
@@ -2094,9 +2094,9 @@
       "recent30Frequency": 2,
       "recent50Frequency": 6,
       "recent100Frequency": 15,
-      "recent300Frequency": 61,
+      "recent300Frequency": 60,
       "lastSeenDraw": 688,
-      "lastSeenGap": 4,
+      "lastSeenGap": 5,
       "averageGap": 4.836879432624113,
       "maxGap": 28
     },
@@ -2106,9 +2106,9 @@
       "recent30Frequency": 5,
       "recent50Frequency": 7,
       "recent100Frequency": 19,
-      "recent300Frequency": 58,
+      "recent300Frequency": 57,
       "lastSeenDraw": 692,
-      "lastSeenGap": 0,
+      "lastSeenGap": 1,
       "averageGap": 5.149253731343284,
       "maxGap": 21
     },
@@ -2117,47 +2117,47 @@
       "totalFrequency": 136,
       "recent30Frequency": 4,
       "recent50Frequency": 7,
-      "recent100Frequency": 17,
+      "recent100Frequency": 16,
       "recent300Frequency": 63,
       "lastSeenDraw": 689,
-      "lastSeenGap": 3,
+      "lastSeenGap": 4,
       "averageGap": 5.044444444444444,
       "maxGap": 25
     },
     {
       "number": 33,
-      "totalFrequency": 116,
-      "recent30Frequency": 6,
-      "recent50Frequency": 11,
-      "recent100Frequency": 19,
-      "recent300Frequency": 53,
-      "lastSeenDraw": 689,
-      "lastSeenGap": 3,
-      "averageGap": 5.973913043478261,
+      "totalFrequency": 117,
+      "recent30Frequency": 7,
+      "recent50Frequency": 12,
+      "recent100Frequency": 20,
+      "recent300Frequency": 54,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 5.956896551724138,
       "maxGap": 28
     },
     {
       "number": 34,
       "totalFrequency": 142,
       "recent30Frequency": 2,
-      "recent50Frequency": 6,
+      "recent50Frequency": 5,
       "recent100Frequency": 24,
       "recent300Frequency": 62,
       "lastSeenDraw": 686,
-      "lastSeenGap": 6,
+      "lastSeenGap": 7,
       "averageGap": 4.858156028368795,
       "maxGap": 22
     },
     {
       "number": 35,
-      "totalFrequency": 140,
-      "recent30Frequency": 6,
-      "recent50Frequency": 14,
-      "recent100Frequency": 21,
-      "recent300Frequency": 57,
-      "lastSeenDraw": 689,
-      "lastSeenGap": 3,
-      "averageGap": 4.942446043165468,
+      "totalFrequency": 141,
+      "recent30Frequency": 7,
+      "recent50Frequency": 15,
+      "recent100Frequency": 22,
+      "recent300Frequency": 58,
+      "lastSeenDraw": 693,
+      "lastSeenGap": 0,
+      "averageGap": 4.935714285714286,
       "maxGap": 23
     },
     {
@@ -2168,7 +2168,7 @@
       "recent100Frequency": 20,
       "recent300Frequency": 57,
       "lastSeenDraw": 687,
-      "lastSeenGap": 5,
+      "lastSeenGap": 6,
       "averageGap": 4.956204379562044,
       "maxGap": 18
     },
@@ -2180,7 +2180,7 @@
       "recent100Frequency": 16,
       "recent300Frequency": 56,
       "lastSeenDraw": 691,
-      "lastSeenGap": 1,
+      "lastSeenGap": 2,
       "averageGap": 5.912280701754386,
       "maxGap": 29
     }
@@ -2189,210 +2189,210 @@
     {
       "label": "3:4",
       "count": 188,
-      "rate": 0.27167630057803466
+      "rate": 0.2712842712842713
     },
     {
       "label": "4:3",
       "count": 230,
-      "rate": 0.33236994219653176
+      "rate": 0.3318903318903319
     },
     {
       "label": "5:2",
-      "count": 112,
-      "rate": 0.16184971098265896
+      "count": 113,
+      "rate": 0.16305916305916307
     },
     {
       "label": "7:0",
       "count": 6,
-      "rate": 0.008670520231213872
+      "rate": 0.008658008658008658
     },
     {
       "label": "2:5",
       "count": 108,
-      "rate": 0.15606936416184972
+      "rate": 0.15584415584415584
     },
     {
       "label": "6:1",
       "count": 27,
-      "rate": 0.03901734104046243
+      "rate": 0.03896103896103896
     },
     {
       "label": "1:6",
       "count": 20,
-      "rate": 0.028901734104046242
+      "rate": 0.02886002886002886
     },
     {
       "label": "0:7",
       "count": 1,
-      "rate": 0.001445086705202312
+      "rate": 0.001443001443001443
     }
   ],
   "sumStats": {
-    "average": 133.57803468208093,
+    "average": 133.63203463203465,
     "median": 133,
     "min": 59,
     "max": 208,
-    "latest": 128
+    "latest": 171
   },
   "consecutiveDistribution": [
     {
       "label": "連番なし",
       "count": 181,
-      "rate": 0.2615606936416185
+      "rate": 0.2611832611832612
     },
     {
       "label": "2組以上",
-      "count": 220,
-      "rate": 0.3179190751445087
+      "count": 221,
+      "rate": 0.3189033189033189
     },
     {
       "label": "1組",
       "count": 291,
-      "rate": 0.42052023121387283
+      "rate": 0.4199134199134199
     }
   ],
   "rangeDistribution": [
     {
       "label": "1〜10",
       "count": 1297,
-      "rate": 0.26775392237819984
+      "rate": 0.2673675530818388
     },
     {
       "label": "11〜20",
-      "count": 1313,
-      "rate": 0.27105697770437653
+      "count": 1315,
+      "rate": 0.27107812822098537
     },
     {
       "label": "21〜30",
-      "count": 1312,
-      "rate": 0.2708505367464905
+      "count": 1315,
+      "rate": 0.27107812822098537
     },
     {
       "label": "31〜37",
-      "count": 922,
-      "rate": 0.19033856317093312
+      "count": 924,
+      "rate": 0.19047619047619047
     }
   ],
   "lastDigitDistribution": [
     {
       "label": "0",
       "count": 397,
-      "rate": 0.0819570602807597
+      "rate": 0.08183879612451041
     },
     {
       "label": "1",
       "count": 527,
-      "rate": 0.1087943848059455
+      "rate": 0.10863739435168007
     },
     {
       "label": "2",
-      "count": 508,
-      "rate": 0.10487200660611065
+      "count": 509,
+      "rate": 0.1049268192125335
     },
     {
       "label": "3",
-      "count": 510,
-      "rate": 0.10528488852188274
+      "count": 512,
+      "rate": 0.10554524840239125
     },
     {
       "label": "4",
       "count": 536,
-      "rate": 0.1106523534269199
+      "rate": 0.11049268192125335
     },
     {
       "label": "5",
-      "count": 521,
-      "rate": 0.10755573905862924
+      "count": 523,
+      "rate": 0.10781282209853639
     },
     {
       "label": "6",
-      "count": 520,
-      "rate": 0.10734929810074319
+      "count": 521,
+      "rate": 0.10740053597196454
     },
     {
       "label": "7",
-      "count": 516,
-      "rate": 0.10652353426919901
+      "count": 517,
+      "rate": 0.10657596371882086
     },
     {
       "label": "8",
       "count": 399,
-      "rate": 0.08236994219653179
+      "rate": 0.08225108225108226
     },
     {
       "label": "9",
       "count": 410,
-      "rate": 0.08464079273327828
+      "rate": 0.08451865594722738
     }
   ],
   "previousOverlapDistribution": [
     {
       "label": "1個",
       "count": 292,
-      "rate": 0.42257597684515197
+      "rate": 0.42196531791907516
     },
     {
       "label": "2個",
       "count": 190,
-      "rate": 0.27496382054992763
+      "rate": 0.2745664739884393
     },
     {
       "label": "0個",
-      "count": 128,
-      "rate": 0.18523878437047755
+      "count": 129,
+      "rate": 0.18641618497109827
     },
     {
       "label": "3個",
       "count": 70,
-      "rate": 0.10130246020260492
+      "rate": 0.10115606936416185
     },
     {
       "label": "4個",
       "count": 11,
-      "rate": 0.015918958031837915
+      "rate": 0.015895953757225433
     }
   ],
   "carryover": {
-    "occurrenceCount": 475,
+    "occurrenceCount": 476,
     "maxAmount": 5826847840,
-    "latestAmount": 2458943110
+    "latestAmount": 1968477730
   },
   "prizeStats": [
     {
       "tier": 1,
-      "averagePrizeYen": 299912438.01878613,
+      "averagePrizeYen": 301211265.6695527,
       "maxPrizeYen": 1200000000,
-      "averageWinners": 0.6965317919075145
+      "averageWinners": 0.696969696969697
     },
     {
       "tier": 2,
-      "averagePrizeYen": 10984116.184971098,
+      "averagePrizeYen": 10981678.066378066,
       "maxPrizeYen": 167348000,
-      "averageWinners": 11.651734104046243
+      "averageWinners": 11.647907647907648
     },
     {
       "tier": 3,
-      "averagePrizeYen": 865705.0578034682,
+      "averagePrizeYen": 865245.7431457432,
       "maxPrizeYen": 1864500,
-      "averageWinners": 140.57658959537574
+      "averageWinners": 140.62770562770564
     },
     {
       "tier": 4,
-      "averagePrizeYen": 10308.815028901734,
+      "averagePrizeYen": 10302.164502164502,
       "maxPrizeYen": 18900,
-      "averageWinners": 6620.796242774566
+      "averageWinners": 6625.800865800866
     },
     {
       "tier": 5,
-      "averagePrizeYen": 1614.5953757225434,
+      "averagePrizeYen": 1614.141414141414,
       "maxPrizeYen": 2500,
-      "averageWinners": 102748.32514450866
+      "averageWinners": 102812.96681096681
     },
     {
       "tier": 6,
-      "averagePrizeYen": 1010.1156069364162,
+      "averagePrizeYen": 1010.10101010101,
       "maxPrizeYen": 1200,
-      "averageWinners": 175418.65895953757
+      "averageWinners": 175493.88455988455
     }
   ]
 }
