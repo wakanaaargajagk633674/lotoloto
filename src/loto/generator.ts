@@ -2,6 +2,7 @@ import { strategyWeights } from "@/config/strategyWeights";
 import { BASE_DISCLAIMER, GAME_SPECS } from "./constants";
 import { buildDisclaimer, explainTicket } from "./explanations";
 import { computeNumberFeatures } from "./features";
+import { tripleCoverageRatio } from "./mathCore";
 import { createSeededRandom, shuffleWithRandom } from "./random";
 import { scoreCombination, scoreNumbers } from "./scoring";
 import { validateNumbers } from "./validation";
@@ -36,6 +37,7 @@ export function generateTickets(draws: Draw[], options: GenerateOptions, sourceP
       usedNumbers,
       usedPairs,
       usedProfiles,
+      tickets.map((ticket) => ticket.numbers),
       options.candidateTuningMode ?? "light"
     );
     validateNumbers(options.game, ticketNumbers);
@@ -85,6 +87,7 @@ function pickTicket(
   usedNumbers: Map<number, number>,
   usedPairs: Map<string, number>,
   usedProfiles: Map<string, number>,
+  previousTickets: number[][],
   candidateTuningMode: CandidateTuningMode
 ): number[] {
   const spec = GAME_SPECS[game];
@@ -135,8 +138,13 @@ function pickTicket(
     const portfolioScoreWeight = 0.2;
     const portfolioPenaltyWeight = 1;
     const highReturnSumBonus = strategy === "high_return" ? scoreHighReturnSumBand(game, candidate) * 0.08 : 0;
+    // 複数口のときは 3 個組が既存の口と重ならないほど加点する (被覆設計)。
+    // 当せん確率の合計は変わらないが、下位等級の当せんが同じ回に固まりにくくなる。
+    const coverageWeight = previousTickets.length > 0 ? 0.15 : 0;
+    const coverage = coverageWeight > 0 ? tripleCoverageRatio([...previousTickets, candidate]) : 1;
     // 当せん確率は候補ごとに同じなので、比較しているのは主に
     // 当せんした場合に他の購入者と重なりにくいかどうか。
+    // expectedShareScore には回帰と口数推定から導いた期待受取係数が含まれる。
     const score =
       candidate.reduce((sum, number) => sum + (rankScoreByNumber.get(number) ?? 0), 0) /
         spec.mainCount +
@@ -145,6 +153,7 @@ function pickTicket(
       combo.diversityScore * diversityWeight +
       pairSignal * pairSignalWeight +
       portfolio.score * portfolioScoreWeight +
+      coverage * coverageWeight +
       highReturnSumBonus -
       (1 - combo.previousDrawOverlapScore) * weights.previous_overlap -
       portfolio.penalty * portfolioPenaltyWeight;

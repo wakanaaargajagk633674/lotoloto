@@ -1,4 +1,5 @@
 import { GAME_SPECS, numbersForGame } from "./constants";
+import { shrinkFrequencies } from "./mathCore";
 import { buildPopularityModel } from "./popularity";
 import { createSeededRandom } from "./random";
 import type { Draw, GameType, NumberFeature } from "./types";
@@ -68,6 +69,8 @@ export function computeNumberFeatures(
   const sourcePatternSet = new Set(sourcePatternSignals);
   // 人気度はその時点までの履歴だけから推定する。未来の抽せん結果は参照しない。
   const popularityModel = buildPopularityModel(game, history);
+  // 出現頻度はカイ二乗検定で説明できる分だけ一様へ縮小する。一様抽せんなら evidence ≈ 0。
+  const shrinkage = shrinkFrequencies(totalFrequency, game, history.length);
 
   return domain.map((number) => {
     const rangeGroup = number <= Math.ceil(spec.maxNumber / 3) ? "low" : number <= Math.ceil((spec.maxNumber * 2) / 3) ? "mid" : "high";
@@ -114,6 +117,8 @@ export function computeNumberFeatures(
       sourcePatternSignalScore,
       sourcePatternBalanceScore,
       carryoverContextScore: previousDraw?.carryoverAmount && previousDraw.carryoverAmount > 0 ? 0.5 : 0,
+      posteriorProbability: shrinkage.posterior.get(number) ?? spec.mainCount / spec.maxNumber,
+      frequencyEvidence: shrinkage.lambda,
       randomNoise: random(),
       scoreParts: {}
     };

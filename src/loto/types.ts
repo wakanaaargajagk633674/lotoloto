@@ -63,6 +63,10 @@ export type NumberFeature = {
   sourcePatternSignalScore: number;
   sourcePatternBalanceScore: number;
   carryoverContextScore: number;
+  /** 経験ベイズ縮小後の、1回の抽せんでこの数字が本数字に含まれる事後確率。 */
+  posteriorProbability: number;
+  /** カイ二乗検定で説明できない超過分散の割合 (0-1)。0 なら頻度の偏りは偶然の範囲。 */
+  frequencyEvidence: number;
   randomNoise: number;
   scoreParts: Record<string, number>;
 };
@@ -90,6 +94,12 @@ export type CombinationScores = {
   combinationPopularityIndex: number;
   expectedShareScore: number;
   expectedShareReasons: string[];
+  /** 平均的な買い方に対する相対的な買われやすさ (1 = 平均)。回帰が使えないときは null。 */
+  relativePopularity: number | null;
+  /** 1等当せん時の同時当せん者数の期待値。回帰が使えないときは null。 */
+  expectedCoWinners: number | null;
+  /** E[受取 | 1等] を独占時 1 とした係数。回帰が使えないときは null。 */
+  payoutFactor: number | null;
   balanceScore: number;
   diversityScore: number;
   explanationScore: number;
@@ -156,6 +166,8 @@ export type BacktestStep = {
   prizeTier: number | null;
   payoutYen: number;
   combinationPopularityIndex: number;
+  /** 予想時点のデータだけから求めた 1等の期待受取係数。null は回帰が使えなかった回。 */
+  payoutFactor: number | null;
 };
 
 export type BacktestSummary = {
@@ -177,6 +189,10 @@ export type BacktestSummary = {
       averageCombinationPopularityIndex: number;
       /** 選ばれた数字の周辺分布が一様からどれだけ離れているか。0 が完全一様。 */
       selectionEntropyGap: number;
+      /** 1等の期待受取係数の平均。高いほど当せん時の独占に近い。当せん確率とは無関係。 */
+      averagePayoutFactor: number;
+      /** 全口の 3 個組がどれだけ重複せず散らばっているか (0-1)。 */
+      tripleCoverageRatio: number;
     }
   >;
   notes: string[];

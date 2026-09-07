@@ -17,7 +17,8 @@
     "data:downloads": "tsx scripts/generate-download-csv.ts",
     "backtest": "tsx scripts/run-backtest.ts",
     "backtest:portfolio": "tsx scripts/run-portfolio-validation.ts",
-    "plan:purchase": "tsx scripts/generate-purchase-plan.ts"
+    "plan:purchase": "tsx scripts/generate-purchase-plan.ts",
+    "math:probe": "tsx scripts/probe-math-core.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

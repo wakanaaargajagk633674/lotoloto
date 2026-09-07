@@ -38,9 +38,16 @@ export function explainTicket(strategy: StrategyType, scores: NumberScore[], com
       combo.previousDrawOverlapRate * 100
     )}% の出方として扱い、極端さの確認だけに使っています。`
   );
+  if (combo.payoutFactor !== null && combo.expectedCoWinners !== null) {
+    explanations.push(
+      `過去の当せん口数から推定すると、この買い目で1等になった場合の同時当せんは平均 ${combo.expectedCoWinners.toFixed(
+        2
+      )} 人前後で、独占できた場合を100としたときの期待受取は約 ${Math.round(combo.payoutFactor * 100)} です。`
+    );
+  }
   if (combo.expectedShareReasons.length > 0) {
     explanations.push(
-      `他の購入者との重なりにくさの目安は ${Math.round(combo.expectedShareScore * 100)} です。${combo.expectedShareReasons[0]}`
+      `他の購入者との重なりにくさの目安は ${Math.round(combo.expectedShareScore * 100)} です。${combo.expectedShareReasons.at(-1)}`
     );
   }
   explanations.push(

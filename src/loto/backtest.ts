@@ -1,5 +1,6 @@
 import { GAME_SPECS } from "./constants";
 import { generateTickets } from "./generator";
+import { tripleCoverageRatio } from "./mathCore";
 import type { BacktestStep, BacktestSummary, Draw, GameType, StrategyType } from "./types";
 
 const DEFAULT_STRATEGIES: StrategyType[] = [
@@ -48,7 +49,8 @@ export function runWalkForwardBacktest(
         bonusMatches,
         prizeTier,
         payoutYen: payoutForTier(actual, prizeTier),
-        combinationPopularityIndex: ticket.combinationScores.combinationPopularityIndex
+        combinationPopularityIndex: ticket.combinationScores.combinationPopularityIndex,
+        payoutFactor: ticket.combinationScores.payoutFactor
       });
     }
   }
@@ -108,7 +110,11 @@ function summarizeBacktest(game: GameType, detail: BacktestStep[], startedAtDraw
             averagePayoutPerTicketYen: trials ? totalPayoutYen / trials : 0,
             maxDrawdownYen: computeMaxDrawdown(rows.map((row) => row.payoutYen - spec.ticketPriceYen)),
             averageCombinationPopularityIndex: safeAverage(rows.map((row) => row.combinationPopularityIndex)),
-            selectionEntropyGap: computeSelectionEntropyGap(game, rows)
+            selectionEntropyGap: computeSelectionEntropyGap(game, rows),
+            averagePayoutFactor: safeAverage(
+              rows.map((row) => row.payoutFactor).filter((value): value is number => value !== null)
+            ),
+            tripleCoverageRatio: tripleCoverageRatio(rows.map((row) => row.ticket))
           }
         ];
       })
@@ -118,7 +124,9 @@ function summarizeBacktest(game: GameType, detail: BacktestStep[], startedAtDraw
       "ランダムとの差は短期では大きく揺れるため、優位に見える結果でも過剰最適化を疑う。",
       "パターンフィルターは固定除外ではなく、候補の優先度を調整する soft signal として扱う。",
     "averageCombinationPopularityIndex は当せんした場合の分配人数の目安で、当せん確率とは無関係。",
-    "selectionEntropyGap は数字の選び方が一様からどれだけ離れているかで、0 に近いほど偏りが小さい。"
+    "selectionEntropyGap は数字の選び方が一様からどれだけ離れているかで、0 に近いほど偏りが小さい。",
+    "averagePayoutFactor は予想時点の口数データから求めた 1等の期待受取係数 (独占 = 1)。当せん確率とは無関係。",
+    "tripleCoverageRatio は各回の買い目を並べたとき 3 個組がどれだけ重複せず散らばっているか。"
     ]
   };
 }
@@ -175,7 +183,8 @@ export function serializeBacktestDetailCsv(rows: BacktestStep[]): string {
     "bonusMatches",
     "prizeTier",
     "payoutYen",
-    "combinationPopularityIndex"
+    "combinationPopularityIndex",
+    "payoutFactor"
   ];
   const lines = rows.map((row) =>
     [
@@ -190,7 +199,8 @@ export function serializeBacktestDetailCsv(rows: BacktestStep[]): string {
       row.bonusMatches,
       row.prizeTier ?? "",
       row.payoutYen,
-      row.combinationPopularityIndex.toFixed(4)
+      row.combinationPopularityIndex.toFixed(4),
+      row.payoutFactor === null ? "" : row.payoutFactor.toFixed(4)
     ].join(",")
   );
   return `${headers.join(",")}\n${lines.join("\n")}\n`;

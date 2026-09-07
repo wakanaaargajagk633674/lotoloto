@@ -4,6 +4,9 @@ import { zScoreMap } from "./features";
 import { buildPopularityModel, scoreCombinationPopularity } from "./popularity";
 import type { CombinationScores, Draw, GameType, NumberFeature, NumberScore, StrategyType } from "./types";
 
+/** 頻度シグナルに常に残す最低限の割合。戦略テーマの個性を保つための下限で、根拠の主張ではない。 */
+export const EVIDENCE_FLOOR = 0.35;
+
 export function scoreNumbers(strategy: StrategyType, features: NumberFeature[]): NumberScore[] {
   const weights = strategyWeights[strategy];
   const domain = features.map((feature) => feature.number);
@@ -12,10 +15,14 @@ export function scoreNumbers(strategy: StrategyType, features: NumberFeature[]):
   const gapZ = zScoreMap(new Map(features.map((feature) => [feature.number, feature.lastSeenGap])), domain);
 
   return features.map((feature) => {
+    // 頻度・間隔のシグナルは、カイ二乗検定で偶然と区別できた分 (frequencyEvidence) だけ強め、
+    // 残りは「戦略テーマとしての好み」の最低限 (EVIDENCE_FLOOR) に抑える。
+    // 実データでは evidence ≈ 0 なので、hot / cold は当たりやすさの主張にはならない。
+    const evidenceGate = EVIDENCE_FLOOR + (1 - EVIDENCE_FLOOR) * feature.frequencyEvidence;
     const parts = {
-      recent: weights.recent * (recentZ.get(feature.number) ?? 0),
-      long: weights.long * (longZ.get(feature.number) ?? 0),
-      gap: weights.gap * (gapZ.get(feature.number) ?? 0),
+      recent: weights.recent * (recentZ.get(feature.number) ?? 0) * evidenceGate,
+      long: weights.long * (longZ.get(feature.number) ?? 0) * evidenceGate,
+      gap: weights.gap * (gapZ.get(feature.number) ?? 0) * evidenceGate,
       prev: weights.prev * (feature.appearedInPreviousDraw ? -1 : 0.15),
       bonus: weights.bonus * (feature.appearedInPreviousBonus ? 0.05 : 0),
       anti_pop: weights.anti_pop * feature.antiPopularityScore,
@@ -96,6 +103,9 @@ export function scoreCombination(
     combinationPopularityIndex: combinationPopularity.index,
     expectedShareScore: combinationPopularity.expectedShareScore,
     expectedShareReasons: combinationPopularity.reasons,
+    relativePopularity: combinationPopularity.payout?.relativePopularity ?? null,
+    expectedCoWinners: combinationPopularity.payout?.expectedCoWinners ?? null,
+    payoutFactor: combinationPopularity.payout?.payoutFactor ?? null,
     balanceScore: strategy === "pure_random" ? balanceScore * 0.5 : balanceScore,
     diversityScore,
     explanationScore: (balanceScore + diversityScore + combinationPopularity.expectedShareScore) / 3

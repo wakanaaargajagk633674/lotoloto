@@ -1,4 +1,11 @@
 import { GAME_SPECS, numbersForGame } from "./constants";
+import {
+  estimateTicketVolumes,
+  expectedJackpotPayout,
+  fitPopularityRegression,
+  type PayoutExpectation,
+  type PopularityRegression
+} from "./mathCore";
 import type { Draw, GameType } from "./types";
 
 /**
@@ -11,8 +18,10 @@ import type { Draw, GameType } from "./types";
  *
  * 推定は次の2層で行う。
  * 1. 事前分布: 誕生日・縁起・連番忌避など、購入者の選び方の一般的な傾向。
- * 2. 経験推定: その時点までの履歴に含まれる「本数字が少なく一致する等級」の口数を
- *    販売口数で正規化した値。人気の数字を含む回ほど口数が増える性質を利用する。
+ * 2. 経験推定: その時点までの履歴に含まれる「本数字が少なく一致する等級」の口数を、
+ *    固定賞金等級から復元した販売口数で正規化し、対数線形 (Ridge) 回帰で
+ *    数字ごとの対数人気度 β を推定する (mathCore.fitPopularityRegression)。
+ *    人気の数字を含む回ほど口数が増える性質を利用する。
  *
  * 2つは信頼度によるシュリンケージで合成し、データが少ないうちは事前分布に寄せる。
  * 推定には常にその時点までの履歴だけを使い、未来のデータは参照しない。
@@ -27,6 +36,16 @@ export type PopularityModel = {
   numberPopularity: Map<number, number>;
   priorPopularity: Map<number, number>;
   empiricalPopularity: Map<number, number> | null;
+  /** 対数線形回帰の結果。データ不足なら null。 */
+  regression: PopularityRegression | null;
+  /**
+   * 1等 (全数字一致) 向けに β を補正する倍率。
+   * 参照等級は本数字のうち一部しか一致しないため、1 個の数字が効く割合は
+   * おおよそ matches / mainCount に薄まる。その逆数で一次補正する。
+   */
+  jackpotScale: number;
+  /** 直近の推定販売口数。 */
+  ticketVolume: number;
 };
 
 const EMPIRICAL_SHRINKAGE_DRAWS = 200;
@@ -70,59 +89,21 @@ export function priorPopularityScore(game: GameType, value: number): number {
 }
 
 /**
- * 本数字の一致数が少ない等級の口数から、数字ごとの選ばれやすさを推定する。
- * 販売口数で正規化し、回ごとに標準化してから数字別に平均を取る。
+ * 対数線形回帰の β を 0-1 の人気度指数へ写す。
+ * β は平均 0 なので、標準偏差 4 個分を 0-1 に収める線形変換で事前分布と同じ尺度にそろえる。
  */
-function estimateEmpiricalPopularity(game: GameType, history: Draw[]): { map: Map<number, number>; observations: number } | null {
-  const spec = GAME_SPECS[game];
-  const tier = game === "loto6" ? 5 : 5;
-  const samples: Array<{ numbers: number[]; logRate: number }> = [];
-
-  for (const draw of history) {
-    if (!draw.salesAmount || draw.salesAmount <= 0) {
-      continue;
-    }
-    const winners = draw.prizeTiers.find((prize) => prize.tier === tier)?.winners;
-    if (winners === null || winners === undefined || winners <= 0) {
-      continue;
-    }
-    const soldTickets = draw.salesAmount / spec.ticketPriceYen;
-    if (soldTickets <= 0) {
-      continue;
-    }
-    samples.push({ numbers: draw.mainNumbers, logRate: Math.log(winners / soldTickets) });
-  }
-
-  if (samples.length < 30) {
-    return null;
-  }
-
-  const rates = samples.map((sample) => sample.logRate);
-  const avg = mean(rates);
-  const deviation = std(rates);
-  const sums = new Map<number, number>();
-  const counts = new Map<number, number>();
-
-  for (const sample of samples) {
-    const standardized = (sample.logRate - avg) / deviation;
-    for (const number of sample.numbers) {
-      sums.set(number, (sums.get(number) ?? 0) + standardized);
-      counts.set(number, (counts.get(number) ?? 0) + 1);
-    }
-  }
-
+function betaToPopularityIndex(game: GameType, regression: PopularityRegression): Map<number, number> {
   const domain = numbersForGame(game);
-  const raw = domain.map((number) => {
-    const count = counts.get(number) ?? 0;
-    return count > 0 ? (sums.get(number) ?? 0) / count : 0;
-  });
+  const raw = domain.map((number) => regression.beta.get(number) ?? 0);
   const rawAvg = mean(raw);
   const rawStd = std(raw);
+  return new Map(domain.map((number, index) => [number, clamp01(0.5 + (raw[index] - rawAvg) / (rawStd * 4))]));
+}
 
-  return {
-    map: new Map(domain.map((number, index) => [number, clamp01(0.5 + (raw[index] - rawAvg) / (rawStd * 4))])),
-    observations: samples.length
-  };
+function jackpotScaleFor(game: GameType): number {
+  const spec = GAME_SPECS[game];
+  const referenceMatches = game === "loto6" ? 3 : 4;
+  return spec.mainCount / referenceMatches;
 }
 
 export function buildPopularityModel(game: GameType, history: Draw[]): PopularityModel {
@@ -135,14 +116,17 @@ export function buildPopularityModel(game: GameType, history: Draw[]): Popularit
 
   const domain = numbersForGame(game);
   const prior = new Map(domain.map((number) => [number, priorPopularityScore(game, number)]));
-  const empirical = estimateEmpiricalPopularity(game, history);
-  const observationCount = empirical?.observations ?? 0;
+  const regression = fitPopularityRegression(game, history);
+  const empirical = regression ? betaToPopularityIndex(game, regression) : null;
+  const observationCount = regression?.observations ?? 0;
   const confidence = observationCount / (observationCount + EMPIRICAL_SHRINKAGE_DRAWS);
+  const volumes = estimateTicketVolumes(game, history);
+  const ticketVolume = volumes.get(latest) ?? 0;
 
   const numberPopularity = new Map(
     domain.map((number) => {
       const priorValue = prior.get(number) ?? 0.5;
-      const empiricalValue = empirical?.map.get(number);
+      const empiricalValue = empirical?.get(number);
       const blended =
         empiricalValue === undefined ? priorValue : (1 - confidence) * priorValue + confidence * empiricalValue;
       return [number, clamp01(blended)];
@@ -156,7 +140,10 @@ export function buildPopularityModel(game: GameType, history: Draw[]): Popularit
     confidence,
     numberPopularity,
     priorPopularity: prior,
-    empiricalPopularity: empirical?.map ?? null
+    empiricalPopularity: empirical,
+    regression,
+    jackpotScale: jackpotScaleFor(game),
+    ticketVolume
   };
 
   if (modelCache.size > 64) {
@@ -171,8 +158,27 @@ export type CombinationPopularity = {
   index: number;
   /** index の裏返し。高いほど当せん時の分配人数が少ないと見込まれる */
   expectedShareScore: number;
+  /** 回帰と口数推定から導いた 1等の期待受取係数。データ不足なら null。 */
+  payout: PayoutExpectation | null;
   reasons: string[];
 };
+
+/**
+ * 1等の期待受取係数 (0-1) を求める。
+ * 回帰の β を 1等向けに補正し、推定販売口数から E[1 / (1 + 同時当せん者数)] を閉形式で計算する。
+ */
+export function combinationPayoutExpectation(game: GameType, numbers: number[], model: PopularityModel): PayoutExpectation | null {
+  if (!model.regression || model.ticketVolume <= 0) {
+    return null;
+  }
+  const scaledBeta = new Map([...model.regression.beta.entries()].map(([number, beta]) => [number, beta * model.jackpotScale]));
+  return expectedJackpotPayout(game, numbers, scaledBeta, model.ticketVolume);
+}
+
+/** payoutFactor は実データで概ね 0.35-0.85 に収まるため、その帯を 0-1 に引き伸ばして指数化する。 */
+function payoutFactorToScore(payoutFactor: number): number {
+  return clamp01((payoutFactor - 0.3) / 0.55);
+}
 
 /**
  * 組み合わせ全体の選ばれやすさ。
@@ -239,9 +245,19 @@ export function scoreCombinationPopularity(
   }
 
   const bounded = clamp01(index);
+  const payout = combinationPayoutExpectation(game, sorted, model);
+  // 回帰が使えるときは、ヒューリスティックな指数と閉形式の期待受取係数を半々で合成する。
+  // 回帰は数字単体の人気しか見ないので、並びのクセ (等間隔・下1桁など) は引き続き指数側で扱う。
+  const expectedShareScore = payout ? 0.5 * (1 - bounded) + 0.5 * payoutFactorToScore(payout.payoutFactor) : 1 - bounded;
+  if (payout) {
+    reasons.unshift(
+      `過去の口数データから推定すると、この組み合わせを持つ人は平均的な買い方の約 ${payout.relativePopularity.toFixed(2)} 倍で、1等なら同時当せんが平均 ${payout.expectedCoWinners.toFixed(2)} 人前後と見込まれます。`
+    );
+  }
   return {
     index: bounded,
-    expectedShareScore: 1 - bounded,
+    expectedShareScore,
+    payout,
     reasons
   };
 }

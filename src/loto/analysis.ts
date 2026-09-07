@@ -1,4 +1,5 @@
 import { GAME_SPECS } from "./constants";
+import { chiSquareUniformity, estimateTicketVolumes, fitPopularityRegression, type UniformityTest } from "./mathCore";
 import type { Draw, GameType } from "./types";
 
 export type NumberAnalysis = {
@@ -49,6 +50,16 @@ export type LotoAnalysis = {
     maxPrizeYen: number | null;
     averageWinners: number | null;
   }>;
+  /** 出現回数が一様抽せんと矛盾しないかのカイ二乗検定。 */
+  uniformity: UniformityTest;
+  /** 固定賞金等級の当せん口数から復元した直近の販売口数。 */
+  estimatedTicketVolume: number | null;
+  /** 口数データからの人気度回帰。数字ごとの対数人気度 β (正 = 買われやすい)。 */
+  popularityRegression: {
+    observations: number;
+    rSquared: number;
+    beta: Array<{ number: number; beta: number }>;
+  } | null;
 };
 
 export function buildLotoAnalysis(game: GameType, draws: Draw[]): LotoAnalysis {
@@ -71,7 +82,32 @@ export function buildLotoAnalysis(game: GameType, draws: Draw[]): LotoAnalysis {
       maxAmount: Math.max(0, ...sorted.map((draw) => draw.carryoverAmount ?? 0)),
       latestAmount: latestDraw?.carryoverAmount ?? 0
     },
-    prizeStats: buildPrizeStats(game, sorted)
+    prizeStats: buildPrizeStats(game, sorted),
+    uniformity: chiSquareUniformity(countMainNumbers(sorted), game, sorted.length),
+    estimatedTicketVolume: latestDraw ? (estimateTicketVolumes(game, sorted).get(latestDraw.drawNumber) ?? null) : null,
+    popularityRegression: buildPopularityRegressionSummary(game, sorted)
+  };
+}
+
+function countMainNumbers(draws: Draw[]): Map<number, number> {
+  const counts = new Map<number, number>();
+  for (const draw of draws) {
+    for (const number of draw.mainNumbers) {
+      counts.set(number, (counts.get(number) ?? 0) + 1);
+    }
+  }
+  return counts;
+}
+
+function buildPopularityRegressionSummary(game: GameType, draws: Draw[]): LotoAnalysis["popularityRegression"] {
+  const regression = fitPopularityRegression(game, draws);
+  if (!regression) {
+    return null;
+  }
+  return {
+    observations: regression.observations,
+    rSquared: regression.rSquared,
+    beta: [...regression.beta.entries()].map(([number, beta]) => ({ number, beta }))
   };
 }
 
