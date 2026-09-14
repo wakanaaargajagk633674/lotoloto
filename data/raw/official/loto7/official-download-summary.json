@@ -1,15 +1,19 @@
 {
   "game": "loto7",
-  "downloadedAt": "2026-08-17T23:47:44.218Z",
+  "downloadedAt": "2026-09-14T01:26:50.716Z",
   "currentPageStatus": 200,
   "indexStatus": 200,
-  "drawCount": 54,
-  "firstDraw": 637,
-  "latestDraw": 690,
+  "drawCount": 53,
+  "firstDraw": 642,
+  "latestDraw": 694,
   "rawDir": "F:\\LP\\lotoloto\\data\\raw\\official\\loto7",
   "sourceUrls": [
     "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto7/index.html",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/loto7.csv",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030694.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030693.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030692.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030691.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030690.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030689.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030688.CSV",
@@ -58,11 +62,6 @@
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030645.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030644.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030643.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030642.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030641.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030640.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030639.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030638.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030637.CSV"
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030642.CSV"
   ]
 }

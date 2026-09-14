@@ -1,15 +1,22 @@
 {
   "game": "loto6",
-  "downloadedAt": "2026-08-17T23:47:35.370Z",
+  "downloadedAt": "2026-09-14T01:26:42.396Z",
   "currentPageStatus": 200,
   "indexStatus": 200,
-  "drawCount": 108,
-  "firstDraw": 2022,
-  "latestDraw": 2129,
+  "drawCount": 107,
+  "firstDraw": 2030,
+  "latestDraw": 2136,
   "rawDir": "F:\\LP\\lotoloto\\data\\raw\\official\\loto6",
   "sourceUrls": [
     "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/loto6.csv",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022136.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022135.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022134.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022133.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022132.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022131.CSV",
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022130.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022129.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022128.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022127.CSV",
@@ -109,14 +116,6 @@
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022033.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022032.CSV",
     "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022031.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022030.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022029.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022028.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022027.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022026.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022025.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022024.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022023.CSV",
-    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022022.CSV"
+    "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A1022030.CSV"
   ]
 }

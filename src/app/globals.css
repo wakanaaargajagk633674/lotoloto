@@ -1484,3 +1484,276 @@ a {
     left: -120px;
   }
 }
+
+/* ---- 傾向表 (sougaku 式) と絞り込み参考 ---- */
+.trend-block {
+  margin-top: 14px;
+}
+
+.trend-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.trend-tabs,
+.trend-range {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.trend-tabs button,
+.trend-range button {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.trend-tabs button[aria-selected="true"],
+.trend-range button[aria-pressed="true"] {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.trend-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 12px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.trend-legend .sym-main,
+.trend-table .cell-main,
+.narrow-list span.prev,
+.ticket-card .inline-number-list span.prev {
+  color: var(--danger);
+}
+
+.trend-legend .sym-bonus,
+.trend-table .cell-bonus {
+  color: var(--primary);
+}
+
+.trend-legend .hot,
+.trend-table td.hot {
+  color: var(--warning);
+  font-weight: 800;
+}
+
+.trend-legend .cold,
+.trend-table td.cold {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.trend-scroll {
+  max-height: 72vh;
+  overflow: auto;
+}
+
+.trend-table {
+  border-collapse: collapse;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.trend-table th,
+.trend-table td {
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid #f1f5f9;
+  padding: 4px 5px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.trend-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #eff6ff;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.trend-table thead tr:nth-child(2) th {
+  top: 27px;
+}
+
+.trend-table .sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #f8fafc;
+  color: var(--text);
+  font-weight: 700;
+  text-align: left;
+}
+
+.trend-table thead .sticky-col {
+  z-index: 3;
+}
+
+.trend-table .group-start {
+  border-left: 2px solid var(--border-strong);
+}
+
+.trend-table .group-label {
+  background: #dbeafe;
+}
+
+.trend-table tr.sep td,
+.trend-table tr.sep th {
+  border-bottom: 2px solid var(--border-strong);
+}
+
+.trend-table tfoot td,
+.trend-table tfoot th {
+  background: #f8fafc;
+  font-weight: 700;
+}
+
+.trend-table tfoot small {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.trend-table .nums {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.trend-table .nums.bonus {
+  color: var(--primary);
+}
+
+.trend-table .code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--text-secondary);
+}
+
+.trend-table .sym {
+  font-size: 14px;
+}
+
+.trend-table .sym.c1 { color: var(--text-secondary); }
+.trend-table .sym.c2 { color: var(--primary); }
+.trend-table .sym.c3 { color: var(--warning); font-weight: 800; }
+.trend-table .sym.c4 { color: var(--danger); font-weight: 800; }
+.trend-table .sym.c5 { color: var(--violet); font-weight: 800; }
+
+.ranking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.ranking-table {
+  min-width: 0;
+}
+
+.ranking-table .nums {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: normal;
+}
+
+.freq-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 140px;
+  margin-top: 16px;
+  padding: 10px 8px 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #ffffff;
+  overflow-x: auto;
+}
+
+.freq-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 0 18px;
+  height: 100%;
+}
+
+.freq-bar .bar {
+  width: 100%;
+  background: linear-gradient(180deg, var(--primary-light), var(--primary));
+  border-radius: 4px 4px 0 0;
+}
+
+.freq-bar small {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.narrowing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.narrowing-card.removed .narrow-list span.muted {
+  color: var(--text-muted);
+  border-color: var(--border);
+  background: var(--surface-soft);
+  text-decoration: line-through;
+}
+
+.narrow-line {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  color: var(--text);
+  word-break: break-word;
+  margin: 0;
+}
+
+.friendly-list.compact {
+  font-size: 13px;
+  line-height: 1.6;
+  columns: 2;
+  column-gap: 16px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.ticket-card .inline-number-list {
+  margin: 8px 0;
+}
+
+.ticket-card .soft-note {
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .narrowing-grid {
+    grid-template-columns: 1fr;
+  }
+  .friendly-list.compact {
+    columns: 1;
+  }
+}

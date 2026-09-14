@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { buildCarryoverRows, buildLotoAnalysis, buildPrizeRows } from "../src/loto/analysis";
+import { buildTrendData } from "../src/loto/trends";
 import { serializeJapaneseDrawsCsv, serializeNumberFrequencyCsv, serializeObjectsCsv, serializeRecent100Csv } from "../src/loto/csvExport";
 import type { Draw, GameType } from "../src/loto/types";
 
@@ -14,6 +15,8 @@ async function main() {
     const draws = await readDraws(game);
     const analysis = buildLotoAnalysis(game, draws);
     await writeFile(path.join("data", "analysis", `${game}_analysis.json`), `${JSON.stringify(analysis, null, 2)}\n`, "utf8");
+    await writeFile(path.join("data", "analysis", `${game}_trends.json`), `${JSON.stringify(buildTrendData(game, draws))}
+`, "utf8");
     await writeFile(path.join("data", "analysis", `${game}_draws_japanese.csv`), serializeJapaneseDrawsCsv(draws), "utf8");
     await writeFile(path.join("data", "analysis", `${game}_number_frequency.csv`), serializeNumberFrequencyCsv(analysis.numberAnalysis), "utf8");
     await writeFile(path.join("data", "analysis", `${game}_recent100.csv`), serializeRecent100Csv(analysis.numberAnalysis), "utf8");

@@ -3,6 +3,8 @@ import DistributionList from "@/components/analysis/DistributionList";
 import DownloadCsvButton from "@/components/analysis/DownloadCsvButton";
 import GapRankingTable from "@/components/analysis/GapRankingTable";
 import HowToReadBox from "@/components/analysis/HowToReadBox";
+import NarrowingSection from "@/components/analysis/NarrowingSection";
+import TrendTables from "@/components/analysis/TrendTables";
 import LatestDrawCard from "@/components/analysis/LatestDrawCard";
 import NumberFrequencyChart from "@/components/analysis/NumberFrequencyChart";
 import NumberFrequencyTable from "@/components/analysis/NumberFrequencyTable";
@@ -13,16 +15,18 @@ import NoticeBox from "@/components/site/NoticeBox";
 import PageHero from "@/components/site/PageHero";
 import { GAME_SPECS } from "@/loto/constants";
 import type { LotoAnalysis } from "@/loto/analysis";
+import type { TrendData } from "@/loto/trends";
 import type { GameType } from "@/loto/types";
 import { formatYen } from "@/loto/format";
 
 type Props = {
   game: GameType;
   analysis: LotoAnalysis | null;
+  trends?: TrendData | null;
   view: "overview" | "results" | "statistics" | "patterns";
 };
 
-export default function GameAnalysisView({ game, analysis, view }: Props) {
+export default function GameAnalysisView({ game, analysis, trends, view }: Props) {
   const label = GAME_SPECS[game].label;
   if (!analysis) {
     return (
@@ -115,8 +119,27 @@ export default function GameAnalysisView({ game, analysis, view }: Props) {
           <HowToReadBox>過去の並び方や数字の組み合わせを参考にした情報であり、数字を除外したり当せんを保証したりするものではありません。</HowToReadBox>
           <PatternInsightCards game={game} />
           <DistributionList title="前回数字との重複" rows={analysis.previousOverlapDistribution} />
+          {view === "overview" ? (
+            <p className="soft-note">
+              ●○の全数字出目表、6分割・{game === "loto6" ? "11" : "9"}分割の傾向表、集計表、絞り込み参考は <Link href={`/${game}/patterns`}>パターン分析ページ</Link> にあります。
+            </p>
+          ) : null}
         </section>
       )}
+
+      {view === "patterns" && trends ? (
+        <>
+          <section className="analysis-section" id="trends">
+            <h2>傾向表 (最新第{trends.latestDrawNumber}回まで)</h2>
+            <HowToReadBox>
+              過去の当せん数字を●○で並べた出目表と、数字を6分割・{trends.groupFineLabel}にした傾向表、出現回数の集計表です。
+              どの組に何個入ったか (AB…の並び)、奇数が何個か、合計がいくつかを回ごとに確認できます。過去の偏りは次回の出やすさを意味しません。
+            </HowToReadBox>
+            <TrendTables data={trends} />
+          </section>
+          <NarrowingSection data={trends} />
+        </>
+      ) : null}
 
       {(view === "overview" || view === "statistics") && (
         <section className="analysis-section" id="carry-prize">
