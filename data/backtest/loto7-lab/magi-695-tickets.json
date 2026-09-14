@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-09-14T23:39:08.523Z",
+  "basedOnDraw": 694,
+  "targetDraw": 695,
+  "seed": 695,
+  "coverage": 1,
+  "coveredNumbers": 28,
+  "tickets": [
+    {
+      "id": "A",
+      "theme": "観測可視化 (35・22 を含む)",
+      "numbers": [
+        1,
+        10,
+        18,
+        20,
+        22,
+        33,
+        35
+      ],
+      "note": "特定数字が10回中4回以上はどれかの数字で 0.98 の確率で起きる。35/22 を含めたのは利用者の観測を可視化するためで、当せん確率は変わらない。残り5数字は受取係数優先。",
+      "payoutFactor": 0.735195351531706,
+      "sum": 139,
+      "consecutive": 0,
+      "dense": 3,
+      "le31": 5,
+      "odd": 3,
+      "arithmetic": false
+    },
+    {
+      "id": "B",
+      "theme": "山分け回避 第2セット",
+      "numbers": [
+        2,
+        11,
+        14,
+        16,
+        30,
+        34,
+        37
+      ],
+      "note": "D と重複 ≤1 で受取係数を最大化。",
+      "payoutFactor": 0.7934584315531482,
+      "sum": 144,
+      "consecutive": 0,
+      "dense": 3,
+      "le31": 5,
+      "odd": 2,
+      "arithmetic": false
+    },
+    {
+      "id": "C",
+      "theme": "矛盾検証 (22 と最多共起の 17: 33 回)",
+      "numbers": [
+        6,
+        13,
+        17,
+        19,
+        22,
+        34,
+        36
+      ],
+      "note": "ペア共起はラボ実測 pair_affinity AUC 0.503 (乱数と区別できない)。説明担当の 1 口。",
+      "payoutFactor": 0.7645289764631165,
+      "sum": 147,
+      "consecutive": 0,
+      "dense": 3,
+      "le31": 5,
+      "odd": 3,
+      "arithmetic": false
+    },
+    {
+      "id": "D",
+      "theme": "山分け回避 主軸",
+      "numbers": [
+        3,
+        5,
+        19,
+        21,
+        26,
+        32,
+        37
+      ],
+      "note": "数学的に期待値へ効く唯一の要素。1等当せん時の E[1/(1+同時当せん者数)] を最大化。",
+      "payoutFactor": 0.8086293964229938,
+      "sum": 143,
+      "consecutive": 0,
+      "dense": 3,
+      "le31": 5,
+      "odd": 5,
+      "arithmetic": false
+    },
+    {
+      "id": "E",
+      "theme": "均等ランダム制御群 (seed 695)",
+      "numbers": [
+        1,
+        9,
+        14,
+        19,
+        23,
+        24,
+        27
+      ],
+      "note": "構造制約なし。A/C との比較用の対照。",
+      "payoutFactor": 0.7297678064712715,
+      "sum": 117,
+      "consecutive": 1,
+      "dense": 3,
+      "le31": 7,
+      "odd": 5,
+      "arithmetic": false
+    }
+  ]
+}
