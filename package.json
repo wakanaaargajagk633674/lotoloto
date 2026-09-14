@@ -18,7 +18,8 @@
     "backtest": "tsx scripts/run-backtest.ts",
     "backtest:portfolio": "tsx scripts/run-portfolio-validation.ts",
     "plan:purchase": "tsx scripts/generate-purchase-plan.ts",
-    "math:probe": "tsx scripts/probe-math-core.ts"
+    "math:probe": "tsx scripts/probe-math-core.ts",
+    "lab:loto7": "tsx scripts/run-loto7-lab.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
