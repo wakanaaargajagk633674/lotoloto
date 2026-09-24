@@ -45,6 +45,13 @@ export function explainTicket(strategy: StrategyType, scores: NumberScore[], com
       )} 人前後で、独占できた場合を100としたときの期待受取は約 ${Math.round(combo.payoutFactor * 100)} です。`
     );
   }
+  if (combo.relativeReturnIndex !== null) {
+    explanations.push(
+      `全等級の山分けを考えた払戻の見込みは、ランダムに選んだ買い目を100として約 ${Math.round(
+        combo.relativeReturnIndex
+      )} です。変わるのは当せんした場合の受取額の見込みだけで、当せん確率は変わりません。当せん金の総額は法律で発売額の5割以下と決められているため、どの買い目でも平均すると購入額を下回ります。`
+    );
+  }
   if (combo.expectedShareReasons.length > 0) {
     explanations.push(
       `他の購入者との重なりにくさの目安は ${Math.round(combo.expectedShareScore * 100)} です。${combo.expectedShareReasons.at(-1)}`

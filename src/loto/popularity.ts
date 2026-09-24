@@ -6,6 +6,16 @@ import {
   type PayoutExpectation,
   type PopularityRegression
 } from "./mathCore";
+import { popularityCalibrationSettings, PRIZE_BASELINE_WINDOW } from "@/config/strategyWeights";
+import {
+  buildPrizeBaselines,
+  expectedReturnForCombination,
+  fitCalibratedPopularity,
+  type CalibratedPopularity,
+  type ExpectedReturn,
+  type PrizeBaseline
+} from "./popularityCalibration";
+import { createSeededRandom } from "./random";
 import type { Draw, GameType } from "./types";
 
 /**
@@ -46,6 +56,14 @@ export type PopularityModel = {
   jackpotScale: number;
   /** 直近の推定販売口数。 */
   ticketVolume: number;
+  /**
+   * 1等口数で較正した人気度モデル (popularityCalibration)。履歴が短いと null。
+   * 使えるときは、期待受取係数と重なりにくさの指数はこちらから計算する。
+   */
+  calibrated: CalibratedPopularity | null;
+  prizeBaselines: PrizeBaseline[];
+  /** ランダムな組み合わせでの払戻率の 5% 点・中央値・95% 点。重なりにくさの指数の目盛りに使う。 */
+  returnBand: { low: number; median: number; high: number } | null;
 };
 
 const EMPIRICAL_SHRINKAGE_DRAWS = 200;
@@ -100,6 +118,36 @@ function betaToPopularityIndex(game: GameType, regression: PopularityRegression)
   return new Map(domain.map((number, index) => [number, clamp01(0.5 + (raw[index] - rawAvg) / (rawStd * 4))]));
 }
 
+function gammaToPopularityIndex(game: GameType, gamma: Map<number, number>): Map<number, number> {
+  const domain = numbersForGame(game);
+  const raw = domain.map((number) => gamma.get(number) ?? 0);
+  const rawAvg = mean(raw);
+  const rawStd = std(raw);
+  return new Map(domain.map((number, index) => [number, clamp01(0.5 + (raw[index] - rawAvg) / (rawStd * 4))]));
+}
+
+/** 一様に選んだ組み合わせ 2,000 口での払戻率の分布。乱数は固定シードなので結果は再現できる。 */
+function estimateReturnBand(
+  game: GameType,
+  calibrated: CalibratedPopularity,
+  baselines: PrizeBaseline[],
+  ticketVolume: number
+): { low: number; median: number; high: number } {
+  const spec = GAME_SPECS[game];
+  const random = createSeededRandom(20260925);
+  const ratios: number[] = [];
+  for (let sample = 0; sample < 2000; sample += 1) {
+    const picked = new Set<number>();
+    while (picked.size < spec.mainCount) {
+      picked.add(1 + Math.floor(random() * spec.maxNumber));
+    }
+    ratios.push(expectedReturnForCombination(game, [...picked], calibrated, baselines, ticketVolume).returnRatio);
+  }
+  ratios.sort((a, b) => a - b);
+  const at = (q: number) => ratios[Math.min(ratios.length - 1, Math.floor(q * (ratios.length - 1)))];
+  return { low: at(0.05), median: at(0.5), high: at(0.95) };
+}
+
 function jackpotScaleFor(game: GameType): number {
   const spec = GAME_SPECS[game];
   const referenceMatches = game === "loto6" ? 3 : 4;
@@ -122,11 +170,16 @@ export function buildPopularityModel(game: GameType, history: Draw[]): Popularit
   const confidence = observationCount / (observationCount + EMPIRICAL_SHRINKAGE_DRAWS);
   const volumes = estimateTicketVolumes(game, history);
   const ticketVolume = volumes.get(latest) ?? 0;
+  const calibrated = fitCalibratedPopularity(game, history, popularityCalibrationSettings[game]);
+  const prizeBaselines = buildPrizeBaselines(game, history, PRIZE_BASELINE_WINDOW);
+  const returnBand = calibrated && ticketVolume > 0 ? estimateReturnBand(game, calibrated, prizeBaselines, ticketVolume) : null;
+  // 較正済みの γ があれば、数字単体の人気度もそちらから作る (1等口数で検証済みのため)。
+  const empiricalSource = calibrated ? gammaToPopularityIndex(game, calibrated.gamma) : empirical;
 
   const numberPopularity = new Map(
     domain.map((number) => {
       const priorValue = prior.get(number) ?? 0.5;
-      const empiricalValue = empirical?.get(number);
+      const empiricalValue = empiricalSource?.get(number);
       const blended =
         empiricalValue === undefined ? priorValue : (1 - confidence) * priorValue + confidence * empiricalValue;
       return [number, clamp01(blended)];
@@ -140,10 +193,13 @@ export function buildPopularityModel(game: GameType, history: Draw[]): Popularit
     confidence,
     numberPopularity,
     priorPopularity: prior,
-    empiricalPopularity: empirical,
+    empiricalPopularity: empiricalSource,
     regression,
     jackpotScale: jackpotScaleFor(game),
-    ticketVolume
+    ticketVolume,
+    calibrated,
+    prizeBaselines,
+    returnBand
   };
 
   if (modelCache.size > 64) {
@@ -160,6 +216,8 @@ export type CombinationPopularity = {
   expectedShareScore: number;
   /** 回帰と口数推定から導いた 1等の期待受取係数。データ不足なら null。 */
   payout: PayoutExpectation | null;
+  /** 較正済みモデルでの全等級の期待払戻。データ不足なら null。 */
+  expectedReturn: ExpectedReturn | null;
   reasons: string[];
 };
 
@@ -168,6 +226,15 @@ export type CombinationPopularity = {
  * 回帰の β を 1等向けに補正し、推定販売口数から E[1 / (1 + 同時当せん者数)] を閉形式で計算する。
  */
 export function combinationPayoutExpectation(game: GameType, numbers: number[], model: PopularityModel): PayoutExpectation | null {
+  if (model.calibrated && model.ticketVolume > 0) {
+    const result = expectedReturnForCombination(game, numbers, model.calibrated, model.prizeBaselines, model.ticketVolume);
+    return {
+      relativePopularity: result.relativePopularity,
+      expectedCoWinners: result.expectedCoWinners,
+      payoutFactor: result.payoutFactor,
+      ticketVolume: model.ticketVolume
+    };
+  }
   if (!model.regression || model.ticketVolume <= 0) {
     return null;
   }
@@ -245,10 +312,22 @@ export function scoreCombinationPopularity(
   }
 
   const bounded = clamp01(index);
+  const expectedReturn =
+    model.calibrated && model.ticketVolume > 0
+      ? expectedReturnForCombination(game, sorted, model.calibrated, model.prizeBaselines, model.ticketVolume)
+      : null;
   const payout = combinationPayoutExpectation(game, sorted, model);
-  // 回帰が使えるときは、ヒューリスティックな指数と閉形式の期待受取係数を半々で合成する。
-  // 回帰は数字単体の人気しか見ないので、並びのクセ (等間隔・下1桁など) は引き続き指数側で扱う。
-  const expectedShareScore = payout ? 0.5 * (1 - bounded) + 0.5 * payoutFactorToScore(payout.payoutFactor) : 1 - bounded;
+  // 較正済みモデルがあるときは、全等級の期待払戻率を「ランダムな口の 5%-95% 点」で 0-1 に目盛る。
+  // 並びのクセ (全部31以下など) は較正モデルが1等口数から推定済みなので、ヒューリスティック指数は混ぜない
+  // (2026-09-25 の検証で、ヒューリスティック指数の上乗せはロト7では効果なし、ロト6では並びのクセ δ で代替できた)。
+  // 較正できないときは従来どおり、ヒューリスティック指数と回帰の期待受取係数を半々で合成する。
+  const band = model.returnBand;
+  const expectedShareScore =
+    expectedReturn && band && band.high > band.low
+      ? clamp01((expectedReturn.returnRatio - band.low) / (band.high - band.low))
+      : payout
+        ? 0.5 * (1 - bounded) + 0.5 * payoutFactorToScore(payout.payoutFactor)
+        : 1 - bounded;
   if (payout) {
     reasons.unshift(
       `過去の口数データから推定すると、この組み合わせを持つ人は平均的な買い方の約 ${payout.relativePopularity.toFixed(2)} 倍で、1等なら同時当せんが平均 ${payout.expectedCoWinners.toFixed(2)} 人前後と見込まれます。`
@@ -258,6 +337,7 @@ export function scoreCombinationPopularity(
     index: bounded,
     expectedShareScore,
     payout,
+    expectedReturn,
     reasons
   };
 }

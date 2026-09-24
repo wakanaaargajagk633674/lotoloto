@@ -20,7 +20,8 @@
     "plan:purchase": "tsx scripts/generate-purchase-plan.ts",
     "math:probe": "tsx scripts/probe-math-core.ts",
     "lab:loto7": "tsx scripts/run-loto7-lab.ts",
-    "magi:695": "tsx scripts/generate-magi-695.ts"
+    "magi:695": "tsx scripts/generate-magi-695.ts",
+    "validate:popularity": "tsx scripts/run-popularity-calibration.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

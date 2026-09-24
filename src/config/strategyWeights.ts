@@ -134,6 +134,51 @@ export const NARRATIVE_SIGNAL_KEYS = [
 
 export const NARRATIVE_SIGNAL_BUDGET = 0.62;
 
+/**
+ * 人気度モデル (当せん時の山分け人数の見積もり) の設定。
+ * 値は 2026-09-25 の25人会議で、ウォークフォワードの標本外検証をもとに決めた
+ * (docs/backtest/popularity-calibration-report.md)。
+ *
+ * - trainTiers : 数字ごとの人気度 γ を学ぶ等級。ロト6・ロト7とも 4等+5等 が1等口数の予測に最も効いた。
+ * - ridge      : γ の Ridge 罰則。16 が1等口数の標本外対数尤度で最良帯。
+ * - slopePrior : 等級換算の理論係数が正しければ傾き s = 1。N(1, 0.3²) で緩く縛る。
+ * - patternPriorSd : 「全部31以下」などの並びのクセ δ を N(0, 0.1²) で縮小して推定する。
+ */
+export const popularityCalibrationSettings = {
+  loto6: {
+    trainTiers: [4, 5],
+    ridge: 16,
+    warmup: 300,
+    refitEvery: 10,
+    slopePriorMean: 1,
+    slopePriorSd: 0.3,
+    patternPriorSd: 0.1,
+    minCalibrationDraws: 100
+  },
+  loto7: {
+    trainTiers: [4, 5],
+    ridge: 16,
+    warmup: 150,
+    refitEvery: 10,
+    slopePriorMean: 1,
+    slopePriorSd: 0.3,
+    patternPriorSd: 0.1,
+    minCalibrationDraws: 100
+  }
+} as const satisfies Record<"loto6" | "loto7", {
+  trainTiers: readonly number[];
+  ridge: number;
+  warmup: number;
+  refitEvery: number;
+  slopePriorMean: number;
+  slopePriorSd: number;
+  patternPriorSd: number;
+  minCalibrationDraws: number;
+}>;
+
+/** 賞金の基準額を取る直近回数。全等級の期待払戻の重み付けに使う。 */
+export const PRIZE_BASELINE_WINDOW = 100;
+
 export function narrativeSignalMagnitude(weights: StrategyWeights): number {
   return NARRATIVE_SIGNAL_KEYS.reduce((sum, key) => sum + Math.abs(weights[key]), 0);
 }

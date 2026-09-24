@@ -106,6 +106,12 @@ export function scoreCombination(
     relativePopularity: combinationPopularity.payout?.relativePopularity ?? null,
     expectedCoWinners: combinationPopularity.payout?.expectedCoWinners ?? null,
     payoutFactor: combinationPopularity.payout?.payoutFactor ?? null,
+    expectedReturnYen: combinationPopularity.expectedReturn?.expectedReturnYen ?? null,
+    expectedReturnRatio: combinationPopularity.expectedReturn?.returnRatio ?? null,
+    relativeReturnIndex:
+      combinationPopularity.expectedReturn && popularityModel.returnBand && popularityModel.returnBand.median > 0
+        ? (100 * combinationPopularity.expectedReturn.returnRatio) / popularityModel.returnBand.median
+        : null,
     balanceScore: strategy === "pure_random" ? balanceScore * 0.5 : balanceScore,
     diversityScore,
     explanationScore: (balanceScore + diversityScore + combinationPopularity.expectedShareScore) / 3

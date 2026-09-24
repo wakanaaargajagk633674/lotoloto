@@ -269,7 +269,7 @@ export function fitPopularityRegression(
   };
 }
 
-function solveLinearSystem(matrix: number[][], vector: number[]): number[] | null {
+export function solveLinearSystem(matrix: number[][], vector: number[]): number[] | null {
   const n = vector.length;
   const a = matrix.map((row, index) => [...row, vector[index]]);
   for (let column = 0; column < n; column += 1) {

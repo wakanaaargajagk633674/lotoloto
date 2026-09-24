@@ -100,6 +100,12 @@ export type CombinationScores = {
   expectedCoWinners: number | null;
   /** E[受取 | 1等] を独占時 1 とした係数。回帰が使えないときは null。 */
   payoutFactor: number | null;
+  /** 全等級を合わせた1口あたりの期待払戻額 (円)。較正モデルが使えないときは null。 */
+  expectedReturnYen: number | null;
+  /** 期待払戻 ÷ 購入額。賞金の基準額が1等の出た回に偏るため絶対値は目安で、比較にだけ使う。 */
+  expectedReturnRatio: number | null;
+  /** ランダムに選んだ口の中央値を 100 とした期待払戻の相対指数。 */
+  relativeReturnIndex: number | null;
   balanceScore: number;
   diversityScore: number;
   explanationScore: number;
