@@ -306,30 +306,36 @@ export function buildNarrowing(game: GameType, history: Draw[], rows: TrendRow[]
   const selected = new Set<number>();
   const steps: string[] = [];
   const minPerGroup6 = game === "loto6" ? 3 : 2;
+  // 前回本数字は最大2個まで (持ち越し平均 ≈ 理論値 mainCount²/maxNumber)。組の確保時点から守り、後で消して組が空になるのを防ぐ。
+  const carryLimit = 2;
+  const carryFull = () => [...selected].filter((value) => previousSet.has(value)).length >= carryLimit;
+  const canTake = (entry: NarrowingEntry) => !entry.inPreviousDraw || !carryFull();
 
   // 1. 各6分割グループから最低人数を確保 (空組を作らない)
   for (const def of g6) {
-    ranked.filter((entry) => entry.group6 === def.key).slice(0, minPerGroup6).forEach((entry) => selected.add(entry.number));
+    let taken = 0;
+    for (const entry of ranked) {
+      if (taken >= minPerGroup6) break;
+      if (entry.group6 !== def.key || !canTake(entry)) continue;
+      selected.add(entry.number);
+      taken += 1;
+    }
   }
   steps.push(`6分割の各組から上位${minPerGroup6}個ずつ確保 (${g6.length * minPerGroup6}個)。組が空になる形は過去${statsAll.drawCount}回で稀なため。`);
   // 2. 細分割の各組から最低1個
   for (const def of gf) {
     if (!ranked.some((entry) => entry.groupFine === def.key && selected.has(entry.number))) {
-      const top = ranked.find((entry) => entry.groupFine === def.key);
+      const top = ranked.find((entry) => entry.groupFine === def.key && canTake(entry)) ?? ranked.find((entry) => entry.groupFine === def.key);
       if (top) selected.add(top.number);
     }
   }
   steps.push(`${gf.length}分割の各組にも最低1個を確保 (${selected.size}個)。`);
-  // 3. 前回本数字は最大2個まで (持ち越し平均 ≈ 理論値 mainCount²/maxNumber)
-  const carryLimit = 2;
-  const carried = ranked.filter((entry) => entry.inPreviousDraw && selected.has(entry.number));
-  for (const entry of carried.slice(carryLimit)) selected.delete(entry.number);
-  // 4. 残りをスコア順に埋める。奇数偶数は 40〜60% の範囲に寄せる。
+  // 3. 残りをスコア順に埋める。奇数偶数は 40〜60% の範囲に寄せる。
   const oddTarget = { min: Math.floor(limit * 0.4), max: Math.ceil(limit * 0.6) };
   for (const entry of ranked) {
     if (selected.size >= limit) break;
     if (selected.has(entry.number)) continue;
-    if (entry.inPreviousDraw && [...selected].filter((value) => previousSet.has(value)).length >= carryLimit) continue;
+    if (!canTake(entry)) continue;
     const oddNow = [...selected].filter((value) => value % 2 === 1).length;
     const evenNow = selected.size - oddNow;
     if (entry.number % 2 === 1 && oddNow >= oddTarget.max) continue;
